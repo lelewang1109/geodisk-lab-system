@@ -1,0 +1,13 @@
+{
+  "method": "Harmonic",
+  "view": "annulus",
+  "cell_count": 137,
+  "seed_mapping": "uniform_graph_laplacian",
+  "partition": "unweighted_voronoi",
+  "history": [
+    {
+      "iteration": 0,
+      "area_cv": 0.5830571726814083
+    }
+  ]
+}

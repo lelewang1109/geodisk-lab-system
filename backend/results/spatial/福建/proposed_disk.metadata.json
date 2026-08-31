@@ -1,0 +1,24 @@
+{
+  "method": "GeoDisk",
+  "view": "disk",
+  "cell_count": 74,
+  "topology_objective_initial": 0.6141659335556532,
+  "topology_objective_final": 0.6268283101963884,
+  "balance": true,
+  "warp_strength": 0.018,
+  "warp_fallback": false,
+  "weight_range": [
+    -0.024310682966947918,
+    0.006237687205597822
+  ],
+  "history": [
+    {
+      "iteration": 0,
+      "area_cv": 0.6485638388294568
+    },
+    {
+      "iteration": 1,
+      "area_cv": 0.5733889247833233
+    }
+  ]
+}

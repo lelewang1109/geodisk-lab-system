@@ -1,0 +1,93 @@
+{
+  "method": "GeoAnnulus-Final",
+  "view": "annulus",
+  "cell_count": 50,
+  "optimization_target": "final_balanced_power_polygon_adjacency",
+  "candidate_schedule": [
+    "topology",
+    "harmonic",
+    "geographic",
+    "topology_harmonic_50",
+    "topology_geographic_50",
+    "force_1",
+    "force_2",
+    "force_3",
+    "force_4"
+  ],
+  "selected_candidate": "force_4",
+  "initial_final_power_objective": 0.614157176686707,
+  "optimized_final_power_objective": 0.7005527267477994,
+  "initial_final_power_adj_f1": 0.5674418604651162,
+  "optimized_final_power_adj_f1": 0.6400000000000001,
+  "optimized_final_power_np2": 0.5424469395518259,
+  "area_cv": 0.7233297781845763,
+  "weight_range": [
+    -0.045350930561075274,
+    0.020972565896043287
+  ],
+  "candidate_history": [
+    {
+      "candidate": "topology",
+      "objective": 0.614157176686707,
+      "adj_f1": 0.5674418604651162,
+      "np2": 0.4938021633073457,
+      "area_cv": 0.8049094782696274
+    },
+    {
+      "candidate": "harmonic",
+      "objective": 0.5917369620957218,
+      "adj_f1": 0.547945205479452,
+      "np2": 0.5331234392990687,
+      "area_cv": 0.8975414201948805
+    },
+    {
+      "candidate": "geographic",
+      "objective": 0.6132818291021902,
+      "adj_f1": 0.5674418604651162,
+      "np2": 0.49373733508530926,
+      "area_cv": 0.9224841569151155
+    },
+    {
+      "candidate": "topology_harmonic_50",
+      "objective": 0.6220559210748433,
+      "adj_f1": 0.5688073394495413,
+      "np2": 0.5114627526949768,
+      "area_cv": 0.7830394210627243
+    },
+    {
+      "candidate": "topology_geographic_50",
+      "objective": 0.6483050562232167,
+      "adj_f1": 0.5925925925925924,
+      "np2": 0.510170078631379,
+      "area_cv": 0.7122685305322755
+    },
+    {
+      "candidate": "force_1",
+      "objective": 0.6519377348237706,
+      "adj_f1": 0.5909090909090908,
+      "np2": 0.5401652873957828,
+      "area_cv": 0.7060404866031874
+    },
+    {
+      "candidate": "force_2",
+      "objective": 0.6721704224696861,
+      "adj_f1": 0.6126126126126127,
+      "np2": 0.5358704512034234,
+      "area_cv": 0.7157145566931715
+    },
+    {
+      "candidate": "force_3",
+      "objective": 0.6822660444508943,
+      "adj_f1": 0.625,
+      "np2": 0.5284782001776012,
+      "area_cv": 0.7221159769378871
+    },
+    {
+      "candidate": "force_4",
+      "objective": 0.7005527267477994,
+      "adj_f1": 0.6400000000000001,
+      "np2": 0.5424469395518259,
+      "area_cv": 0.7233297781845763
+    }
+  ]
+}

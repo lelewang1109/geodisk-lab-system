@@ -1,0 +1,14 @@
+{
+  "region": "广西",
+  "cell_count": 142,
+  "edge_count": 248,
+  "anchor": {
+    "longitude": 108.8569510013655,
+    "latitude": 23.6206
+  },
+  "coarsen_factor": 4,
+  "source_grid_resolution": {
+    "longitude": 0.09999999999999432,
+    "latitude": 0.10000000000000142
+  }
+}

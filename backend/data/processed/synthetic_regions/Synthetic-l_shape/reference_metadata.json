@@ -1,0 +1,17 @@
+{
+  "region": "Synthetic-l_shape",
+  "cell_count": 145,
+  "edge_count": 256,
+  "anchor": {
+    "longitude": 2.0,
+    "latitude": 8.0
+  },
+  "source_kind": "deterministic_synthetic_quad_grid",
+  "case": "l_shape",
+  "connected_components_expected": 1,
+  "has_hole": false,
+  "dimensions": [
+    17,
+    17
+  ]
+}

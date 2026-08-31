@@ -1,0 +1,17 @@
+{
+  "region": "Synthetic-concave_u",
+  "cell_count": 172,
+  "edge_count": 297,
+  "anchor": {
+    "longitude": 1.5,
+    "latitude": 8.0
+  },
+  "source_kind": "deterministic_synthetic_quad_grid",
+  "case": "concave_u",
+  "connected_components_expected": 1,
+  "has_hole": false,
+  "dimensions": [
+    17,
+    17
+  ]
+}

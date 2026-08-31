@@ -1,0 +1,17 @@
+{
+  "neighbor_models": {
+    "4-neighbor": "rook/grid-edge contact",
+    "8-neighbor": "rook plus diagonal queen contact"
+  },
+  "inclusion_thresholds": [
+    0.0,
+    0.25,
+    0.5,
+    0.75
+  ],
+  "reference_policies": [
+    "full_macro_cell",
+    "province_clipped"
+  ],
+  "selection_note": "All thresholds and both reference policies were declared before comparing outcomes."
+}

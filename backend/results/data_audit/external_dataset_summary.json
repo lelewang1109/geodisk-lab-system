@@ -1,0 +1,71 @@
+{
+  "NE-Admin0-Africa": {
+    "cells": 50,
+    "edges": 109,
+    "natural_earth_version": "5.1.1",
+    "feature_count_africa": 51,
+    "source_kind": "irregular_areal_polygons",
+    "adjacency": "shared_boundary_length>=0.01_degree",
+    "component_policy": "largest adjacency-connected component fixed before evaluation",
+    "excluded_ids": [
+      "MDG"
+    ]
+  },
+  "NCEP-AirTemp-Africa-2000": {
+    "cells": 401,
+    "edges": 741,
+    "source_kind": "regular_grid_netcdf",
+    "variable": "air",
+    "units": "degC",
+    "time_values": [
+      "2000-01",
+      "2000-02",
+      "2000-03",
+      "2000-04",
+      "2000-05",
+      "2000-06",
+      "2000-07",
+      "2000-08",
+      "2000-09",
+      "2000-10",
+      "2000-11",
+      "2000-12"
+    ],
+    "grid_resolution_degree": [
+      2.5,
+      2.5
+    ],
+    "component_policy": "largest 4-neighbor component",
+    "source_subset_shape": [
+      12,
+      33,
+      31
+    ]
+  },
+  "Synthetic-Topology-Stress": {
+    "disk_like": {
+      "cells": 149,
+      "edges": 268
+    },
+    "elongated": {
+      "cells": 203,
+      "edges": 370
+    },
+    "l_shape": {
+      "cells": 145,
+      "edges": 256
+    },
+    "concave_u": {
+      "cells": 172,
+      "edges": 297
+    },
+    "hole": {
+      "cells": 264,
+      "edges": 484
+    },
+    "disconnected": {
+      "cells": 160,
+      "edges": 284
+    }
+  }
+}

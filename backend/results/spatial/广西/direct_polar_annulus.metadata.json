@@ -1,0 +1,8 @@
+{
+  "method": "Direct Polar",
+  "view": "annulus",
+  "cell_count": 142,
+  "initialization": "four_vertex_boundary_ray",
+  "balance": false,
+  "warp": false
+}

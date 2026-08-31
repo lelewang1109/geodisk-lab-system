@@ -1,0 +1,13 @@
+{
+  "declared_regions": [
+    "湖北",
+    "广东"
+  ],
+  "selection_basis": "predeclared runtime-bounded shape contrast; not outcome-selected",
+  "recommended_default": {
+    "coarsen_factor": 4,
+    "layer_count": 5,
+    "optimize_passes": 8,
+    "warp_strength": 0.019999999999999997
+  }
+}

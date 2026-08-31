@@ -1,0 +1,17 @@
+{
+  "method": "Area-balanced",
+  "view": "disk",
+  "cell_count": 401,
+  "initialization": "center_polar",
+  "balance": true,
+  "weight_range": [
+    0.0,
+    0.0
+  ],
+  "history": [
+    {
+      "iteration": 0,
+      "area_cv": 0.8246196793301133
+    }
+  ]
+}

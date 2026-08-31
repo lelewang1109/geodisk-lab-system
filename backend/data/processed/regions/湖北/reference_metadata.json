@@ -1,0 +1,14 @@
+{
+  "region": "湖北",
+  "cell_count": 130,
+  "edge_count": 225,
+  "anchor": {
+    "longitude": 112.91859974834915,
+    "latitude": 31.1792
+  },
+  "coarsen_factor": 4,
+  "source_grid_resolution": {
+    "longitude": 0.09999999999999432,
+    "latitude": 0.10000000000000142
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "method": "GeoAnnulus",
+  "view": "annulus",
+  "cell_count": 108,
+  "topology_objective_initial": 0.5267823611856558,
+  "topology_objective_final": 0.5611959870399185,
+  "balance": true,
+  "warp_strength": 0.022,
+  "warp_fallback": false,
+  "weight_range": [
+    0.0,
+    0.0
+  ],
+  "history": [
+    {
+      "iteration": 0,
+      "area_cv": 2.235336641192327
+    }
+  ]
+}

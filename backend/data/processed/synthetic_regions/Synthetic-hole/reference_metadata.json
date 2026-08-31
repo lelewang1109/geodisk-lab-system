@@ -1,0 +1,17 @@
+{
+  "region": "Synthetic-hole",
+  "cell_count": 264,
+  "edge_count": 484,
+  "anchor": {
+    "longitude": 2.5,
+    "latitude": 8.0
+  },
+  "source_kind": "deterministic_synthetic_quad_grid",
+  "case": "hole",
+  "connected_components_expected": 1,
+  "has_hole": true,
+  "dimensions": [
+    17,
+    17
+  ]
+}

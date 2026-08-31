@@ -1,0 +1,19 @@
+{
+  "bin_counts": [
+    5,
+    7,
+    9,
+    13
+  ],
+  "transition_count_per_dataset": 11,
+  "evaluation_modes": [
+    "difference between reconstructed monthly values",
+    "direct symmetric diverging delta"
+  ],
+  "fixed_geometry_metrics": {
+    "cell_identity_accuracy": 1.0,
+    "geometry_centroid_drift": 0.0,
+    "temporal_adjacency_jaccard": 1.0
+  },
+  "interpretation_guardrail": "Fixed-geometry stability is a construction property, not evidence of perceptual accuracy."
+}

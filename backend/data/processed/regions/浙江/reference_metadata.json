@@ -1,0 +1,14 @@
+{
+  "region": "浙江",
+  "cell_count": 65,
+  "edge_count": 110,
+  "anchor": {
+    "longitude": 120.15822088895631,
+    "latitude": 29.113799999999998
+  },
+  "coarsen_factor": 4,
+  "source_grid_resolution": {
+    "longitude": 0.09999999999999432,
+    "latitude": 0.10000000000000142
+  }
+}

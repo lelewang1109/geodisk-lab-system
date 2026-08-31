@@ -1,0 +1,8 @@
+{
+  "method": "Direct Polar",
+  "view": "disk",
+  "cell_count": 65,
+  "initialization": "four_vertex_boundary_ray",
+  "balance": false,
+  "warp": false
+}

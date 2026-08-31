@@ -1,0 +1,9 @@
+{
+  "timing_scope": "single-process wall-clock seconds; one run per predeclared dataset size",
+  "warning": "Use as an order-of-magnitude scalability report, not a confidence interval.",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "processor": "arm",
+  "python": "3.9.24",
+  "numpy": "2.0.2",
+  "shapely": "2.0.7"
+}

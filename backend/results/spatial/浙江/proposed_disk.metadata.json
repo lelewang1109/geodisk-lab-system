@@ -1,0 +1,44 @@
+{
+  "method": "GeoDisk",
+  "view": "disk",
+  "cell_count": 65,
+  "topology_objective_initial": 0.6208420862520717,
+  "topology_objective_final": 0.6422942492168098,
+  "balance": true,
+  "warp_strength": 0.018,
+  "warp_fallback": false,
+  "weight_range": [
+    -0.04139681247264415,
+    0.01954585927367648
+  ],
+  "history": [
+    {
+      "iteration": 0,
+      "area_cv": 0.4804655952932991
+    },
+    {
+      "iteration": 1,
+      "area_cv": 0.3903470663712845
+    },
+    {
+      "iteration": 2,
+      "area_cv": 0.3533603580014037
+    },
+    {
+      "iteration": 3,
+      "area_cv": 0.33846317932507847
+    },
+    {
+      "iteration": 4,
+      "area_cv": 0.3014906129381
+    },
+    {
+      "iteration": 5,
+      "area_cv": 0.28868063844360875
+    },
+    {
+      "iteration": 6,
+      "area_cv": 0.27836615262455416
+    }
+  ]
+}

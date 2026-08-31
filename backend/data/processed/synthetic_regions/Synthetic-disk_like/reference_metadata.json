@@ -1,0 +1,17 @@
+{
+  "region": "Synthetic-disk_like",
+  "cell_count": 149,
+  "edge_count": 268,
+  "anchor": {
+    "longitude": 8.0,
+    "latitude": 8.0
+  },
+  "source_kind": "deterministic_synthetic_quad_grid",
+  "case": "disk_like",
+  "connected_components_expected": 1,
+  "has_hole": false,
+  "dimensions": [
+    17,
+    17
+  ]
+}

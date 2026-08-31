@@ -1,0 +1,77 @@
+{
+  "method": "GeoDisk-Final",
+  "view": "disk",
+  "cell_count": 401,
+  "optimization_target": "final_balanced_power_polygon_adjacency",
+  "candidate_schedule": [
+    "topology",
+    "harmonic",
+    "geographic",
+    "topology_harmonic_50",
+    "topology_geographic_50",
+    "force_1",
+    "force_2"
+  ],
+  "selected_candidate": "force_2",
+  "initial_final_power_objective": 0.49345447414781823,
+  "optimized_final_power_objective": 0.7738224518090602,
+  "initial_final_power_adj_f1": 0.4756756756756757,
+  "optimized_final_power_adj_f1": 0.7081081081081082,
+  "optimized_final_power_np2": 0.5871242561396568,
+  "area_cv": 0.8528434403369131,
+  "weight_range": [
+    0.0,
+    0.0
+  ],
+  "candidate_history": [
+    {
+      "candidate": "topology",
+      "objective": 0.49345447414781823,
+      "adj_f1": 0.4756756756756757,
+      "np2": 0.37830402959135423,
+      "area_cv": 1.0769365727920568
+    },
+    {
+      "candidate": "harmonic",
+      "objective": 0.767522960402269,
+      "adj_f1": 0.7017353579175705,
+      "np2": 0.5836225847923198,
+      "area_cv": 0.8344498908882212
+    },
+    {
+      "candidate": "geographic",
+      "objective": 0.623662963838946,
+      "adj_f1": 0.5725317153888582,
+      "np2": 0.4917434601110444,
+      "area_cv": 0.8246196793301133
+    },
+    {
+      "candidate": "topology_harmonic_50",
+      "objective": 0.7403853511750143,
+      "adj_f1": 0.6759656652360515,
+      "np2": 0.5570432272239371,
+      "area_cv": 0.7930006433937138
+    },
+    {
+      "candidate": "topology_geographic_50",
+      "objective": 0.6114033020973944,
+      "adj_f1": 0.5681570338058888,
+      "np2": 0.47099617277969635,
+      "area_cv": 0.9265872754935625
+    },
+    {
+      "candidate": "force_1",
+      "objective": 0.7614733131857502,
+      "adj_f1": 0.6983783783783785,
+      "np2": 0.5714436305488969,
+      "area_cv": 0.8202594048999046
+    },
+    {
+      "candidate": "force_2",
+      "objective": 0.7738224518090602,
+      "adj_f1": 0.7081081081081082,
+      "np2": 0.5871242561396568,
+      "area_cv": 0.8528434403369131
+    }
+  ]
+}

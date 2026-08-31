@@ -1,0 +1,13 @@
+{
+  "method": "Harmonic",
+  "view": "disk",
+  "cell_count": 401,
+  "seed_mapping": "uniform_graph_laplacian",
+  "partition": "unweighted_voronoi",
+  "history": [
+    {
+      "iteration": 0,
+      "area_cv": 0.851218419529012
+    }
+  ]
+}

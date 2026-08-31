@@ -1,0 +1,17 @@
+{
+  "region": "NE-Admin0-Africa",
+  "cell_count": 50,
+  "edge_count": 109,
+  "anchor": {
+    "longitude": 27.169222829380605,
+    "latitude": 1.6033356815595916
+  },
+  "natural_earth_version": "5.1.1",
+  "feature_count_africa": 51,
+  "source_kind": "irregular_areal_polygons",
+  "adjacency": "shared_boundary_length>=0.01_degree",
+  "component_policy": "largest adjacency-connected component fixed before evaluation",
+  "excluded_ids": [
+    "MDG"
+  ]
+}

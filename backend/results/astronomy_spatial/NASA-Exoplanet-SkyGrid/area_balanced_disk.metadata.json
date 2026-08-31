@@ -1,0 +1,33 @@
+{
+  "method": "Area-balanced",
+  "view": "disk",
+  "cell_count": 162,
+  "initialization": "center_polar",
+  "balance": true,
+  "weight_range": [
+    -0.03327355865772811,
+    0.009131722139826038
+  ],
+  "history": [
+    {
+      "iteration": 0,
+      "area_cv": 1.1634109111772077
+    },
+    {
+      "iteration": 1,
+      "area_cv": 1.0601371883651067
+    },
+    {
+      "iteration": 2,
+      "area_cv": 0.9802303287001926
+    },
+    {
+      "iteration": 3,
+      "area_cv": 0.9474603637050302
+    },
+    {
+      "iteration": 4,
+      "area_cv": 0.9175796350433385
+    }
+  ]
+}

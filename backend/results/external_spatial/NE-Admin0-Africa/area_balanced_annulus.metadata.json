@@ -1,0 +1,17 @@
+{
+  "method": "Area-balanced",
+  "view": "annulus",
+  "cell_count": 50,
+  "initialization": "center_polar",
+  "balance": true,
+  "weight_range": [
+    0.0,
+    0.0
+  ],
+  "history": [
+    {
+      "iteration": 0,
+      "area_cv": 0.9224841569151153
+    }
+  ]
+}

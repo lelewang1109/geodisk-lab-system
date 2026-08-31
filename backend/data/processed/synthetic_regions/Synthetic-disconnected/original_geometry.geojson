@@ -1,0 +1,5445 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r002_c002",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.5,
+              13.5
+            ],
+            [
+              2.5,
+              13.5
+            ],
+            [
+              2.5,
+              14.5
+            ],
+            [
+              1.5,
+              14.5
+            ],
+            [
+              1.5,
+              13.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r002_c003",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.5,
+              13.5
+            ],
+            [
+              3.5,
+              13.5
+            ],
+            [
+              3.5,
+              14.5
+            ],
+            [
+              2.5,
+              14.5
+            ],
+            [
+              2.5,
+              13.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r002_c004",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              3.5,
+              13.5
+            ],
+            [
+              4.5,
+              13.5
+            ],
+            [
+              4.5,
+              14.5
+            ],
+            [
+              3.5,
+              14.5
+            ],
+            [
+              3.5,
+              13.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r002_c005",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.5,
+              13.5
+            ],
+            [
+              5.5,
+              13.5
+            ],
+            [
+              5.5,
+              14.5
+            ],
+            [
+              4.5,
+              14.5
+            ],
+            [
+              4.5,
+              13.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r002_c006",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              5.5,
+              13.5
+            ],
+            [
+              6.5,
+              13.5
+            ],
+            [
+              6.5,
+              14.5
+            ],
+            [
+              5.5,
+              14.5
+            ],
+            [
+              5.5,
+              13.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r002_c007",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.5,
+              13.5
+            ],
+            [
+              7.5,
+              13.5
+            ],
+            [
+              7.5,
+              14.5
+            ],
+            [
+              6.5,
+              14.5
+            ],
+            [
+              6.5,
+              13.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r002_c008",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.5,
+              13.5
+            ],
+            [
+              8.5,
+              13.5
+            ],
+            [
+              8.5,
+              14.5
+            ],
+            [
+              7.5,
+              14.5
+            ],
+            [
+              7.5,
+              13.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r002_c009",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.5,
+              13.5
+            ],
+            [
+              9.5,
+              13.5
+            ],
+            [
+              9.5,
+              14.5
+            ],
+            [
+              8.5,
+              14.5
+            ],
+            [
+              8.5,
+              13.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r003_c002",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.5,
+              12.5
+            ],
+            [
+              2.5,
+              12.5
+            ],
+            [
+              2.5,
+              13.5
+            ],
+            [
+              1.5,
+              13.5
+            ],
+            [
+              1.5,
+              12.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r003_c003",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.5,
+              12.5
+            ],
+            [
+              3.5,
+              12.5
+            ],
+            [
+              3.5,
+              13.5
+            ],
+            [
+              2.5,
+              13.5
+            ],
+            [
+              2.5,
+              12.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r003_c004",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              3.5,
+              12.5
+            ],
+            [
+              4.5,
+              12.5
+            ],
+            [
+              4.5,
+              13.5
+            ],
+            [
+              3.5,
+              13.5
+            ],
+            [
+              3.5,
+              12.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r003_c005",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.5,
+              12.5
+            ],
+            [
+              5.5,
+              12.5
+            ],
+            [
+              5.5,
+              13.5
+            ],
+            [
+              4.5,
+              13.5
+            ],
+            [
+              4.5,
+              12.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r003_c006",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              5.5,
+              12.5
+            ],
+            [
+              6.5,
+              12.5
+            ],
+            [
+              6.5,
+              13.5
+            ],
+            [
+              5.5,
+              13.5
+            ],
+            [
+              5.5,
+              12.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r003_c007",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.5,
+              12.5
+            ],
+            [
+              7.5,
+              12.5
+            ],
+            [
+              7.5,
+              13.5
+            ],
+            [
+              6.5,
+              13.5
+            ],
+            [
+              6.5,
+              12.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r003_c008",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.5,
+              12.5
+            ],
+            [
+              8.5,
+              12.5
+            ],
+            [
+              8.5,
+              13.5
+            ],
+            [
+              7.5,
+              13.5
+            ],
+            [
+              7.5,
+              12.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r003_c009",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.5,
+              12.5
+            ],
+            [
+              9.5,
+              12.5
+            ],
+            [
+              9.5,
+              13.5
+            ],
+            [
+              8.5,
+              13.5
+            ],
+            [
+              8.5,
+              12.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r004_c002",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.5,
+              11.5
+            ],
+            [
+              2.5,
+              11.5
+            ],
+            [
+              2.5,
+              12.5
+            ],
+            [
+              1.5,
+              12.5
+            ],
+            [
+              1.5,
+              11.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r004_c003",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.5,
+              11.5
+            ],
+            [
+              3.5,
+              11.5
+            ],
+            [
+              3.5,
+              12.5
+            ],
+            [
+              2.5,
+              12.5
+            ],
+            [
+              2.5,
+              11.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r004_c004",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              3.5,
+              11.5
+            ],
+            [
+              4.5,
+              11.5
+            ],
+            [
+              4.5,
+              12.5
+            ],
+            [
+              3.5,
+              12.5
+            ],
+            [
+              3.5,
+              11.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r004_c005",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.5,
+              11.5
+            ],
+            [
+              5.5,
+              11.5
+            ],
+            [
+              5.5,
+              12.5
+            ],
+            [
+              4.5,
+              12.5
+            ],
+            [
+              4.5,
+              11.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r004_c006",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              5.5,
+              11.5
+            ],
+            [
+              6.5,
+              11.5
+            ],
+            [
+              6.5,
+              12.5
+            ],
+            [
+              5.5,
+              12.5
+            ],
+            [
+              5.5,
+              11.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r004_c007",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.5,
+              11.5
+            ],
+            [
+              7.5,
+              11.5
+            ],
+            [
+              7.5,
+              12.5
+            ],
+            [
+              6.5,
+              12.5
+            ],
+            [
+              6.5,
+              11.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r004_c008",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.5,
+              11.5
+            ],
+            [
+              8.5,
+              11.5
+            ],
+            [
+              8.5,
+              12.5
+            ],
+            [
+              7.5,
+              12.5
+            ],
+            [
+              7.5,
+              11.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r004_c009",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.5,
+              11.5
+            ],
+            [
+              9.5,
+              11.5
+            ],
+            [
+              9.5,
+              12.5
+            ],
+            [
+              8.5,
+              12.5
+            ],
+            [
+              8.5,
+              11.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r005_c002",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.5,
+              10.5
+            ],
+            [
+              2.5,
+              10.5
+            ],
+            [
+              2.5,
+              11.5
+            ],
+            [
+              1.5,
+              11.5
+            ],
+            [
+              1.5,
+              10.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r005_c003",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.5,
+              10.5
+            ],
+            [
+              3.5,
+              10.5
+            ],
+            [
+              3.5,
+              11.5
+            ],
+            [
+              2.5,
+              11.5
+            ],
+            [
+              2.5,
+              10.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r005_c004",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              3.5,
+              10.5
+            ],
+            [
+              4.5,
+              10.5
+            ],
+            [
+              4.5,
+              11.5
+            ],
+            [
+              3.5,
+              11.5
+            ],
+            [
+              3.5,
+              10.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r005_c005",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.5,
+              10.5
+            ],
+            [
+              5.5,
+              10.5
+            ],
+            [
+              5.5,
+              11.5
+            ],
+            [
+              4.5,
+              11.5
+            ],
+            [
+              4.5,
+              10.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r005_c006",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              5.5,
+              10.5
+            ],
+            [
+              6.5,
+              10.5
+            ],
+            [
+              6.5,
+              11.5
+            ],
+            [
+              5.5,
+              11.5
+            ],
+            [
+              5.5,
+              10.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r005_c007",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.5,
+              10.5
+            ],
+            [
+              7.5,
+              10.5
+            ],
+            [
+              7.5,
+              11.5
+            ],
+            [
+              6.5,
+              11.5
+            ],
+            [
+              6.5,
+              10.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r005_c008",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.5,
+              10.5
+            ],
+            [
+              8.5,
+              10.5
+            ],
+            [
+              8.5,
+              11.5
+            ],
+            [
+              7.5,
+              11.5
+            ],
+            [
+              7.5,
+              10.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r005_c009",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.5,
+              10.5
+            ],
+            [
+              9.5,
+              10.5
+            ],
+            [
+              9.5,
+              11.5
+            ],
+            [
+              8.5,
+              11.5
+            ],
+            [
+              8.5,
+              10.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r005_c015",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.5,
+              10.5
+            ],
+            [
+              15.5,
+              10.5
+            ],
+            [
+              15.5,
+              11.5
+            ],
+            [
+              14.5,
+              11.5
+            ],
+            [
+              14.5,
+              10.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r005_c016",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              15.5,
+              10.5
+            ],
+            [
+              16.5,
+              10.5
+            ],
+            [
+              16.5,
+              11.5
+            ],
+            [
+              15.5,
+              11.5
+            ],
+            [
+              15.5,
+              10.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r005_c017",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              16.5,
+              10.5
+            ],
+            [
+              17.5,
+              10.5
+            ],
+            [
+              17.5,
+              11.5
+            ],
+            [
+              16.5,
+              11.5
+            ],
+            [
+              16.5,
+              10.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r005_c018",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              17.5,
+              10.5
+            ],
+            [
+              18.5,
+              10.5
+            ],
+            [
+              18.5,
+              11.5
+            ],
+            [
+              17.5,
+              11.5
+            ],
+            [
+              17.5,
+              10.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r005_c019",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              18.5,
+              10.5
+            ],
+            [
+              19.5,
+              10.5
+            ],
+            [
+              19.5,
+              11.5
+            ],
+            [
+              18.5,
+              11.5
+            ],
+            [
+              18.5,
+              10.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r005_c020",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              19.5,
+              10.5
+            ],
+            [
+              20.5,
+              10.5
+            ],
+            [
+              20.5,
+              11.5
+            ],
+            [
+              19.5,
+              11.5
+            ],
+            [
+              19.5,
+              10.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r005_c021",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              20.5,
+              10.5
+            ],
+            [
+              21.5,
+              10.5
+            ],
+            [
+              21.5,
+              11.5
+            ],
+            [
+              20.5,
+              11.5
+            ],
+            [
+              20.5,
+              10.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r005_c022",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              21.5,
+              10.5
+            ],
+            [
+              22.5,
+              10.5
+            ],
+            [
+              22.5,
+              11.5
+            ],
+            [
+              21.5,
+              11.5
+            ],
+            [
+              21.5,
+              10.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r006_c002",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.5,
+              9.5
+            ],
+            [
+              2.5,
+              9.5
+            ],
+            [
+              2.5,
+              10.5
+            ],
+            [
+              1.5,
+              10.5
+            ],
+            [
+              1.5,
+              9.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r006_c003",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.5,
+              9.5
+            ],
+            [
+              3.5,
+              9.5
+            ],
+            [
+              3.5,
+              10.5
+            ],
+            [
+              2.5,
+              10.5
+            ],
+            [
+              2.5,
+              9.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r006_c004",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              3.5,
+              9.5
+            ],
+            [
+              4.5,
+              9.5
+            ],
+            [
+              4.5,
+              10.5
+            ],
+            [
+              3.5,
+              10.5
+            ],
+            [
+              3.5,
+              9.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r006_c005",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.5,
+              9.5
+            ],
+            [
+              5.5,
+              9.5
+            ],
+            [
+              5.5,
+              10.5
+            ],
+            [
+              4.5,
+              10.5
+            ],
+            [
+              4.5,
+              9.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r006_c006",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              5.5,
+              9.5
+            ],
+            [
+              6.5,
+              9.5
+            ],
+            [
+              6.5,
+              10.5
+            ],
+            [
+              5.5,
+              10.5
+            ],
+            [
+              5.5,
+              9.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r006_c007",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.5,
+              9.5
+            ],
+            [
+              7.5,
+              9.5
+            ],
+            [
+              7.5,
+              10.5
+            ],
+            [
+              6.5,
+              10.5
+            ],
+            [
+              6.5,
+              9.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r006_c008",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.5,
+              9.5
+            ],
+            [
+              8.5,
+              9.5
+            ],
+            [
+              8.5,
+              10.5
+            ],
+            [
+              7.5,
+              10.5
+            ],
+            [
+              7.5,
+              9.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r006_c009",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.5,
+              9.5
+            ],
+            [
+              9.5,
+              9.5
+            ],
+            [
+              9.5,
+              10.5
+            ],
+            [
+              8.5,
+              10.5
+            ],
+            [
+              8.5,
+              9.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r006_c015",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.5,
+              9.5
+            ],
+            [
+              15.5,
+              9.5
+            ],
+            [
+              15.5,
+              10.5
+            ],
+            [
+              14.5,
+              10.5
+            ],
+            [
+              14.5,
+              9.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r006_c016",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              15.5,
+              9.5
+            ],
+            [
+              16.5,
+              9.5
+            ],
+            [
+              16.5,
+              10.5
+            ],
+            [
+              15.5,
+              10.5
+            ],
+            [
+              15.5,
+              9.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r006_c017",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              16.5,
+              9.5
+            ],
+            [
+              17.5,
+              9.5
+            ],
+            [
+              17.5,
+              10.5
+            ],
+            [
+              16.5,
+              10.5
+            ],
+            [
+              16.5,
+              9.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r006_c018",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              17.5,
+              9.5
+            ],
+            [
+              18.5,
+              9.5
+            ],
+            [
+              18.5,
+              10.5
+            ],
+            [
+              17.5,
+              10.5
+            ],
+            [
+              17.5,
+              9.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r006_c019",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              18.5,
+              9.5
+            ],
+            [
+              19.5,
+              9.5
+            ],
+            [
+              19.5,
+              10.5
+            ],
+            [
+              18.5,
+              10.5
+            ],
+            [
+              18.5,
+              9.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r006_c020",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              19.5,
+              9.5
+            ],
+            [
+              20.5,
+              9.5
+            ],
+            [
+              20.5,
+              10.5
+            ],
+            [
+              19.5,
+              10.5
+            ],
+            [
+              19.5,
+              9.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r006_c021",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              20.5,
+              9.5
+            ],
+            [
+              21.5,
+              9.5
+            ],
+            [
+              21.5,
+              10.5
+            ],
+            [
+              20.5,
+              10.5
+            ],
+            [
+              20.5,
+              9.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r006_c022",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              21.5,
+              9.5
+            ],
+            [
+              22.5,
+              9.5
+            ],
+            [
+              22.5,
+              10.5
+            ],
+            [
+              21.5,
+              10.5
+            ],
+            [
+              21.5,
+              9.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r007_c002",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.5,
+              8.5
+            ],
+            [
+              2.5,
+              8.5
+            ],
+            [
+              2.5,
+              9.5
+            ],
+            [
+              1.5,
+              9.5
+            ],
+            [
+              1.5,
+              8.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r007_c003",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.5,
+              8.5
+            ],
+            [
+              3.5,
+              8.5
+            ],
+            [
+              3.5,
+              9.5
+            ],
+            [
+              2.5,
+              9.5
+            ],
+            [
+              2.5,
+              8.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r007_c004",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              3.5,
+              8.5
+            ],
+            [
+              4.5,
+              8.5
+            ],
+            [
+              4.5,
+              9.5
+            ],
+            [
+              3.5,
+              9.5
+            ],
+            [
+              3.5,
+              8.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r007_c005",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.5,
+              8.5
+            ],
+            [
+              5.5,
+              8.5
+            ],
+            [
+              5.5,
+              9.5
+            ],
+            [
+              4.5,
+              9.5
+            ],
+            [
+              4.5,
+              8.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r007_c006",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              5.5,
+              8.5
+            ],
+            [
+              6.5,
+              8.5
+            ],
+            [
+              6.5,
+              9.5
+            ],
+            [
+              5.5,
+              9.5
+            ],
+            [
+              5.5,
+              8.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r007_c007",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.5,
+              8.5
+            ],
+            [
+              7.5,
+              8.5
+            ],
+            [
+              7.5,
+              9.5
+            ],
+            [
+              6.5,
+              9.5
+            ],
+            [
+              6.5,
+              8.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r007_c008",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.5,
+              8.5
+            ],
+            [
+              8.5,
+              8.5
+            ],
+            [
+              8.5,
+              9.5
+            ],
+            [
+              7.5,
+              9.5
+            ],
+            [
+              7.5,
+              8.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r007_c009",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.5,
+              8.5
+            ],
+            [
+              9.5,
+              8.5
+            ],
+            [
+              9.5,
+              9.5
+            ],
+            [
+              8.5,
+              9.5
+            ],
+            [
+              8.5,
+              8.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r007_c015",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.5,
+              8.5
+            ],
+            [
+              15.5,
+              8.5
+            ],
+            [
+              15.5,
+              9.5
+            ],
+            [
+              14.5,
+              9.5
+            ],
+            [
+              14.5,
+              8.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r007_c016",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              15.5,
+              8.5
+            ],
+            [
+              16.5,
+              8.5
+            ],
+            [
+              16.5,
+              9.5
+            ],
+            [
+              15.5,
+              9.5
+            ],
+            [
+              15.5,
+              8.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r007_c017",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              16.5,
+              8.5
+            ],
+            [
+              17.5,
+              8.5
+            ],
+            [
+              17.5,
+              9.5
+            ],
+            [
+              16.5,
+              9.5
+            ],
+            [
+              16.5,
+              8.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r007_c018",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              17.5,
+              8.5
+            ],
+            [
+              18.5,
+              8.5
+            ],
+            [
+              18.5,
+              9.5
+            ],
+            [
+              17.5,
+              9.5
+            ],
+            [
+              17.5,
+              8.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r007_c019",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              18.5,
+              8.5
+            ],
+            [
+              19.5,
+              8.5
+            ],
+            [
+              19.5,
+              9.5
+            ],
+            [
+              18.5,
+              9.5
+            ],
+            [
+              18.5,
+              8.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r007_c020",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              19.5,
+              8.5
+            ],
+            [
+              20.5,
+              8.5
+            ],
+            [
+              20.5,
+              9.5
+            ],
+            [
+              19.5,
+              9.5
+            ],
+            [
+              19.5,
+              8.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r007_c021",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              20.5,
+              8.5
+            ],
+            [
+              21.5,
+              8.5
+            ],
+            [
+              21.5,
+              9.5
+            ],
+            [
+              20.5,
+              9.5
+            ],
+            [
+              20.5,
+              8.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r007_c022",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              21.5,
+              8.5
+            ],
+            [
+              22.5,
+              8.5
+            ],
+            [
+              22.5,
+              9.5
+            ],
+            [
+              21.5,
+              9.5
+            ],
+            [
+              21.5,
+              8.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r008_c002",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.5,
+              7.5
+            ],
+            [
+              2.5,
+              7.5
+            ],
+            [
+              2.5,
+              8.5
+            ],
+            [
+              1.5,
+              8.5
+            ],
+            [
+              1.5,
+              7.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r008_c003",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.5,
+              7.5
+            ],
+            [
+              3.5,
+              7.5
+            ],
+            [
+              3.5,
+              8.5
+            ],
+            [
+              2.5,
+              8.5
+            ],
+            [
+              2.5,
+              7.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r008_c004",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              3.5,
+              7.5
+            ],
+            [
+              4.5,
+              7.5
+            ],
+            [
+              4.5,
+              8.5
+            ],
+            [
+              3.5,
+              8.5
+            ],
+            [
+              3.5,
+              7.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r008_c005",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.5,
+              7.5
+            ],
+            [
+              5.5,
+              7.5
+            ],
+            [
+              5.5,
+              8.5
+            ],
+            [
+              4.5,
+              8.5
+            ],
+            [
+              4.5,
+              7.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r008_c006",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              5.5,
+              7.5
+            ],
+            [
+              6.5,
+              7.5
+            ],
+            [
+              6.5,
+              8.5
+            ],
+            [
+              5.5,
+              8.5
+            ],
+            [
+              5.5,
+              7.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r008_c007",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.5,
+              7.5
+            ],
+            [
+              7.5,
+              7.5
+            ],
+            [
+              7.5,
+              8.5
+            ],
+            [
+              6.5,
+              8.5
+            ],
+            [
+              6.5,
+              7.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r008_c008",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.5,
+              7.5
+            ],
+            [
+              8.5,
+              7.5
+            ],
+            [
+              8.5,
+              8.5
+            ],
+            [
+              7.5,
+              8.5
+            ],
+            [
+              7.5,
+              7.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r008_c009",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.5,
+              7.5
+            ],
+            [
+              9.5,
+              7.5
+            ],
+            [
+              9.5,
+              8.5
+            ],
+            [
+              8.5,
+              8.5
+            ],
+            [
+              8.5,
+              7.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r008_c015",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.5,
+              7.5
+            ],
+            [
+              15.5,
+              7.5
+            ],
+            [
+              15.5,
+              8.5
+            ],
+            [
+              14.5,
+              8.5
+            ],
+            [
+              14.5,
+              7.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r008_c016",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              15.5,
+              7.5
+            ],
+            [
+              16.5,
+              7.5
+            ],
+            [
+              16.5,
+              8.5
+            ],
+            [
+              15.5,
+              8.5
+            ],
+            [
+              15.5,
+              7.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r008_c017",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              16.5,
+              7.5
+            ],
+            [
+              17.5,
+              7.5
+            ],
+            [
+              17.5,
+              8.5
+            ],
+            [
+              16.5,
+              8.5
+            ],
+            [
+              16.5,
+              7.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r008_c018",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              17.5,
+              7.5
+            ],
+            [
+              18.5,
+              7.5
+            ],
+            [
+              18.5,
+              8.5
+            ],
+            [
+              17.5,
+              8.5
+            ],
+            [
+              17.5,
+              7.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r008_c019",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              18.5,
+              7.5
+            ],
+            [
+              19.5,
+              7.5
+            ],
+            [
+              19.5,
+              8.5
+            ],
+            [
+              18.5,
+              8.5
+            ],
+            [
+              18.5,
+              7.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r008_c020",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              19.5,
+              7.5
+            ],
+            [
+              20.5,
+              7.5
+            ],
+            [
+              20.5,
+              8.5
+            ],
+            [
+              19.5,
+              8.5
+            ],
+            [
+              19.5,
+              7.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r008_c021",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              20.5,
+              7.5
+            ],
+            [
+              21.5,
+              7.5
+            ],
+            [
+              21.5,
+              8.5
+            ],
+            [
+              20.5,
+              8.5
+            ],
+            [
+              20.5,
+              7.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r008_c022",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              21.5,
+              7.5
+            ],
+            [
+              22.5,
+              7.5
+            ],
+            [
+              22.5,
+              8.5
+            ],
+            [
+              21.5,
+              8.5
+            ],
+            [
+              21.5,
+              7.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r009_c002",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.5,
+              6.5
+            ],
+            [
+              2.5,
+              6.5
+            ],
+            [
+              2.5,
+              7.5
+            ],
+            [
+              1.5,
+              7.5
+            ],
+            [
+              1.5,
+              6.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r009_c003",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.5,
+              6.5
+            ],
+            [
+              3.5,
+              6.5
+            ],
+            [
+              3.5,
+              7.5
+            ],
+            [
+              2.5,
+              7.5
+            ],
+            [
+              2.5,
+              6.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r009_c004",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              3.5,
+              6.5
+            ],
+            [
+              4.5,
+              6.5
+            ],
+            [
+              4.5,
+              7.5
+            ],
+            [
+              3.5,
+              7.5
+            ],
+            [
+              3.5,
+              6.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r009_c005",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.5,
+              6.5
+            ],
+            [
+              5.5,
+              6.5
+            ],
+            [
+              5.5,
+              7.5
+            ],
+            [
+              4.5,
+              7.5
+            ],
+            [
+              4.5,
+              6.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r009_c006",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              5.5,
+              6.5
+            ],
+            [
+              6.5,
+              6.5
+            ],
+            [
+              6.5,
+              7.5
+            ],
+            [
+              5.5,
+              7.5
+            ],
+            [
+              5.5,
+              6.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r009_c007",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.5,
+              6.5
+            ],
+            [
+              7.5,
+              6.5
+            ],
+            [
+              7.5,
+              7.5
+            ],
+            [
+              6.5,
+              7.5
+            ],
+            [
+              6.5,
+              6.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r009_c008",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.5,
+              6.5
+            ],
+            [
+              8.5,
+              6.5
+            ],
+            [
+              8.5,
+              7.5
+            ],
+            [
+              7.5,
+              7.5
+            ],
+            [
+              7.5,
+              6.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r009_c009",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.5,
+              6.5
+            ],
+            [
+              9.5,
+              6.5
+            ],
+            [
+              9.5,
+              7.5
+            ],
+            [
+              8.5,
+              7.5
+            ],
+            [
+              8.5,
+              6.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r009_c015",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.5,
+              6.5
+            ],
+            [
+              15.5,
+              6.5
+            ],
+            [
+              15.5,
+              7.5
+            ],
+            [
+              14.5,
+              7.5
+            ],
+            [
+              14.5,
+              6.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r009_c016",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              15.5,
+              6.5
+            ],
+            [
+              16.5,
+              6.5
+            ],
+            [
+              16.5,
+              7.5
+            ],
+            [
+              15.5,
+              7.5
+            ],
+            [
+              15.5,
+              6.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r009_c017",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              16.5,
+              6.5
+            ],
+            [
+              17.5,
+              6.5
+            ],
+            [
+              17.5,
+              7.5
+            ],
+            [
+              16.5,
+              7.5
+            ],
+            [
+              16.5,
+              6.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r009_c018",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              17.5,
+              6.5
+            ],
+            [
+              18.5,
+              6.5
+            ],
+            [
+              18.5,
+              7.5
+            ],
+            [
+              17.5,
+              7.5
+            ],
+            [
+              17.5,
+              6.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r009_c019",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              18.5,
+              6.5
+            ],
+            [
+              19.5,
+              6.5
+            ],
+            [
+              19.5,
+              7.5
+            ],
+            [
+              18.5,
+              7.5
+            ],
+            [
+              18.5,
+              6.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r009_c020",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              19.5,
+              6.5
+            ],
+            [
+              20.5,
+              6.5
+            ],
+            [
+              20.5,
+              7.5
+            ],
+            [
+              19.5,
+              7.5
+            ],
+            [
+              19.5,
+              6.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r009_c021",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              20.5,
+              6.5
+            ],
+            [
+              21.5,
+              6.5
+            ],
+            [
+              21.5,
+              7.5
+            ],
+            [
+              20.5,
+              7.5
+            ],
+            [
+              20.5,
+              6.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r009_c022",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              21.5,
+              6.5
+            ],
+            [
+              22.5,
+              6.5
+            ],
+            [
+              22.5,
+              7.5
+            ],
+            [
+              21.5,
+              7.5
+            ],
+            [
+              21.5,
+              6.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r010_c002",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.5,
+              5.5
+            ],
+            [
+              2.5,
+              5.5
+            ],
+            [
+              2.5,
+              6.5
+            ],
+            [
+              1.5,
+              6.5
+            ],
+            [
+              1.5,
+              5.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r010_c003",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.5,
+              5.5
+            ],
+            [
+              3.5,
+              5.5
+            ],
+            [
+              3.5,
+              6.5
+            ],
+            [
+              2.5,
+              6.5
+            ],
+            [
+              2.5,
+              5.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r010_c004",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              3.5,
+              5.5
+            ],
+            [
+              4.5,
+              5.5
+            ],
+            [
+              4.5,
+              6.5
+            ],
+            [
+              3.5,
+              6.5
+            ],
+            [
+              3.5,
+              5.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r010_c005",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.5,
+              5.5
+            ],
+            [
+              5.5,
+              5.5
+            ],
+            [
+              5.5,
+              6.5
+            ],
+            [
+              4.5,
+              6.5
+            ],
+            [
+              4.5,
+              5.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r010_c006",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              5.5,
+              5.5
+            ],
+            [
+              6.5,
+              5.5
+            ],
+            [
+              6.5,
+              6.5
+            ],
+            [
+              5.5,
+              6.5
+            ],
+            [
+              5.5,
+              5.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r010_c007",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.5,
+              5.5
+            ],
+            [
+              7.5,
+              5.5
+            ],
+            [
+              7.5,
+              6.5
+            ],
+            [
+              6.5,
+              6.5
+            ],
+            [
+              6.5,
+              5.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r010_c008",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.5,
+              5.5
+            ],
+            [
+              8.5,
+              5.5
+            ],
+            [
+              8.5,
+              6.5
+            ],
+            [
+              7.5,
+              6.5
+            ],
+            [
+              7.5,
+              5.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r010_c009",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.5,
+              5.5
+            ],
+            [
+              9.5,
+              5.5
+            ],
+            [
+              9.5,
+              6.5
+            ],
+            [
+              8.5,
+              6.5
+            ],
+            [
+              8.5,
+              5.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r010_c015",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.5,
+              5.5
+            ],
+            [
+              15.5,
+              5.5
+            ],
+            [
+              15.5,
+              6.5
+            ],
+            [
+              14.5,
+              6.5
+            ],
+            [
+              14.5,
+              5.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r010_c016",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              15.5,
+              5.5
+            ],
+            [
+              16.5,
+              5.5
+            ],
+            [
+              16.5,
+              6.5
+            ],
+            [
+              15.5,
+              6.5
+            ],
+            [
+              15.5,
+              5.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r010_c017",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              16.5,
+              5.5
+            ],
+            [
+              17.5,
+              5.5
+            ],
+            [
+              17.5,
+              6.5
+            ],
+            [
+              16.5,
+              6.5
+            ],
+            [
+              16.5,
+              5.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r010_c018",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              17.5,
+              5.5
+            ],
+            [
+              18.5,
+              5.5
+            ],
+            [
+              18.5,
+              6.5
+            ],
+            [
+              17.5,
+              6.5
+            ],
+            [
+              17.5,
+              5.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r010_c019",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              18.5,
+              5.5
+            ],
+            [
+              19.5,
+              5.5
+            ],
+            [
+              19.5,
+              6.5
+            ],
+            [
+              18.5,
+              6.5
+            ],
+            [
+              18.5,
+              5.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r010_c020",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              19.5,
+              5.5
+            ],
+            [
+              20.5,
+              5.5
+            ],
+            [
+              20.5,
+              6.5
+            ],
+            [
+              19.5,
+              6.5
+            ],
+            [
+              19.5,
+              5.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r010_c021",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              20.5,
+              5.5
+            ],
+            [
+              21.5,
+              5.5
+            ],
+            [
+              21.5,
+              6.5
+            ],
+            [
+              20.5,
+              6.5
+            ],
+            [
+              20.5,
+              5.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r010_c022",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              21.5,
+              5.5
+            ],
+            [
+              22.5,
+              5.5
+            ],
+            [
+              22.5,
+              6.5
+            ],
+            [
+              21.5,
+              6.5
+            ],
+            [
+              21.5,
+              5.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r011_c002",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.5,
+              4.5
+            ],
+            [
+              2.5,
+              4.5
+            ],
+            [
+              2.5,
+              5.5
+            ],
+            [
+              1.5,
+              5.5
+            ],
+            [
+              1.5,
+              4.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r011_c003",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.5,
+              4.5
+            ],
+            [
+              3.5,
+              4.5
+            ],
+            [
+              3.5,
+              5.5
+            ],
+            [
+              2.5,
+              5.5
+            ],
+            [
+              2.5,
+              4.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r011_c004",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              3.5,
+              4.5
+            ],
+            [
+              4.5,
+              4.5
+            ],
+            [
+              4.5,
+              5.5
+            ],
+            [
+              3.5,
+              5.5
+            ],
+            [
+              3.5,
+              4.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r011_c005",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.5,
+              4.5
+            ],
+            [
+              5.5,
+              4.5
+            ],
+            [
+              5.5,
+              5.5
+            ],
+            [
+              4.5,
+              5.5
+            ],
+            [
+              4.5,
+              4.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r011_c006",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              5.5,
+              4.5
+            ],
+            [
+              6.5,
+              4.5
+            ],
+            [
+              6.5,
+              5.5
+            ],
+            [
+              5.5,
+              5.5
+            ],
+            [
+              5.5,
+              4.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r011_c007",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.5,
+              4.5
+            ],
+            [
+              7.5,
+              4.5
+            ],
+            [
+              7.5,
+              5.5
+            ],
+            [
+              6.5,
+              5.5
+            ],
+            [
+              6.5,
+              4.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r011_c008",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.5,
+              4.5
+            ],
+            [
+              8.5,
+              4.5
+            ],
+            [
+              8.5,
+              5.5
+            ],
+            [
+              7.5,
+              5.5
+            ],
+            [
+              7.5,
+              4.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r011_c009",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.5,
+              4.5
+            ],
+            [
+              9.5,
+              4.5
+            ],
+            [
+              9.5,
+              5.5
+            ],
+            [
+              8.5,
+              5.5
+            ],
+            [
+              8.5,
+              4.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r011_c015",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.5,
+              4.5
+            ],
+            [
+              15.5,
+              4.5
+            ],
+            [
+              15.5,
+              5.5
+            ],
+            [
+              14.5,
+              5.5
+            ],
+            [
+              14.5,
+              4.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r011_c016",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              15.5,
+              4.5
+            ],
+            [
+              16.5,
+              4.5
+            ],
+            [
+              16.5,
+              5.5
+            ],
+            [
+              15.5,
+              5.5
+            ],
+            [
+              15.5,
+              4.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r011_c017",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              16.5,
+              4.5
+            ],
+            [
+              17.5,
+              4.5
+            ],
+            [
+              17.5,
+              5.5
+            ],
+            [
+              16.5,
+              5.5
+            ],
+            [
+              16.5,
+              4.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r011_c018",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              17.5,
+              4.5
+            ],
+            [
+              18.5,
+              4.5
+            ],
+            [
+              18.5,
+              5.5
+            ],
+            [
+              17.5,
+              5.5
+            ],
+            [
+              17.5,
+              4.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r011_c019",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              18.5,
+              4.5
+            ],
+            [
+              19.5,
+              4.5
+            ],
+            [
+              19.5,
+              5.5
+            ],
+            [
+              18.5,
+              5.5
+            ],
+            [
+              18.5,
+              4.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r011_c020",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              19.5,
+              4.5
+            ],
+            [
+              20.5,
+              4.5
+            ],
+            [
+              20.5,
+              5.5
+            ],
+            [
+              19.5,
+              5.5
+            ],
+            [
+              19.5,
+              4.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r011_c021",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              20.5,
+              4.5
+            ],
+            [
+              21.5,
+              4.5
+            ],
+            [
+              21.5,
+              5.5
+            ],
+            [
+              20.5,
+              5.5
+            ],
+            [
+              20.5,
+              4.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r011_c022",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              21.5,
+              4.5
+            ],
+            [
+              22.5,
+              4.5
+            ],
+            [
+              22.5,
+              5.5
+            ],
+            [
+              21.5,
+              5.5
+            ],
+            [
+              21.5,
+              4.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r012_c015",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.5,
+              3.5
+            ],
+            [
+              15.5,
+              3.5
+            ],
+            [
+              15.5,
+              4.5
+            ],
+            [
+              14.5,
+              4.5
+            ],
+            [
+              14.5,
+              3.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r012_c016",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              15.5,
+              3.5
+            ],
+            [
+              16.5,
+              3.5
+            ],
+            [
+              16.5,
+              4.5
+            ],
+            [
+              15.5,
+              4.5
+            ],
+            [
+              15.5,
+              3.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r012_c017",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              16.5,
+              3.5
+            ],
+            [
+              17.5,
+              3.5
+            ],
+            [
+              17.5,
+              4.5
+            ],
+            [
+              16.5,
+              4.5
+            ],
+            [
+              16.5,
+              3.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r012_c018",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              17.5,
+              3.5
+            ],
+            [
+              18.5,
+              3.5
+            ],
+            [
+              18.5,
+              4.5
+            ],
+            [
+              17.5,
+              4.5
+            ],
+            [
+              17.5,
+              3.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r012_c019",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              18.5,
+              3.5
+            ],
+            [
+              19.5,
+              3.5
+            ],
+            [
+              19.5,
+              4.5
+            ],
+            [
+              18.5,
+              4.5
+            ],
+            [
+              18.5,
+              3.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r012_c020",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              19.5,
+              3.5
+            ],
+            [
+              20.5,
+              3.5
+            ],
+            [
+              20.5,
+              4.5
+            ],
+            [
+              19.5,
+              4.5
+            ],
+            [
+              19.5,
+              3.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r012_c021",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              20.5,
+              3.5
+            ],
+            [
+              21.5,
+              3.5
+            ],
+            [
+              21.5,
+              4.5
+            ],
+            [
+              20.5,
+              4.5
+            ],
+            [
+              20.5,
+              3.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r012_c022",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              21.5,
+              3.5
+            ],
+            [
+              22.5,
+              3.5
+            ],
+            [
+              22.5,
+              4.5
+            ],
+            [
+              21.5,
+              4.5
+            ],
+            [
+              21.5,
+              3.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r013_c015",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.5,
+              2.5
+            ],
+            [
+              15.5,
+              2.5
+            ],
+            [
+              15.5,
+              3.5
+            ],
+            [
+              14.5,
+              3.5
+            ],
+            [
+              14.5,
+              2.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r013_c016",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              15.5,
+              2.5
+            ],
+            [
+              16.5,
+              2.5
+            ],
+            [
+              16.5,
+              3.5
+            ],
+            [
+              15.5,
+              3.5
+            ],
+            [
+              15.5,
+              2.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r013_c017",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              16.5,
+              2.5
+            ],
+            [
+              17.5,
+              2.5
+            ],
+            [
+              17.5,
+              3.5
+            ],
+            [
+              16.5,
+              3.5
+            ],
+            [
+              16.5,
+              2.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r013_c018",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              17.5,
+              2.5
+            ],
+            [
+              18.5,
+              2.5
+            ],
+            [
+              18.5,
+              3.5
+            ],
+            [
+              17.5,
+              3.5
+            ],
+            [
+              17.5,
+              2.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r013_c019",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              18.5,
+              2.5
+            ],
+            [
+              19.5,
+              2.5
+            ],
+            [
+              19.5,
+              3.5
+            ],
+            [
+              18.5,
+              3.5
+            ],
+            [
+              18.5,
+              2.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r013_c020",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              19.5,
+              2.5
+            ],
+            [
+              20.5,
+              2.5
+            ],
+            [
+              20.5,
+              3.5
+            ],
+            [
+              19.5,
+              3.5
+            ],
+            [
+              19.5,
+              2.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r013_c021",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              20.5,
+              2.5
+            ],
+            [
+              21.5,
+              2.5
+            ],
+            [
+              21.5,
+              3.5
+            ],
+            [
+              20.5,
+              3.5
+            ],
+            [
+              20.5,
+              2.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r013_c022",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              21.5,
+              2.5
+            ],
+            [
+              22.5,
+              2.5
+            ],
+            [
+              22.5,
+              3.5
+            ],
+            [
+              21.5,
+              3.5
+            ],
+            [
+              21.5,
+              2.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r014_c015",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.5,
+              1.5
+            ],
+            [
+              15.5,
+              1.5
+            ],
+            [
+              15.5,
+              2.5
+            ],
+            [
+              14.5,
+              2.5
+            ],
+            [
+              14.5,
+              1.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r014_c016",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              15.5,
+              1.5
+            ],
+            [
+              16.5,
+              1.5
+            ],
+            [
+              16.5,
+              2.5
+            ],
+            [
+              15.5,
+              2.5
+            ],
+            [
+              15.5,
+              1.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r014_c017",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              16.5,
+              1.5
+            ],
+            [
+              17.5,
+              1.5
+            ],
+            [
+              17.5,
+              2.5
+            ],
+            [
+              16.5,
+              2.5
+            ],
+            [
+              16.5,
+              1.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r014_c018",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              17.5,
+              1.5
+            ],
+            [
+              18.5,
+              1.5
+            ],
+            [
+              18.5,
+              2.5
+            ],
+            [
+              17.5,
+              2.5
+            ],
+            [
+              17.5,
+              1.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r014_c019",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              18.5,
+              1.5
+            ],
+            [
+              19.5,
+              1.5
+            ],
+            [
+              19.5,
+              2.5
+            ],
+            [
+              18.5,
+              2.5
+            ],
+            [
+              18.5,
+              1.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r014_c020",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              19.5,
+              1.5
+            ],
+            [
+              20.5,
+              1.5
+            ],
+            [
+              20.5,
+              2.5
+            ],
+            [
+              19.5,
+              2.5
+            ],
+            [
+              19.5,
+              1.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r014_c021",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              20.5,
+              1.5
+            ],
+            [
+              21.5,
+              1.5
+            ],
+            [
+              21.5,
+              2.5
+            ],
+            [
+              20.5,
+              2.5
+            ],
+            [
+              20.5,
+              1.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_disconnected_r014_c022",
+        "region_id": "Synthetic-disconnected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              21.5,
+              1.5
+            ],
+            [
+              22.5,
+              1.5
+            ],
+            [
+              22.5,
+              2.5
+            ],
+            [
+              21.5,
+              2.5
+            ],
+            [
+              21.5,
+              1.5
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

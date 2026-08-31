@@ -1,0 +1,24 @@
+{
+  "design": "within-subject 2-condition counterbalanced study",
+  "conditions": [
+    "geographic_map",
+    "delta_annulus"
+  ],
+  "tasks": [
+    "change_localization",
+    "increase_decrease",
+    "temporal_comparison",
+    "radial_propagation"
+  ],
+  "trial_count": 96,
+  "trials_per_participant_before_sampling": 96,
+  "power_analysis": {
+    "test": "two-sided paired t approximation for the primary accuracy contrast",
+    "effect_size_dz": 0.5,
+    "alpha": 0.05,
+    "power": 0.8,
+    "complete_participants_required": 34,
+    "recruitment_target_15pct_attrition": 40
+  },
+  "status": "materials generated; no participant data have been collected"
+}

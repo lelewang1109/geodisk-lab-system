@@ -1,0 +1,44 @@
+{
+  "method": "GeoAnnulus",
+  "view": "annulus",
+  "cell_count": 96,
+  "topology_objective_initial": 0.526723877410084,
+  "topology_objective_final": 0.5461626202430175,
+  "balance": true,
+  "warp_strength": 0.022,
+  "warp_fallback": false,
+  "weight_range": [
+    -0.03044431769246491,
+    0.013408798872390727
+  ],
+  "history": [
+    {
+      "iteration": 0,
+      "area_cv": 0.5934075584807795
+    },
+    {
+      "iteration": 1,
+      "area_cv": 0.5291336184820516
+    },
+    {
+      "iteration": 2,
+      "area_cv": 0.49203669012268497
+    },
+    {
+      "iteration": 3,
+      "area_cv": 0.46511964688439633
+    },
+    {
+      "iteration": 4,
+      "area_cv": 0.4542882118321905
+    },
+    {
+      "iteration": 5,
+      "area_cv": 0.4444490069654788
+    },
+    {
+      "iteration": 6,
+      "area_cv": 0.435445837007472
+    }
+  ]
+}

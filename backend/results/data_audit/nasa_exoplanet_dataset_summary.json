@@ -1,0 +1,25 @@
+{
+  "source_kind": "astronomical_equal_area_sky_grid",
+  "source_table": "pscomppars",
+  "source_row_count": 6354,
+  "grid_dimensions": [
+    9,
+    18
+  ],
+  "cell_count": 162,
+  "scalar": "log1p confirmed planet count",
+  "right_ascension_wrap": true,
+  "declination_bands": "equal increments in sin(dec)",
+  "retrieval_is_dynamic_snapshot": true,
+  "evaluation_methods": [
+    "Area-balanced",
+    "Direct Polar",
+    "GeoAnnulus",
+    "GeoAnnulus-Final",
+    "GeoDisk",
+    "GeoDisk-Final",
+    "Harmonic",
+    "Regular Topology"
+  ],
+  "outcome_policy": "all methods evaluated; final method chosen by the same fixed Power-refinement schedule"
+}

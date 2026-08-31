@@ -1,0 +1,21 @@
+{
+  "dataset": "NCEP-AirTemp-Africa-2000",
+  "variable": "air_temperature",
+  "units": "°C",
+  "month_count": 12,
+  "cell_count": 401,
+  "bin_count": 9,
+  "value_clip_quantiles": [
+    0.02,
+    0.98
+  ],
+  "value_clip_range": [
+    11.509272670745847,
+    34.54859382629394
+  ],
+  "delta_symmetric_quantile": 0.95,
+  "delta_symmetric_limit": 5.943693161010742,
+  "geometry_policy": "one fixed final-refined annulus partition reused for every month",
+  "identity_policy": "cell_id is unchanged across all months",
+  "geometry_path": "results/external_refined/NCEP-AirTemp-Africa-2000/final_refined_annulus.geojson"
+}

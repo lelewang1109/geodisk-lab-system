@@ -1,0 +1,17 @@
+{
+  "region": "Synthetic-elongated",
+  "cell_count": 203,
+  "edge_count": 370,
+  "anchor": {
+    "longitude": 14.0,
+    "latitude": 3.0
+  },
+  "source_kind": "deterministic_synthetic_quad_grid",
+  "case": "elongated",
+  "connected_components_expected": 1,
+  "has_hole": false,
+  "dimensions": [
+    7,
+    29
+  ]
+}

@@ -1,0 +1,6 @@
+﻿metric,comparison,pair_count,mean_difference,ci95_low,ci95_high,bootstrap_samples
+delta_sign_accuracy,direct_diverging_delta - derived_from_value_bins,99,0.1364436011975431,0.1099707748588888,0.16585779552540875,5000
+normalized_delta_mae,direct_diverging_delta - derived_from_value_bins,99,-0.04811576816901272,-0.05378330113759995,-0.041927424064313545,5000
+magnitude_spearman,direct_diverging_delta - derived_from_value_bins,99,0.18420340336150223,0.15495277253457942,0.21094964068082728,5000
+top10_change_jaccard,direct_diverging_delta - derived_from_value_bins,99,0.05521214252620403,-0.0053234361419618875,0.11322127119158136,5000
+high_change_event_f1,direct_diverging_delta - derived_from_value_bins,99,0.04227392160453865,-0.02118513875384649,0.10233389707110213,5000

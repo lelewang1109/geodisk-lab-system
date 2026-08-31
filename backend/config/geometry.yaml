@@ -1,0 +1,47 @@
+regions: [湖北, 湖南, 江西, 广东, 福建, 广西, 安徽, 浙江]
+coarsen_factor: 4
+min_valid_fraction: 0.25
+layer_count: 5
+optimize_passes: 8
+annulus_inner: 0.48
+annulus_outer: 1.0
+power_iterations: 6
+disk_warp_strength: 0.018
+annulus_warp_strength: 0.022
+topology_weights:
+  adjacency: 1.0
+  angular: 0.08
+  local_direction: 0.04
+  radial: 0.04
+external:
+  layer_count: 6
+  optimize_passes: 8
+  power_iterations: 5
+synthetic:
+  layer_count: 5
+  optimize_passes: 8
+  power_iterations: 4
+method_revision:
+  layer_count: 6
+  optimize_passes: 8
+  candidate_budget: 500
+  topology_weights:
+    adjacency: 1.0
+    neighborhood: 0.15
+    angular: 0.08
+    local_direction: 0.08
+    radial: 0.08
+final_power_refinement:
+  power_iterations_small: 3
+  power_iterations_large: 2
+  force_iterations_small: 4
+  force_iterations_large: 2
+  large_dataset_cell_threshold: 250
+  candidate_schedule: [topology, harmonic, geographic, topology_harmonic_50, topology_geographic_50]
+  objective_weights:
+    adjacency: 1.0
+    neighborhood: 0.18
+    local_direction: 0.06
+    angular: 0.04
+    radial: 0.04
+    area_cv: 0.035

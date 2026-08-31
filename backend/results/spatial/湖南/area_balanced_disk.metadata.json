@@ -1,0 +1,41 @@
+{
+  "method": "Area-balanced",
+  "view": "disk",
+  "cell_count": 137,
+  "initialization": "center_polar",
+  "balance": true,
+  "weight_range": [
+    -0.03836724450412933,
+    0.009325541127843439
+  ],
+  "history": [
+    {
+      "iteration": 0,
+      "area_cv": 0.4080411570091948
+    },
+    {
+      "iteration": 1,
+      "area_cv": 0.3553374151743434
+    },
+    {
+      "iteration": 2,
+      "area_cv": 0.3224351165796468
+    },
+    {
+      "iteration": 3,
+      "area_cv": 0.298496102540813
+    },
+    {
+      "iteration": 4,
+      "area_cv": 0.28910163101204683
+    },
+    {
+      "iteration": 5,
+      "area_cv": 0.28070079204574894
+    },
+    {
+      "iteration": 6,
+      "area_cv": 0.27313535751627227
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "retrieved_at_utc": "2026-08-30T08:12:09.829368+00:00",
+  "files": [
+    {
+      "dataset_id": "NCEP-AirTemp-Africa-2000",
+      "file": "data/external/noaa_ncep/air.mon.mean.africa.2000.nc",
+      "bytes": 72499,
+      "sha256": "528afecb74069e3b3b009f8da5dae5c69fbaeca18f5c74e09fc27abad85f5c47",
+      "source_url": "https://psl.noaa.gov/thredds/ncss/grid/Datasets/ncep.reanalysis/Monthlies/surface/air.mon.mean.nc"
+    },
+    {
+      "dataset_id": "NE-Admin0-Africa",
+      "file": "data/external/natural_earth/ne_110m_admin_0_countries.zip",
+      "bytes": 214976,
+      "sha256": "0f243aeac8ac6cf26f0417285b0bd33ac47f1b5bdb719fd3e0df37d03ea37110",
+      "source_url": "https://naturalearth.s3.amazonaws.com/110m_cultural/ne_110m_admin_0_countries.zip"
+    },
+    {
+      "dataset_id": "NASA-Exoplanet-SkyGrid",
+      "file": "data/external/nasa_exoplanet/pscomppars_sky.csv",
+      "bytes": 417188,
+      "sha256": "48d4042a7468644799dabd8bd736fe9e25c76bbd194a60ed2f17f96c878eb7fc",
+      "source_url": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select%20pl_name%2Cra%2Cdec%2Cpl_rade%2Cdisc_year%2Cdiscoverymethod%20from%20pscomppars%20where%20ra%20is%20not%20null%20and%20dec%20is%20not%20null&format=csv"
+    }
+  ]
+}

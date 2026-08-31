@@ -1,0 +1,21 @@
+{
+  "dataset": "福建",
+  "variable": "PM2.5",
+  "units": "µg/m³",
+  "month_count": 12,
+  "cell_count": 74,
+  "bin_count": 9,
+  "value_clip_quantiles": [
+    0.02,
+    0.98
+  ],
+  "value_clip_range": [
+    17.693231668391153,
+    38.75094423033586
+  ],
+  "delta_symmetric_quantile": 0.95,
+  "delta_symmetric_limit": 10.684878166906843,
+  "geometry_policy": "one fixed final-refined annulus partition reused for every month",
+  "identity_policy": "cell_id is unchanged across all months",
+  "geometry_path": "results/spatial_refined/福建/final_refined_annulus.geojson"
+}

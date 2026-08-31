@@ -1,0 +1,7 @@
+{
+  "method": "Regular Topology",
+  "view": "annulus",
+  "cell_count": 65,
+  "topology_objective_initial": 0.6208420862520717,
+  "topology_objective_final": 0.6422942492168098
+}

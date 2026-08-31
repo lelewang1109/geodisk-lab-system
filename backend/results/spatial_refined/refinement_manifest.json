@@ -1,0 +1,19 @@
+{
+  "optimization_target": "adjacency and neighborhood recomputed from every final balanced Power partition",
+  "candidate_policy": [
+    "topology",
+    "harmonic",
+    "geographic",
+    "two fixed 50/50 blends",
+    "deterministic topology force iterations"
+  ],
+  "selection_policy": "same deterministic multi-start schedule for every dataset; no dataset-specific hand tuning",
+  "objective_weights": {
+    "adjacency": 1.0,
+    "neighborhood": 0.18,
+    "local_direction": 0.06,
+    "angular": 0.04,
+    "radial": 0.04,
+    "area_cv": 0.035
+  }
+}

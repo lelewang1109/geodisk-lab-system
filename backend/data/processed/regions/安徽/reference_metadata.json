@@ -1,0 +1,14 @@
+{
+  "region": "安徽",
+  "cell_count": 96,
+  "edge_count": 160,
+  "anchor": {
+    "longitude": 117.16337162650602,
+    "latitude": 32.058099999999996
+  },
+  "coarsen_factor": 4,
+  "source_grid_resolution": {
+    "longitude": 0.09999999999999432,
+    "latitude": 0.10000000000000142
+  }
+}

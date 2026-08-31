@@ -1,0 +1,28 @@
+{
+  "dataset_id": "CEG-PM2.5-2000",
+  "full_name": "China Environmental Grid PM2.5 2000",
+  "dataset_name_status": "Internal project name; not an official provider dataset title.",
+  "file_count": 366,
+  "date_start": "2000-01-01",
+  "date_end": "2000-12-31",
+  "date_count": 366,
+  "schema_count": 1,
+  "latitude_field": "lat",
+  "longitude_field": "lon",
+  "pm25_field": "PM2.5",
+  "time_field": "time",
+  "dimensions": {
+    "latitude": 353,
+    "longitude": 613
+  },
+  "coordinate_order": {
+    "latitude": "ascending",
+    "longitude": "ascending"
+  },
+  "resolution_degrees": {
+    "latitude": 0.10000000000000142,
+    "longitude": 0.09999999999999432
+  },
+  "all_files_same_grid": true,
+  "pm25_units": "µg/m3"
+}

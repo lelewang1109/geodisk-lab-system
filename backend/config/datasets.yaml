@@ -1,0 +1,37 @@
+dataset:
+  id: CEG-PM2.5-2000
+  full_name: China Environmental Grid PM2.5 2000
+  naming_note: Internal project name; not an official provider dataset title.
+  adapter: netcdf_daily_regular_grid
+  raw_dir: ../../data/2000
+  filename_glob: "*.nc"
+  scalar_variable: null  # E0 resolves the real PM2.5 variable; never guessed by the loader.
+  expected_year: 2000
+
+external_datasets:
+  - id: NCEP-AirTemp-Africa-2000
+    type: regular_grid_netcdf
+    role: independent_resolution_and_source_validation
+    raw_path: data/external/noaa_ncep/air.mon.mean.africa.2000.nc
+    source_url: https://psl.noaa.gov/thredds/ncss/grid/Datasets/ncep.reanalysis/Monthlies/surface/air.mon.mean.nc
+    variable: air
+    target_year: 2000
+    region: Africa
+  - id: NE-Admin0-Africa
+    type: irregular_areal_polygons
+    role: independent_irregular_topology_validation
+    raw_path: data/external/natural_earth/ne_110m_admin_0_countries.zip
+    source_url: https://naturalearth.s3.amazonaws.com/110m_cultural/ne_110m_admin_0_countries.zip
+    region: Africa
+  - id: Synthetic-Topology-Stress
+    type: deterministic_synthetic_quad_grids
+    role: controlled_geometry_causality
+    cases: [disk_like, elongated, l_shape, concave_u, hole, disconnected]
+  - id: NASA-Exoplanet-SkyGrid
+    type: astronomical_equal_area_sky_grid
+    role: non_environmental_scientific_domain_generalization
+    raw_path: data/external/nasa_exoplanet/pscomppars_sky.csv
+    source_url: https://exoplanetarchive.ipac.caltech.edu/TAP/sync
+    source_table: pscomppars
+    scalar_variable: log1p_confirmed_planet_count
+    acknowledgement: NASA Exoplanet Archive

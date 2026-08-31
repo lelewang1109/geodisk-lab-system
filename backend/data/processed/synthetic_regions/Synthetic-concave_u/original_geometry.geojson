@@ -1,0 +1,5853 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r000_c000",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.5,
+              15.5
+            ],
+            [
+              0.5,
+              15.5
+            ],
+            [
+              0.5,
+              16.5
+            ],
+            [
+              -0.5,
+              16.5
+            ],
+            [
+              -0.5,
+              15.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r000_c001",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.5,
+              15.5
+            ],
+            [
+              1.5,
+              15.5
+            ],
+            [
+              1.5,
+              16.5
+            ],
+            [
+              0.5,
+              16.5
+            ],
+            [
+              0.5,
+              15.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r000_c002",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.5,
+              15.5
+            ],
+            [
+              2.5,
+              15.5
+            ],
+            [
+              2.5,
+              16.5
+            ],
+            [
+              1.5,
+              16.5
+            ],
+            [
+              1.5,
+              15.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r000_c003",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.5,
+              15.5
+            ],
+            [
+              3.5,
+              15.5
+            ],
+            [
+              3.5,
+              16.5
+            ],
+            [
+              2.5,
+              16.5
+            ],
+            [
+              2.5,
+              15.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r000_c013",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.5,
+              15.5
+            ],
+            [
+              13.5,
+              15.5
+            ],
+            [
+              13.5,
+              16.5
+            ],
+            [
+              12.5,
+              16.5
+            ],
+            [
+              12.5,
+              15.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r000_c014",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5,
+              15.5
+            ],
+            [
+              14.5,
+              15.5
+            ],
+            [
+              14.5,
+              16.5
+            ],
+            [
+              13.5,
+              16.5
+            ],
+            [
+              13.5,
+              15.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r000_c015",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.5,
+              15.5
+            ],
+            [
+              15.5,
+              15.5
+            ],
+            [
+              15.5,
+              16.5
+            ],
+            [
+              14.5,
+              16.5
+            ],
+            [
+              14.5,
+              15.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r000_c016",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              15.5,
+              15.5
+            ],
+            [
+              16.5,
+              15.5
+            ],
+            [
+              16.5,
+              16.5
+            ],
+            [
+              15.5,
+              16.5
+            ],
+            [
+              15.5,
+              15.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r001_c000",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.5,
+              14.5
+            ],
+            [
+              0.5,
+              14.5
+            ],
+            [
+              0.5,
+              15.5
+            ],
+            [
+              -0.5,
+              15.5
+            ],
+            [
+              -0.5,
+              14.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r001_c001",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.5,
+              14.5
+            ],
+            [
+              1.5,
+              14.5
+            ],
+            [
+              1.5,
+              15.5
+            ],
+            [
+              0.5,
+              15.5
+            ],
+            [
+              0.5,
+              14.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r001_c002",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.5,
+              14.5
+            ],
+            [
+              2.5,
+              14.5
+            ],
+            [
+              2.5,
+              15.5
+            ],
+            [
+              1.5,
+              15.5
+            ],
+            [
+              1.5,
+              14.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r001_c003",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.5,
+              14.5
+            ],
+            [
+              3.5,
+              14.5
+            ],
+            [
+              3.5,
+              15.5
+            ],
+            [
+              2.5,
+              15.5
+            ],
+            [
+              2.5,
+              14.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r001_c013",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.5,
+              14.5
+            ],
+            [
+              13.5,
+              14.5
+            ],
+            [
+              13.5,
+              15.5
+            ],
+            [
+              12.5,
+              15.5
+            ],
+            [
+              12.5,
+              14.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r001_c014",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5,
+              14.5
+            ],
+            [
+              14.5,
+              14.5
+            ],
+            [
+              14.5,
+              15.5
+            ],
+            [
+              13.5,
+              15.5
+            ],
+            [
+              13.5,
+              14.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r001_c015",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.5,
+              14.5
+            ],
+            [
+              15.5,
+              14.5
+            ],
+            [
+              15.5,
+              15.5
+            ],
+            [
+              14.5,
+              15.5
+            ],
+            [
+              14.5,
+              14.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r001_c016",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              15.5,
+              14.5
+            ],
+            [
+              16.5,
+              14.5
+            ],
+            [
+              16.5,
+              15.5
+            ],
+            [
+              15.5,
+              15.5
+            ],
+            [
+              15.5,
+              14.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r002_c000",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.5,
+              13.5
+            ],
+            [
+              0.5,
+              13.5
+            ],
+            [
+              0.5,
+              14.5
+            ],
+            [
+              -0.5,
+              14.5
+            ],
+            [
+              -0.5,
+              13.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r002_c001",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.5,
+              13.5
+            ],
+            [
+              1.5,
+              13.5
+            ],
+            [
+              1.5,
+              14.5
+            ],
+            [
+              0.5,
+              14.5
+            ],
+            [
+              0.5,
+              13.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r002_c002",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.5,
+              13.5
+            ],
+            [
+              2.5,
+              13.5
+            ],
+            [
+              2.5,
+              14.5
+            ],
+            [
+              1.5,
+              14.5
+            ],
+            [
+              1.5,
+              13.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r002_c003",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.5,
+              13.5
+            ],
+            [
+              3.5,
+              13.5
+            ],
+            [
+              3.5,
+              14.5
+            ],
+            [
+              2.5,
+              14.5
+            ],
+            [
+              2.5,
+              13.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r002_c013",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.5,
+              13.5
+            ],
+            [
+              13.5,
+              13.5
+            ],
+            [
+              13.5,
+              14.5
+            ],
+            [
+              12.5,
+              14.5
+            ],
+            [
+              12.5,
+              13.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r002_c014",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5,
+              13.5
+            ],
+            [
+              14.5,
+              13.5
+            ],
+            [
+              14.5,
+              14.5
+            ],
+            [
+              13.5,
+              14.5
+            ],
+            [
+              13.5,
+              13.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r002_c015",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.5,
+              13.5
+            ],
+            [
+              15.5,
+              13.5
+            ],
+            [
+              15.5,
+              14.5
+            ],
+            [
+              14.5,
+              14.5
+            ],
+            [
+              14.5,
+              13.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r002_c016",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              15.5,
+              13.5
+            ],
+            [
+              16.5,
+              13.5
+            ],
+            [
+              16.5,
+              14.5
+            ],
+            [
+              15.5,
+              14.5
+            ],
+            [
+              15.5,
+              13.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r003_c000",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.5,
+              12.5
+            ],
+            [
+              0.5,
+              12.5
+            ],
+            [
+              0.5,
+              13.5
+            ],
+            [
+              -0.5,
+              13.5
+            ],
+            [
+              -0.5,
+              12.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r003_c001",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.5,
+              12.5
+            ],
+            [
+              1.5,
+              12.5
+            ],
+            [
+              1.5,
+              13.5
+            ],
+            [
+              0.5,
+              13.5
+            ],
+            [
+              0.5,
+              12.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r003_c002",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.5,
+              12.5
+            ],
+            [
+              2.5,
+              12.5
+            ],
+            [
+              2.5,
+              13.5
+            ],
+            [
+              1.5,
+              13.5
+            ],
+            [
+              1.5,
+              12.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r003_c003",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.5,
+              12.5
+            ],
+            [
+              3.5,
+              12.5
+            ],
+            [
+              3.5,
+              13.5
+            ],
+            [
+              2.5,
+              13.5
+            ],
+            [
+              2.5,
+              12.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r003_c013",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.5,
+              12.5
+            ],
+            [
+              13.5,
+              12.5
+            ],
+            [
+              13.5,
+              13.5
+            ],
+            [
+              12.5,
+              13.5
+            ],
+            [
+              12.5,
+              12.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r003_c014",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5,
+              12.5
+            ],
+            [
+              14.5,
+              12.5
+            ],
+            [
+              14.5,
+              13.5
+            ],
+            [
+              13.5,
+              13.5
+            ],
+            [
+              13.5,
+              12.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r003_c015",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.5,
+              12.5
+            ],
+            [
+              15.5,
+              12.5
+            ],
+            [
+              15.5,
+              13.5
+            ],
+            [
+              14.5,
+              13.5
+            ],
+            [
+              14.5,
+              12.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r003_c016",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              15.5,
+              12.5
+            ],
+            [
+              16.5,
+              12.5
+            ],
+            [
+              16.5,
+              13.5
+            ],
+            [
+              15.5,
+              13.5
+            ],
+            [
+              15.5,
+              12.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r004_c000",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.5,
+              11.5
+            ],
+            [
+              0.5,
+              11.5
+            ],
+            [
+              0.5,
+              12.5
+            ],
+            [
+              -0.5,
+              12.5
+            ],
+            [
+              -0.5,
+              11.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r004_c001",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.5,
+              11.5
+            ],
+            [
+              1.5,
+              11.5
+            ],
+            [
+              1.5,
+              12.5
+            ],
+            [
+              0.5,
+              12.5
+            ],
+            [
+              0.5,
+              11.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r004_c002",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.5,
+              11.5
+            ],
+            [
+              2.5,
+              11.5
+            ],
+            [
+              2.5,
+              12.5
+            ],
+            [
+              1.5,
+              12.5
+            ],
+            [
+              1.5,
+              11.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r004_c003",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.5,
+              11.5
+            ],
+            [
+              3.5,
+              11.5
+            ],
+            [
+              3.5,
+              12.5
+            ],
+            [
+              2.5,
+              12.5
+            ],
+            [
+              2.5,
+              11.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r004_c013",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.5,
+              11.5
+            ],
+            [
+              13.5,
+              11.5
+            ],
+            [
+              13.5,
+              12.5
+            ],
+            [
+              12.5,
+              12.5
+            ],
+            [
+              12.5,
+              11.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r004_c014",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5,
+              11.5
+            ],
+            [
+              14.5,
+              11.5
+            ],
+            [
+              14.5,
+              12.5
+            ],
+            [
+              13.5,
+              12.5
+            ],
+            [
+              13.5,
+              11.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r004_c015",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.5,
+              11.5
+            ],
+            [
+              15.5,
+              11.5
+            ],
+            [
+              15.5,
+              12.5
+            ],
+            [
+              14.5,
+              12.5
+            ],
+            [
+              14.5,
+              11.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r004_c016",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              15.5,
+              11.5
+            ],
+            [
+              16.5,
+              11.5
+            ],
+            [
+              16.5,
+              12.5
+            ],
+            [
+              15.5,
+              12.5
+            ],
+            [
+              15.5,
+              11.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r005_c000",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.5,
+              10.5
+            ],
+            [
+              0.5,
+              10.5
+            ],
+            [
+              0.5,
+              11.5
+            ],
+            [
+              -0.5,
+              11.5
+            ],
+            [
+              -0.5,
+              10.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r005_c001",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.5,
+              10.5
+            ],
+            [
+              1.5,
+              10.5
+            ],
+            [
+              1.5,
+              11.5
+            ],
+            [
+              0.5,
+              11.5
+            ],
+            [
+              0.5,
+              10.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r005_c002",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.5,
+              10.5
+            ],
+            [
+              2.5,
+              10.5
+            ],
+            [
+              2.5,
+              11.5
+            ],
+            [
+              1.5,
+              11.5
+            ],
+            [
+              1.5,
+              10.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r005_c003",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.5,
+              10.5
+            ],
+            [
+              3.5,
+              10.5
+            ],
+            [
+              3.5,
+              11.5
+            ],
+            [
+              2.5,
+              11.5
+            ],
+            [
+              2.5,
+              10.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r005_c013",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.5,
+              10.5
+            ],
+            [
+              13.5,
+              10.5
+            ],
+            [
+              13.5,
+              11.5
+            ],
+            [
+              12.5,
+              11.5
+            ],
+            [
+              12.5,
+              10.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r005_c014",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5,
+              10.5
+            ],
+            [
+              14.5,
+              10.5
+            ],
+            [
+              14.5,
+              11.5
+            ],
+            [
+              13.5,
+              11.5
+            ],
+            [
+              13.5,
+              10.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r005_c015",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.5,
+              10.5
+            ],
+            [
+              15.5,
+              10.5
+            ],
+            [
+              15.5,
+              11.5
+            ],
+            [
+              14.5,
+              11.5
+            ],
+            [
+              14.5,
+              10.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r005_c016",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              15.5,
+              10.5
+            ],
+            [
+              16.5,
+              10.5
+            ],
+            [
+              16.5,
+              11.5
+            ],
+            [
+              15.5,
+              11.5
+            ],
+            [
+              15.5,
+              10.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r006_c000",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.5,
+              9.5
+            ],
+            [
+              0.5,
+              9.5
+            ],
+            [
+              0.5,
+              10.5
+            ],
+            [
+              -0.5,
+              10.5
+            ],
+            [
+              -0.5,
+              9.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r006_c001",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.5,
+              9.5
+            ],
+            [
+              1.5,
+              9.5
+            ],
+            [
+              1.5,
+              10.5
+            ],
+            [
+              0.5,
+              10.5
+            ],
+            [
+              0.5,
+              9.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r006_c002",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.5,
+              9.5
+            ],
+            [
+              2.5,
+              9.5
+            ],
+            [
+              2.5,
+              10.5
+            ],
+            [
+              1.5,
+              10.5
+            ],
+            [
+              1.5,
+              9.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r006_c003",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.5,
+              9.5
+            ],
+            [
+              3.5,
+              9.5
+            ],
+            [
+              3.5,
+              10.5
+            ],
+            [
+              2.5,
+              10.5
+            ],
+            [
+              2.5,
+              9.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r006_c013",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.5,
+              9.5
+            ],
+            [
+              13.5,
+              9.5
+            ],
+            [
+              13.5,
+              10.5
+            ],
+            [
+              12.5,
+              10.5
+            ],
+            [
+              12.5,
+              9.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r006_c014",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5,
+              9.5
+            ],
+            [
+              14.5,
+              9.5
+            ],
+            [
+              14.5,
+              10.5
+            ],
+            [
+              13.5,
+              10.5
+            ],
+            [
+              13.5,
+              9.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r006_c015",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.5,
+              9.5
+            ],
+            [
+              15.5,
+              9.5
+            ],
+            [
+              15.5,
+              10.5
+            ],
+            [
+              14.5,
+              10.5
+            ],
+            [
+              14.5,
+              9.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r006_c016",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              15.5,
+              9.5
+            ],
+            [
+              16.5,
+              9.5
+            ],
+            [
+              16.5,
+              10.5
+            ],
+            [
+              15.5,
+              10.5
+            ],
+            [
+              15.5,
+              9.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r007_c000",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.5,
+              8.5
+            ],
+            [
+              0.5,
+              8.5
+            ],
+            [
+              0.5,
+              9.5
+            ],
+            [
+              -0.5,
+              9.5
+            ],
+            [
+              -0.5,
+              8.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r007_c001",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.5,
+              8.5
+            ],
+            [
+              1.5,
+              8.5
+            ],
+            [
+              1.5,
+              9.5
+            ],
+            [
+              0.5,
+              9.5
+            ],
+            [
+              0.5,
+              8.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r007_c002",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.5,
+              8.5
+            ],
+            [
+              2.5,
+              8.5
+            ],
+            [
+              2.5,
+              9.5
+            ],
+            [
+              1.5,
+              9.5
+            ],
+            [
+              1.5,
+              8.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r007_c003",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.5,
+              8.5
+            ],
+            [
+              3.5,
+              8.5
+            ],
+            [
+              3.5,
+              9.5
+            ],
+            [
+              2.5,
+              9.5
+            ],
+            [
+              2.5,
+              8.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r007_c013",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.5,
+              8.5
+            ],
+            [
+              13.5,
+              8.5
+            ],
+            [
+              13.5,
+              9.5
+            ],
+            [
+              12.5,
+              9.5
+            ],
+            [
+              12.5,
+              8.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r007_c014",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5,
+              8.5
+            ],
+            [
+              14.5,
+              8.5
+            ],
+            [
+              14.5,
+              9.5
+            ],
+            [
+              13.5,
+              9.5
+            ],
+            [
+              13.5,
+              8.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r007_c015",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.5,
+              8.5
+            ],
+            [
+              15.5,
+              8.5
+            ],
+            [
+              15.5,
+              9.5
+            ],
+            [
+              14.5,
+              9.5
+            ],
+            [
+              14.5,
+              8.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r007_c016",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              15.5,
+              8.5
+            ],
+            [
+              16.5,
+              8.5
+            ],
+            [
+              16.5,
+              9.5
+            ],
+            [
+              15.5,
+              9.5
+            ],
+            [
+              15.5,
+              8.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r008_c000",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.5,
+              7.5
+            ],
+            [
+              0.5,
+              7.5
+            ],
+            [
+              0.5,
+              8.5
+            ],
+            [
+              -0.5,
+              8.5
+            ],
+            [
+              -0.5,
+              7.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r008_c001",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.5,
+              7.5
+            ],
+            [
+              1.5,
+              7.5
+            ],
+            [
+              1.5,
+              8.5
+            ],
+            [
+              0.5,
+              8.5
+            ],
+            [
+              0.5,
+              7.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r008_c002",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.5,
+              7.5
+            ],
+            [
+              2.5,
+              7.5
+            ],
+            [
+              2.5,
+              8.5
+            ],
+            [
+              1.5,
+              8.5
+            ],
+            [
+              1.5,
+              7.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r008_c003",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.5,
+              7.5
+            ],
+            [
+              3.5,
+              7.5
+            ],
+            [
+              3.5,
+              8.5
+            ],
+            [
+              2.5,
+              8.5
+            ],
+            [
+              2.5,
+              7.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r008_c013",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.5,
+              7.5
+            ],
+            [
+              13.5,
+              7.5
+            ],
+            [
+              13.5,
+              8.5
+            ],
+            [
+              12.5,
+              8.5
+            ],
+            [
+              12.5,
+              7.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r008_c014",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5,
+              7.5
+            ],
+            [
+              14.5,
+              7.5
+            ],
+            [
+              14.5,
+              8.5
+            ],
+            [
+              13.5,
+              8.5
+            ],
+            [
+              13.5,
+              7.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r008_c015",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.5,
+              7.5
+            ],
+            [
+              15.5,
+              7.5
+            ],
+            [
+              15.5,
+              8.5
+            ],
+            [
+              14.5,
+              8.5
+            ],
+            [
+              14.5,
+              7.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r008_c016",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              15.5,
+              7.5
+            ],
+            [
+              16.5,
+              7.5
+            ],
+            [
+              16.5,
+              8.5
+            ],
+            [
+              15.5,
+              8.5
+            ],
+            [
+              15.5,
+              7.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r009_c000",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.5,
+              6.5
+            ],
+            [
+              0.5,
+              6.5
+            ],
+            [
+              0.5,
+              7.5
+            ],
+            [
+              -0.5,
+              7.5
+            ],
+            [
+              -0.5,
+              6.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r009_c001",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.5,
+              6.5
+            ],
+            [
+              1.5,
+              6.5
+            ],
+            [
+              1.5,
+              7.5
+            ],
+            [
+              0.5,
+              7.5
+            ],
+            [
+              0.5,
+              6.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r009_c002",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.5,
+              6.5
+            ],
+            [
+              2.5,
+              6.5
+            ],
+            [
+              2.5,
+              7.5
+            ],
+            [
+              1.5,
+              7.5
+            ],
+            [
+              1.5,
+              6.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r009_c003",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.5,
+              6.5
+            ],
+            [
+              3.5,
+              6.5
+            ],
+            [
+              3.5,
+              7.5
+            ],
+            [
+              2.5,
+              7.5
+            ],
+            [
+              2.5,
+              6.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r009_c013",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.5,
+              6.5
+            ],
+            [
+              13.5,
+              6.5
+            ],
+            [
+              13.5,
+              7.5
+            ],
+            [
+              12.5,
+              7.5
+            ],
+            [
+              12.5,
+              6.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r009_c014",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5,
+              6.5
+            ],
+            [
+              14.5,
+              6.5
+            ],
+            [
+              14.5,
+              7.5
+            ],
+            [
+              13.5,
+              7.5
+            ],
+            [
+              13.5,
+              6.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r009_c015",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.5,
+              6.5
+            ],
+            [
+              15.5,
+              6.5
+            ],
+            [
+              15.5,
+              7.5
+            ],
+            [
+              14.5,
+              7.5
+            ],
+            [
+              14.5,
+              6.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r009_c016",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              15.5,
+              6.5
+            ],
+            [
+              16.5,
+              6.5
+            ],
+            [
+              16.5,
+              7.5
+            ],
+            [
+              15.5,
+              7.5
+            ],
+            [
+              15.5,
+              6.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r010_c000",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.5,
+              5.5
+            ],
+            [
+              0.5,
+              5.5
+            ],
+            [
+              0.5,
+              6.5
+            ],
+            [
+              -0.5,
+              6.5
+            ],
+            [
+              -0.5,
+              5.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r010_c001",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.5,
+              5.5
+            ],
+            [
+              1.5,
+              5.5
+            ],
+            [
+              1.5,
+              6.5
+            ],
+            [
+              0.5,
+              6.5
+            ],
+            [
+              0.5,
+              5.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r010_c002",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.5,
+              5.5
+            ],
+            [
+              2.5,
+              5.5
+            ],
+            [
+              2.5,
+              6.5
+            ],
+            [
+              1.5,
+              6.5
+            ],
+            [
+              1.5,
+              5.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r010_c003",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.5,
+              5.5
+            ],
+            [
+              3.5,
+              5.5
+            ],
+            [
+              3.5,
+              6.5
+            ],
+            [
+              2.5,
+              6.5
+            ],
+            [
+              2.5,
+              5.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r010_c013",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.5,
+              5.5
+            ],
+            [
+              13.5,
+              5.5
+            ],
+            [
+              13.5,
+              6.5
+            ],
+            [
+              12.5,
+              6.5
+            ],
+            [
+              12.5,
+              5.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r010_c014",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5,
+              5.5
+            ],
+            [
+              14.5,
+              5.5
+            ],
+            [
+              14.5,
+              6.5
+            ],
+            [
+              13.5,
+              6.5
+            ],
+            [
+              13.5,
+              5.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r010_c015",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.5,
+              5.5
+            ],
+            [
+              15.5,
+              5.5
+            ],
+            [
+              15.5,
+              6.5
+            ],
+            [
+              14.5,
+              6.5
+            ],
+            [
+              14.5,
+              5.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r010_c016",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              15.5,
+              5.5
+            ],
+            [
+              16.5,
+              5.5
+            ],
+            [
+              16.5,
+              6.5
+            ],
+            [
+              15.5,
+              6.5
+            ],
+            [
+              15.5,
+              5.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r011_c000",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.5,
+              4.5
+            ],
+            [
+              0.5,
+              4.5
+            ],
+            [
+              0.5,
+              5.5
+            ],
+            [
+              -0.5,
+              5.5
+            ],
+            [
+              -0.5,
+              4.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r011_c001",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.5,
+              4.5
+            ],
+            [
+              1.5,
+              4.5
+            ],
+            [
+              1.5,
+              5.5
+            ],
+            [
+              0.5,
+              5.5
+            ],
+            [
+              0.5,
+              4.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r011_c002",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.5,
+              4.5
+            ],
+            [
+              2.5,
+              4.5
+            ],
+            [
+              2.5,
+              5.5
+            ],
+            [
+              1.5,
+              5.5
+            ],
+            [
+              1.5,
+              4.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r011_c003",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.5,
+              4.5
+            ],
+            [
+              3.5,
+              4.5
+            ],
+            [
+              3.5,
+              5.5
+            ],
+            [
+              2.5,
+              5.5
+            ],
+            [
+              2.5,
+              4.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r011_c013",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.5,
+              4.5
+            ],
+            [
+              13.5,
+              4.5
+            ],
+            [
+              13.5,
+              5.5
+            ],
+            [
+              12.5,
+              5.5
+            ],
+            [
+              12.5,
+              4.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r011_c014",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5,
+              4.5
+            ],
+            [
+              14.5,
+              4.5
+            ],
+            [
+              14.5,
+              5.5
+            ],
+            [
+              13.5,
+              5.5
+            ],
+            [
+              13.5,
+              4.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r011_c015",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.5,
+              4.5
+            ],
+            [
+              15.5,
+              4.5
+            ],
+            [
+              15.5,
+              5.5
+            ],
+            [
+              14.5,
+              5.5
+            ],
+            [
+              14.5,
+              4.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r011_c016",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              15.5,
+              4.5
+            ],
+            [
+              16.5,
+              4.5
+            ],
+            [
+              16.5,
+              5.5
+            ],
+            [
+              15.5,
+              5.5
+            ],
+            [
+              15.5,
+              4.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r012_c000",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.5,
+              3.5
+            ],
+            [
+              0.5,
+              3.5
+            ],
+            [
+              0.5,
+              4.5
+            ],
+            [
+              -0.5,
+              4.5
+            ],
+            [
+              -0.5,
+              3.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r012_c001",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.5,
+              3.5
+            ],
+            [
+              1.5,
+              3.5
+            ],
+            [
+              1.5,
+              4.5
+            ],
+            [
+              0.5,
+              4.5
+            ],
+            [
+              0.5,
+              3.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r012_c002",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.5,
+              3.5
+            ],
+            [
+              2.5,
+              3.5
+            ],
+            [
+              2.5,
+              4.5
+            ],
+            [
+              1.5,
+              4.5
+            ],
+            [
+              1.5,
+              3.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r012_c003",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.5,
+              3.5
+            ],
+            [
+              3.5,
+              3.5
+            ],
+            [
+              3.5,
+              4.5
+            ],
+            [
+              2.5,
+              4.5
+            ],
+            [
+              2.5,
+              3.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r012_c013",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.5,
+              3.5
+            ],
+            [
+              13.5,
+              3.5
+            ],
+            [
+              13.5,
+              4.5
+            ],
+            [
+              12.5,
+              4.5
+            ],
+            [
+              12.5,
+              3.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r012_c014",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5,
+              3.5
+            ],
+            [
+              14.5,
+              3.5
+            ],
+            [
+              14.5,
+              4.5
+            ],
+            [
+              13.5,
+              4.5
+            ],
+            [
+              13.5,
+              3.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r012_c015",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.5,
+              3.5
+            ],
+            [
+              15.5,
+              3.5
+            ],
+            [
+              15.5,
+              4.5
+            ],
+            [
+              14.5,
+              4.5
+            ],
+            [
+              14.5,
+              3.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r012_c016",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              15.5,
+              3.5
+            ],
+            [
+              16.5,
+              3.5
+            ],
+            [
+              16.5,
+              4.5
+            ],
+            [
+              15.5,
+              4.5
+            ],
+            [
+              15.5,
+              3.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r013_c000",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.5,
+              2.5
+            ],
+            [
+              0.5,
+              2.5
+            ],
+            [
+              0.5,
+              3.5
+            ],
+            [
+              -0.5,
+              3.5
+            ],
+            [
+              -0.5,
+              2.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r013_c001",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.5,
+              2.5
+            ],
+            [
+              1.5,
+              2.5
+            ],
+            [
+              1.5,
+              3.5
+            ],
+            [
+              0.5,
+              3.5
+            ],
+            [
+              0.5,
+              2.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r013_c002",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.5,
+              2.5
+            ],
+            [
+              2.5,
+              2.5
+            ],
+            [
+              2.5,
+              3.5
+            ],
+            [
+              1.5,
+              3.5
+            ],
+            [
+              1.5,
+              2.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r013_c003",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.5,
+              2.5
+            ],
+            [
+              3.5,
+              2.5
+            ],
+            [
+              3.5,
+              3.5
+            ],
+            [
+              2.5,
+              3.5
+            ],
+            [
+              2.5,
+              2.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r013_c004",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              3.5,
+              2.5
+            ],
+            [
+              4.5,
+              2.5
+            ],
+            [
+              4.5,
+              3.5
+            ],
+            [
+              3.5,
+              3.5
+            ],
+            [
+              3.5,
+              2.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r013_c005",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.5,
+              2.5
+            ],
+            [
+              5.5,
+              2.5
+            ],
+            [
+              5.5,
+              3.5
+            ],
+            [
+              4.5,
+              3.5
+            ],
+            [
+              4.5,
+              2.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r013_c006",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              5.5,
+              2.5
+            ],
+            [
+              6.5,
+              2.5
+            ],
+            [
+              6.5,
+              3.5
+            ],
+            [
+              5.5,
+              3.5
+            ],
+            [
+              5.5,
+              2.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r013_c007",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.5,
+              2.5
+            ],
+            [
+              7.5,
+              2.5
+            ],
+            [
+              7.5,
+              3.5
+            ],
+            [
+              6.5,
+              3.5
+            ],
+            [
+              6.5,
+              2.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r013_c008",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.5,
+              2.5
+            ],
+            [
+              8.5,
+              2.5
+            ],
+            [
+              8.5,
+              3.5
+            ],
+            [
+              7.5,
+              3.5
+            ],
+            [
+              7.5,
+              2.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r013_c009",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.5,
+              2.5
+            ],
+            [
+              9.5,
+              2.5
+            ],
+            [
+              9.5,
+              3.5
+            ],
+            [
+              8.5,
+              3.5
+            ],
+            [
+              8.5,
+              2.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r013_c010",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              9.5,
+              2.5
+            ],
+            [
+              10.5,
+              2.5
+            ],
+            [
+              10.5,
+              3.5
+            ],
+            [
+              9.5,
+              3.5
+            ],
+            [
+              9.5,
+              2.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r013_c011",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              10.5,
+              2.5
+            ],
+            [
+              11.5,
+              2.5
+            ],
+            [
+              11.5,
+              3.5
+            ],
+            [
+              10.5,
+              3.5
+            ],
+            [
+              10.5,
+              2.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r013_c012",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.5,
+              2.5
+            ],
+            [
+              12.5,
+              2.5
+            ],
+            [
+              12.5,
+              3.5
+            ],
+            [
+              11.5,
+              3.5
+            ],
+            [
+              11.5,
+              2.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r013_c013",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.5,
+              2.5
+            ],
+            [
+              13.5,
+              2.5
+            ],
+            [
+              13.5,
+              3.5
+            ],
+            [
+              12.5,
+              3.5
+            ],
+            [
+              12.5,
+              2.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r013_c014",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5,
+              2.5
+            ],
+            [
+              14.5,
+              2.5
+            ],
+            [
+              14.5,
+              3.5
+            ],
+            [
+              13.5,
+              3.5
+            ],
+            [
+              13.5,
+              2.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r013_c015",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.5,
+              2.5
+            ],
+            [
+              15.5,
+              2.5
+            ],
+            [
+              15.5,
+              3.5
+            ],
+            [
+              14.5,
+              3.5
+            ],
+            [
+              14.5,
+              2.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r013_c016",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              15.5,
+              2.5
+            ],
+            [
+              16.5,
+              2.5
+            ],
+            [
+              16.5,
+              3.5
+            ],
+            [
+              15.5,
+              3.5
+            ],
+            [
+              15.5,
+              2.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r014_c000",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.5,
+              1.5
+            ],
+            [
+              0.5,
+              1.5
+            ],
+            [
+              0.5,
+              2.5
+            ],
+            [
+              -0.5,
+              2.5
+            ],
+            [
+              -0.5,
+              1.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r014_c001",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.5,
+              1.5
+            ],
+            [
+              1.5,
+              1.5
+            ],
+            [
+              1.5,
+              2.5
+            ],
+            [
+              0.5,
+              2.5
+            ],
+            [
+              0.5,
+              1.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r014_c002",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.5,
+              1.5
+            ],
+            [
+              2.5,
+              1.5
+            ],
+            [
+              2.5,
+              2.5
+            ],
+            [
+              1.5,
+              2.5
+            ],
+            [
+              1.5,
+              1.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r014_c003",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.5,
+              1.5
+            ],
+            [
+              3.5,
+              1.5
+            ],
+            [
+              3.5,
+              2.5
+            ],
+            [
+              2.5,
+              2.5
+            ],
+            [
+              2.5,
+              1.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r014_c004",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              3.5,
+              1.5
+            ],
+            [
+              4.5,
+              1.5
+            ],
+            [
+              4.5,
+              2.5
+            ],
+            [
+              3.5,
+              2.5
+            ],
+            [
+              3.5,
+              1.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r014_c005",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.5,
+              1.5
+            ],
+            [
+              5.5,
+              1.5
+            ],
+            [
+              5.5,
+              2.5
+            ],
+            [
+              4.5,
+              2.5
+            ],
+            [
+              4.5,
+              1.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r014_c006",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              5.5,
+              1.5
+            ],
+            [
+              6.5,
+              1.5
+            ],
+            [
+              6.5,
+              2.5
+            ],
+            [
+              5.5,
+              2.5
+            ],
+            [
+              5.5,
+              1.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r014_c007",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.5,
+              1.5
+            ],
+            [
+              7.5,
+              1.5
+            ],
+            [
+              7.5,
+              2.5
+            ],
+            [
+              6.5,
+              2.5
+            ],
+            [
+              6.5,
+              1.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r014_c008",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.5,
+              1.5
+            ],
+            [
+              8.5,
+              1.5
+            ],
+            [
+              8.5,
+              2.5
+            ],
+            [
+              7.5,
+              2.5
+            ],
+            [
+              7.5,
+              1.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r014_c009",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.5,
+              1.5
+            ],
+            [
+              9.5,
+              1.5
+            ],
+            [
+              9.5,
+              2.5
+            ],
+            [
+              8.5,
+              2.5
+            ],
+            [
+              8.5,
+              1.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r014_c010",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              9.5,
+              1.5
+            ],
+            [
+              10.5,
+              1.5
+            ],
+            [
+              10.5,
+              2.5
+            ],
+            [
+              9.5,
+              2.5
+            ],
+            [
+              9.5,
+              1.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r014_c011",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              10.5,
+              1.5
+            ],
+            [
+              11.5,
+              1.5
+            ],
+            [
+              11.5,
+              2.5
+            ],
+            [
+              10.5,
+              2.5
+            ],
+            [
+              10.5,
+              1.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r014_c012",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.5,
+              1.5
+            ],
+            [
+              12.5,
+              1.5
+            ],
+            [
+              12.5,
+              2.5
+            ],
+            [
+              11.5,
+              2.5
+            ],
+            [
+              11.5,
+              1.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r014_c013",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.5,
+              1.5
+            ],
+            [
+              13.5,
+              1.5
+            ],
+            [
+              13.5,
+              2.5
+            ],
+            [
+              12.5,
+              2.5
+            ],
+            [
+              12.5,
+              1.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r014_c014",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5,
+              1.5
+            ],
+            [
+              14.5,
+              1.5
+            ],
+            [
+              14.5,
+              2.5
+            ],
+            [
+              13.5,
+              2.5
+            ],
+            [
+              13.5,
+              1.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r014_c015",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.5,
+              1.5
+            ],
+            [
+              15.5,
+              1.5
+            ],
+            [
+              15.5,
+              2.5
+            ],
+            [
+              14.5,
+              2.5
+            ],
+            [
+              14.5,
+              1.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r014_c016",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              15.5,
+              1.5
+            ],
+            [
+              16.5,
+              1.5
+            ],
+            [
+              16.5,
+              2.5
+            ],
+            [
+              15.5,
+              2.5
+            ],
+            [
+              15.5,
+              1.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r015_c000",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.5,
+              0.5
+            ],
+            [
+              0.5,
+              0.5
+            ],
+            [
+              0.5,
+              1.5
+            ],
+            [
+              -0.5,
+              1.5
+            ],
+            [
+              -0.5,
+              0.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r015_c001",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.5,
+              0.5
+            ],
+            [
+              1.5,
+              0.5
+            ],
+            [
+              1.5,
+              1.5
+            ],
+            [
+              0.5,
+              1.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r015_c002",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.5,
+              0.5
+            ],
+            [
+              2.5,
+              0.5
+            ],
+            [
+              2.5,
+              1.5
+            ],
+            [
+              1.5,
+              1.5
+            ],
+            [
+              1.5,
+              0.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r015_c003",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.5,
+              0.5
+            ],
+            [
+              3.5,
+              0.5
+            ],
+            [
+              3.5,
+              1.5
+            ],
+            [
+              2.5,
+              1.5
+            ],
+            [
+              2.5,
+              0.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r015_c004",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              3.5,
+              0.5
+            ],
+            [
+              4.5,
+              0.5
+            ],
+            [
+              4.5,
+              1.5
+            ],
+            [
+              3.5,
+              1.5
+            ],
+            [
+              3.5,
+              0.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r015_c005",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.5,
+              0.5
+            ],
+            [
+              5.5,
+              0.5
+            ],
+            [
+              5.5,
+              1.5
+            ],
+            [
+              4.5,
+              1.5
+            ],
+            [
+              4.5,
+              0.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r015_c006",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              5.5,
+              0.5
+            ],
+            [
+              6.5,
+              0.5
+            ],
+            [
+              6.5,
+              1.5
+            ],
+            [
+              5.5,
+              1.5
+            ],
+            [
+              5.5,
+              0.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r015_c007",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.5,
+              0.5
+            ],
+            [
+              7.5,
+              0.5
+            ],
+            [
+              7.5,
+              1.5
+            ],
+            [
+              6.5,
+              1.5
+            ],
+            [
+              6.5,
+              0.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r015_c008",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.5,
+              0.5
+            ],
+            [
+              8.5,
+              0.5
+            ],
+            [
+              8.5,
+              1.5
+            ],
+            [
+              7.5,
+              1.5
+            ],
+            [
+              7.5,
+              0.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r015_c009",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.5,
+              0.5
+            ],
+            [
+              9.5,
+              0.5
+            ],
+            [
+              9.5,
+              1.5
+            ],
+            [
+              8.5,
+              1.5
+            ],
+            [
+              8.5,
+              0.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r015_c010",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              9.5,
+              0.5
+            ],
+            [
+              10.5,
+              0.5
+            ],
+            [
+              10.5,
+              1.5
+            ],
+            [
+              9.5,
+              1.5
+            ],
+            [
+              9.5,
+              0.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r015_c011",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              10.5,
+              0.5
+            ],
+            [
+              11.5,
+              0.5
+            ],
+            [
+              11.5,
+              1.5
+            ],
+            [
+              10.5,
+              1.5
+            ],
+            [
+              10.5,
+              0.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r015_c012",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.5,
+              0.5
+            ],
+            [
+              12.5,
+              0.5
+            ],
+            [
+              12.5,
+              1.5
+            ],
+            [
+              11.5,
+              1.5
+            ],
+            [
+              11.5,
+              0.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r015_c013",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.5,
+              0.5
+            ],
+            [
+              13.5,
+              0.5
+            ],
+            [
+              13.5,
+              1.5
+            ],
+            [
+              12.5,
+              1.5
+            ],
+            [
+              12.5,
+              0.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r015_c014",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5,
+              0.5
+            ],
+            [
+              14.5,
+              0.5
+            ],
+            [
+              14.5,
+              1.5
+            ],
+            [
+              13.5,
+              1.5
+            ],
+            [
+              13.5,
+              0.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r015_c015",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.5,
+              0.5
+            ],
+            [
+              15.5,
+              0.5
+            ],
+            [
+              15.5,
+              1.5
+            ],
+            [
+              14.5,
+              1.5
+            ],
+            [
+              14.5,
+              0.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r015_c016",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              15.5,
+              0.5
+            ],
+            [
+              16.5,
+              0.5
+            ],
+            [
+              16.5,
+              1.5
+            ],
+            [
+              15.5,
+              1.5
+            ],
+            [
+              15.5,
+              0.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r016_c000",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ],
+            [
+              -0.5,
+              0.5
+            ],
+            [
+              -0.5,
+              -0.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r016_c001",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.5,
+              -0.5
+            ],
+            [
+              1.5,
+              -0.5
+            ],
+            [
+              1.5,
+              0.5
+            ],
+            [
+              0.5,
+              0.5
+            ],
+            [
+              0.5,
+              -0.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r016_c002",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.5,
+              -0.5
+            ],
+            [
+              2.5,
+              -0.5
+            ],
+            [
+              2.5,
+              0.5
+            ],
+            [
+              1.5,
+              0.5
+            ],
+            [
+              1.5,
+              -0.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r016_c003",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.5,
+              -0.5
+            ],
+            [
+              3.5,
+              -0.5
+            ],
+            [
+              3.5,
+              0.5
+            ],
+            [
+              2.5,
+              0.5
+            ],
+            [
+              2.5,
+              -0.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r016_c004",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              3.5,
+              -0.5
+            ],
+            [
+              4.5,
+              -0.5
+            ],
+            [
+              4.5,
+              0.5
+            ],
+            [
+              3.5,
+              0.5
+            ],
+            [
+              3.5,
+              -0.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r016_c005",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.5,
+              -0.5
+            ],
+            [
+              5.5,
+              -0.5
+            ],
+            [
+              5.5,
+              0.5
+            ],
+            [
+              4.5,
+              0.5
+            ],
+            [
+              4.5,
+              -0.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r016_c006",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              5.5,
+              -0.5
+            ],
+            [
+              6.5,
+              -0.5
+            ],
+            [
+              6.5,
+              0.5
+            ],
+            [
+              5.5,
+              0.5
+            ],
+            [
+              5.5,
+              -0.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r016_c007",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.5,
+              -0.5
+            ],
+            [
+              7.5,
+              -0.5
+            ],
+            [
+              7.5,
+              0.5
+            ],
+            [
+              6.5,
+              0.5
+            ],
+            [
+              6.5,
+              -0.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r016_c008",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.5,
+              -0.5
+            ],
+            [
+              8.5,
+              -0.5
+            ],
+            [
+              8.5,
+              0.5
+            ],
+            [
+              7.5,
+              0.5
+            ],
+            [
+              7.5,
+              -0.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r016_c009",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.5,
+              -0.5
+            ],
+            [
+              9.5,
+              -0.5
+            ],
+            [
+              9.5,
+              0.5
+            ],
+            [
+              8.5,
+              0.5
+            ],
+            [
+              8.5,
+              -0.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r016_c010",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              9.5,
+              -0.5
+            ],
+            [
+              10.5,
+              -0.5
+            ],
+            [
+              10.5,
+              0.5
+            ],
+            [
+              9.5,
+              0.5
+            ],
+            [
+              9.5,
+              -0.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r016_c011",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              10.5,
+              -0.5
+            ],
+            [
+              11.5,
+              -0.5
+            ],
+            [
+              11.5,
+              0.5
+            ],
+            [
+              10.5,
+              0.5
+            ],
+            [
+              10.5,
+              -0.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r016_c012",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.5,
+              -0.5
+            ],
+            [
+              12.5,
+              -0.5
+            ],
+            [
+              12.5,
+              0.5
+            ],
+            [
+              11.5,
+              0.5
+            ],
+            [
+              11.5,
+              -0.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r016_c013",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.5,
+              -0.5
+            ],
+            [
+              13.5,
+              -0.5
+            ],
+            [
+              13.5,
+              0.5
+            ],
+            [
+              12.5,
+              0.5
+            ],
+            [
+              12.5,
+              -0.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r016_c014",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5,
+              -0.5
+            ],
+            [
+              14.5,
+              -0.5
+            ],
+            [
+              14.5,
+              0.5
+            ],
+            [
+              13.5,
+              0.5
+            ],
+            [
+              13.5,
+              -0.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r016_c015",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.5,
+              -0.5
+            ],
+            [
+              15.5,
+              -0.5
+            ],
+            [
+              15.5,
+              0.5
+            ],
+            [
+              14.5,
+              0.5
+            ],
+            [
+              14.5,
+              -0.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "SYN_concave_u_r016_c016",
+        "region_id": "Synthetic-concave_u"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              15.5,
+              -0.5
+            ],
+            [
+              16.5,
+              -0.5
+            ],
+            [
+              16.5,
+              0.5
+            ],
+            [
+              15.5,
+              0.5
+            ],
+            [
+              15.5,
+              -0.5
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

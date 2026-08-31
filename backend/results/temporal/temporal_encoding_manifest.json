@@ -1,0 +1,194 @@
+{
+  "datasets": {
+    "湖北": {
+      "dataset": "湖北",
+      "variable": "PM2.5",
+      "units": "µg/m³",
+      "month_count": 12,
+      "cell_count": 130,
+      "bin_count": 9,
+      "value_clip_quantiles": [
+        0.02,
+        0.98
+      ],
+      "value_clip_range": [
+        23.93861901501368,
+        78.76927048860043
+      ],
+      "delta_symmetric_quantile": 0.95,
+      "delta_symmetric_limit": 19.181641783146755,
+      "geometry_policy": "one fixed final-refined annulus partition reused for every month",
+      "identity_policy": "cell_id is unchanged across all months",
+      "geometry_path": "results/spatial_refined/湖北/final_refined_annulus.geojson"
+    },
+    "湖南": {
+      "dataset": "湖南",
+      "variable": "PM2.5",
+      "units": "µg/m³",
+      "month_count": 12,
+      "cell_count": 137,
+      "bin_count": 9,
+      "value_clip_quantiles": [
+        0.02,
+        0.98
+      ],
+      "value_clip_range": [
+        23.639344645557628,
+        65.36235381088844
+      ],
+      "delta_symmetric_quantile": 0.95,
+      "delta_symmetric_limit": 15.007942803602,
+      "geometry_policy": "one fixed final-refined annulus partition reused for every month",
+      "identity_policy": "cell_id is unchanged across all months",
+      "geometry_path": "results/spatial_refined/湖南/final_refined_annulus.geojson"
+    },
+    "江西": {
+      "dataset": "江西",
+      "variable": "PM2.5",
+      "units": "µg/m³",
+      "month_count": 12,
+      "cell_count": 107,
+      "bin_count": 9,
+      "value_clip_quantiles": [
+        0.02,
+        0.98
+      ],
+      "value_clip_range": [
+        20.254636278997413,
+        51.65407544659426
+      ],
+      "delta_symmetric_quantile": 0.95,
+      "delta_symmetric_limit": 14.166767017483052,
+      "geometry_policy": "one fixed final-refined annulus partition reused for every month",
+      "identity_policy": "cell_id is unchanged across all months",
+      "geometry_path": "results/spatial_refined/江西/final_refined_annulus.geojson"
+    },
+    "广东": {
+      "dataset": "广东",
+      "variable": "PM2.5",
+      "units": "µg/m³",
+      "month_count": 12,
+      "cell_count": 108,
+      "bin_count": 9,
+      "value_clip_quantiles": [
+        0.02,
+        0.98
+      ],
+      "value_clip_range": [
+        17.077190708911186,
+        44.03648811307378
+      ],
+      "delta_symmetric_quantile": 0.95,
+      "delta_symmetric_limit": 9.375893945187709,
+      "geometry_policy": "one fixed final-refined annulus partition reused for every month",
+      "identity_policy": "cell_id is unchanged across all months",
+      "geometry_path": "results/spatial_refined/广东/final_refined_annulus.geojson"
+    },
+    "福建": {
+      "dataset": "福建",
+      "variable": "PM2.5",
+      "units": "µg/m³",
+      "month_count": 12,
+      "cell_count": 74,
+      "bin_count": 9,
+      "value_clip_quantiles": [
+        0.02,
+        0.98
+      ],
+      "value_clip_range": [
+        17.693231668391153,
+        38.75094423033586
+      ],
+      "delta_symmetric_quantile": 0.95,
+      "delta_symmetric_limit": 10.684878166906843,
+      "geometry_policy": "one fixed final-refined annulus partition reused for every month",
+      "identity_policy": "cell_id is unchanged across all months",
+      "geometry_path": "results/spatial_refined/福建/final_refined_annulus.geojson"
+    },
+    "广西": {
+      "dataset": "广西",
+      "variable": "PM2.5",
+      "units": "µg/m³",
+      "month_count": 12,
+      "cell_count": 142,
+      "bin_count": 9,
+      "value_clip_quantiles": [
+        0.02,
+        0.98
+      ],
+      "value_clip_range": [
+        19.37798900957763,
+        45.987467149492446
+      ],
+      "delta_symmetric_quantile": 0.95,
+      "delta_symmetric_limit": 9.401288541023476,
+      "geometry_policy": "one fixed final-refined annulus partition reused for every month",
+      "identity_policy": "cell_id is unchanged across all months",
+      "geometry_path": "results/spatial_refined/广西/final_refined_annulus.geojson"
+    },
+    "安徽": {
+      "dataset": "安徽",
+      "variable": "PM2.5",
+      "units": "µg/m³",
+      "month_count": 12,
+      "cell_count": 96,
+      "bin_count": 9,
+      "value_clip_quantiles": [
+        0.02,
+        0.98
+      ],
+      "value_clip_range": [
+        25.66443464656639,
+        76.9818627531044
+      ],
+      "delta_symmetric_quantile": 0.95,
+      "delta_symmetric_limit": 16.753581154201612,
+      "geometry_policy": "one fixed final-refined annulus partition reused for every month",
+      "identity_policy": "cell_id is unchanged across all months",
+      "geometry_path": "results/spatial_refined/安徽/final_refined_annulus.geojson"
+    },
+    "浙江": {
+      "dataset": "浙江",
+      "variable": "PM2.5",
+      "units": "µg/m³",
+      "month_count": 12,
+      "cell_count": 65,
+      "bin_count": 9,
+      "value_clip_quantiles": [
+        0.02,
+        0.98
+      ],
+      "value_clip_range": [
+        19.79917733466021,
+        53.56309816964108
+      ],
+      "delta_symmetric_quantile": 0.95,
+      "delta_symmetric_limit": 13.071474483019314,
+      "geometry_policy": "one fixed final-refined annulus partition reused for every month",
+      "identity_policy": "cell_id is unchanged across all months",
+      "geometry_path": "results/spatial_refined/浙江/final_refined_annulus.geojson"
+    },
+    "NCEP-AirTemp-Africa-2000": {
+      "dataset": "NCEP-AirTemp-Africa-2000",
+      "variable": "air_temperature",
+      "units": "°C",
+      "month_count": 12,
+      "cell_count": 401,
+      "bin_count": 9,
+      "value_clip_quantiles": [
+        0.02,
+        0.98
+      ],
+      "value_clip_range": [
+        11.509272670745847,
+        34.54859382629394
+      ],
+      "delta_symmetric_quantile": 0.95,
+      "delta_symmetric_limit": 5.943693161010742,
+      "geometry_policy": "one fixed final-refined annulus partition reused for every month",
+      "identity_policy": "cell_id is unchanged across all months",
+      "geometry_path": "results/external_refined/NCEP-AirTemp-Africa-2000/final_refined_annulus.geojson"
+    }
+  },
+  "encoding": "9-bin sequential value plus symmetric 9-bin direct delta"
+}
