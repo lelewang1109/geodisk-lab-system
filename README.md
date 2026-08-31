@@ -106,6 +106,7 @@ The local API exposes only canonical artifacts and a whitelist of experiment com
 
 - [System architecture](docs/ARCHITECTURE.md)
 - [Evaluation metrics and experiment protocol (Chinese)](docs/EVALUATION_METRICS_CN.md)
+- [Top-conference interface redesign and experiment linkage (Chinese)](docs/INTERFACE_REDESIGN_CN.md)
 - [Experiment roadmap](backend/FORMAL_EXPERIMENT_ROADMAP.md)
 - [Phase 2 method and experiment report](backend/PHASE2_METHOD_AND_EXPERIMENT_REPORT.md)
 - [User-study protocol](backend/user_study/USER_STUDY_PROTOCOL.md)

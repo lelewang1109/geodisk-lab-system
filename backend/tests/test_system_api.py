@@ -31,6 +31,14 @@ class SystemApiTest(unittest.TestCase):
         self.assertEqual(len(payload["nodes"]), 130)
         self.assertEqual(len(payload["temporal"]), 130 * 12)
         self.assertEqual(payload["method"], "GeoDisk-Final")
+        self.assertTrue(payload["reference_edges"])
+        self.assertTrue(payload["display_edges"])
+        cell_ids = {
+            str(feature["properties"]["cell_id"])
+            for feature in payload["display"]["features"]
+        }
+        self.assertTrue(all(source in cell_ids and target in cell_ids
+                            for source, target in payload["display_edges"]))
 
     def test_legacy_insights_integrates_projects_two_and_three(self):
         payload = legacy_insights()

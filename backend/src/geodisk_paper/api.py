@@ -23,6 +23,9 @@ from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
+from geodisk_paper.geometry.serialization import load_geometry
+from geodisk_paper.metrics.geometry import display_adjacency
+
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 FORMAL_SUITE_ROOT = PROJECT_ROOT.parent.parent
@@ -354,6 +357,7 @@ def workbench(
     display_root = Path(config["display"])
     original = _read_json(reference_root / "original_geometry.geojson")
     display = _read_json(display_root / f"final_refined_{view}.geojson")
+    display_result = load_geometry(display_root / f"final_refined_{view}.geojson")
     metadata = _read_json(display_root / f"final_refined_{view}.metadata.json")
     reference_edges = [
         [str(row["source"]), str(row["target"])]
@@ -368,7 +372,11 @@ def workbench(
     return {
         "dataset": dataset, "label": config["label"], "unit": config["unit"],
         "view": view, "method": method, "original": original, "display": display,
-        "reference_edges": reference_edges, "nodes": nodes, "temporal": temporal,
+        "reference_edges": reference_edges,
+        "display_edges": [list(edge) for edge in sorted(display_adjacency(
+            display_result.cell_ids, display_result.geometries
+        ))],
+        "nodes": nodes, "temporal": temporal,
         "cells": _read_csv(reference_root / "cells.csv"), "metadata": metadata,
     }
 
