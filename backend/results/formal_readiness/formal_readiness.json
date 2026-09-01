@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-09-01T07:18:19.446379+00:00",
-  "open_count": 4,
+  "generated_at_utc": "2026-09-01T07:59:12.925492+00:00",
+  "open_count": 3,
   "checks": [
     {
       "check_id": "primary_data_provenance",
@@ -96,10 +96,10 @@
       "check_id": "clean_full_pipeline_manifest",
       "area": "reproducibility",
       "severity": "major",
-      "status": "open",
+      "status": "pass",
       "claim_scope": "algorithmic",
-      "evidence": "successful clean manifests=0; total manifests=0",
-      "required_action": "Run scripts/run_formal_experiment.sh from a clean frozen commit and preserve its manifest."
+      "evidence": "successful clean manifests=1; total manifests=1",
+      "required_action": "none"
     },
     {
       "check_id": "published_baseline_implementation",

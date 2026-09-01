@@ -1,12 +1,15 @@
 {
-  "retrieved_at_utc": "2026-08-30T08:12:09.829368+00:00",
+  "retrieved_at_utc": "2026-09-01T07:41:41.534108+00:00",
+  "manifest_generated_at_utc": "2026-09-01T07:45:11.818529+00:00",
   "files": [
     {
       "dataset_id": "NCEP-AirTemp-Africa-2000",
       "file": "data/external/noaa_ncep/air.mon.mean.africa.2000.nc",
       "bytes": 72499,
-      "sha256": "528afecb74069e3b3b009f8da5dae5c69fbaeca18f5c74e09fc27abad85f5c47",
-      "source_url": "https://psl.noaa.gov/thredds/ncss/grid/Datasets/ncep.reanalysis/Monthlies/surface/air.mon.mean.nc"
+      "sha256": "5ad7d836d6c85ffc509d026b4932f2d0a25234c7f08c899730d53284523601a6",
+      "source_url": "https://psl.noaa.gov/thredds/ncss/grid/Datasets/ncep.reanalysis/Monthlies/surface/air.mon.mean.nc",
+      "scientific_content_sha256": "23e6f435608a63ea65ebabae5bd21cc01c9d9007e8523f5b49858adf3fde6d33",
+      "scientific_content_hash_scope": "sorted variable names, dtypes, shapes and array bytes; attributes excluded"
     },
     {
       "dataset_id": "NE-Admin0-Africa",

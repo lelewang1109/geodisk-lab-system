@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 import platform
+import resource
+import sys
 import time
 
 import numpy as np
@@ -21,6 +23,12 @@ DATASETS = [
     ("NASA-Exoplanet-SkyGrid", ROOT / "data/processed/external_regions"),
     ("NCEP-AirTemp-Africa-2000", ROOT / "data/processed/external_regions"),
 ]
+
+
+def _peak_rss_mb() -> float:
+    """Return process high-water RSS including native NumPy/GEOS allocations."""
+    value = float(resource.getrusage(resource.RUSAGE_SELF).ru_maxrss)
+    return value / (1024.0 * 1024.0) if sys.platform == "darwin" else value / 1024.0
 
 
 def main() -> None:
@@ -59,11 +67,13 @@ def main() -> None:
                     "repeat": repeat - warmups + 1, "embedding_seconds": embedding_seconds,
                     "original_power_seconds": original_seconds, "final_refinement_seconds": refined_seconds,
                     "refinement_over_original_ratio": refined_seconds / max(original_seconds, 1e-12),
+                    "process_high_water_rss_mb": _peak_rss_mb(),
                 })
             print("[runtime]", dataset, repeat + 1, "/", warmups + repetitions, flush=True)
     raw = pd.DataFrame(rows)
     write_csv(raw, ROOT / "results/tables/Table_runtime_scalability_raw.csv")
-    metrics = ["embedding_seconds", "original_power_seconds", "final_refinement_seconds", "refinement_over_original_ratio"]
+    metrics = ["embedding_seconds", "original_power_seconds", "final_refinement_seconds",
+               "refinement_over_original_ratio", "process_high_water_rss_mb"]
     summary_rows = []
     for dataset, group in raw.groupby("dataset", sort=False):
         row = {"dataset": dataset, "cell_count": int(group.cell_count.iloc[0]),
@@ -79,6 +89,7 @@ def main() -> None:
     write_csv(frame, ROOT / "paper/tables/Table_runtime_scalability.csv")
     write_json({
         "timing_scope": "single-process wall-clock seconds after a per-dataset warm-up",
+        "memory_scope": "suite-process cumulative high-water RSS; includes native allocations and is an upper bound rather than an isolated per-method delta",
         "warmup_repetitions": warmups, "measured_repetitions": repetitions,
         "summary": "median, IQR, mean and sample standard deviation",
         "platform": platform.platform(), "processor": platform.processor(),

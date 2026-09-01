@@ -68,6 +68,10 @@ def main() -> None:
     runtime_ok = minimum_repeat >= int(formal["minimum_runtime_repetitions"])
     _record(rows, "runtime_repetitions", "efficiency", "major", runtime_ok,
             f"minimum repeat_count={minimum_repeat}", "Run E23 with one warm-up and at least ten measured repetitions.")
+    memory_ok = "process_high_water_rss_mb_median" in runtime and len(runtime) > 0
+    _record(rows, "runtime_peak_memory", "efficiency", "minor", memory_ok,
+            "suite-process high-water RSS recorded" if memory_ok else "peak RSS column missing",
+            "Rerun E23 with native-allocation-aware process high-water RSS recording.")
 
     advanced_stats = ROOT / "results/tables/Table_advanced_paired_statistics.csv"
     _record(rows, "advanced_paired_inference", "statistics", "major", advanced_stats.exists(),
@@ -102,6 +106,13 @@ def main() -> None:
     _record(rows, "published_baseline_implementation", "baselines", "major", False,
             "Current baselines are project-local implementations.",
             "Add or justify at least one independently published topology-preserving/cartogram baseline and verify parameter parity.")
+    _record(rows, "confirmatory_holdout_dataset", "study_design", "major", False,
+            "The eight CEG regions were available during method development.",
+            "Freeze an untouched year or region before tuning, then run the declared primary comparison once.")
+    analysis_plan = ROOT / "config/formal_hypotheses.yaml"
+    _record(rows, "machine_readable_analysis_plan", "study_design", "major", analysis_plan.exists(),
+            "post-hoc plan frozen for future reruns" if analysis_plan.exists() else "formal_hypotheses.yaml missing",
+            "Freeze hypotheses, primary outcomes, units and multiplicity families before collecting a holdout dataset.")
     _record(rows, "backend_environment_lock", "reproducibility", "major", (ROOT / "requirements-lock.txt").exists(),
             "requirements-lock.txt present" if (ROOT / "requirements-lock.txt").exists() else "only lower-bound requirements are present",
             "Freeze an exact tested Python dependency lock for the submission artifact.")

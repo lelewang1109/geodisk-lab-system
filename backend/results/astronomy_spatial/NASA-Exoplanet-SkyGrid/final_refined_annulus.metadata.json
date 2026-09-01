@@ -3,6 +3,17 @@
   "view": "annulus",
   "cell_count": 162,
   "optimization_target": "final_balanced_power_polygon_adjacency",
+  "contact_tolerance": 2e-05,
+  "objective_weights": {
+    "adjacency": 1.0,
+    "neighborhood": 0.18,
+    "local_direction": 0.06,
+    "angular": 0.04,
+    "radial": 0.04,
+    "area_cv": 0.035
+  },
+  "power_iterations": 3,
+  "force_iterations": 4,
   "candidate_schedule": [
     "topology",
     "harmonic",
@@ -14,16 +25,16 @@
     "force_3",
     "force_4"
   ],
-  "selected_candidate": "force_3",
+  "selected_candidate": "force_4",
   "initial_final_power_objective": 0.644800666149483,
-  "optimized_final_power_objective": 0.7733490211332671,
+  "optimized_final_power_objective": 0.7744658833595177,
   "initial_final_power_adj_f1": 0.6039325842696629,
-  "optimized_final_power_adj_f1": 0.7052341597796143,
-  "optimized_final_power_np2": 0.6244450326528569,
-  "area_cv": 0.9691873266924076,
+  "optimized_final_power_adj_f1": 0.7032967032967032,
+  "optimized_final_power_np2": 0.6374383250515574,
+  "area_cv": 0.9581580211400235,
   "weight_range": [
-    -0.027751558945221723,
-    0.00572259535057723
+    -0.026931727159317475,
+    0.005748185717438703
   ],
   "candidate_history": [
     {
@@ -63,31 +74,31 @@
     },
     {
       "candidate": "force_1",
-      "objective": 0.686827615517837,
-      "adj_f1": 0.6298342541436464,
-      "np2": 0.5566722087191169,
-      "area_cv": 0.9523126334647285
+      "objective": 0.6791990596791075,
+      "adj_f1": 0.6239554317548747,
+      "np2": 0.5469514208529043,
+      "area_cv": 0.9523126334647284
     },
     {
       "candidate": "force_2",
-      "objective": 0.7432808035892706,
-      "adj_f1": 0.6795580110497237,
-      "np2": 0.5995759577688256,
-      "area_cv": 0.9648784813501166
+      "objective": 0.7093413316600627,
+      "adj_f1": 0.64804469273743,
+      "np2": 0.5777815914657022,
+      "area_cv": 0.9485513617110664
     },
     {
       "candidate": "force_3",
-      "objective": 0.7733490211332671,
-      "adj_f1": 0.7052341597796143,
-      "np2": 0.6244450326528569,
-      "area_cv": 0.9691873266924076
+      "objective": 0.761098409263087,
+      "adj_f1": 0.6961325966850829,
+      "np2": 0.6014508133920048,
+      "area_cv": 0.9556984691022076
     },
     {
       "candidate": "force_4",
-      "objective": 0.7341937914313482,
-      "adj_f1": 0.672176308539945,
-      "np2": 0.6063094450242165,
-      "area_cv": 1.0494658398943555
+      "objective": 0.7744658833595177,
+      "adj_f1": 0.7032967032967032,
+      "np2": 0.6374383250515574,
+      "area_cv": 0.9581580211400235
     }
   ]
 }

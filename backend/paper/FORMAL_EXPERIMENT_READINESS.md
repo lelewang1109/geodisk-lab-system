@@ -14,7 +14,7 @@
 | statistics | `advanced_paired_inference` | major | **pass** | advanced paired table exists | none |
 | diagnostics | `failure_case_retention` | minor | **pass** | ranked failure table exists | none |
 | user_study | `human_participant_results` | blocker | **open** | response rows=0 | Collect the preregistered participant study before making perceptual-efficiency claims. |
-| reproducibility | `clean_full_pipeline_manifest` | major | **open** | successful clean manifests=0; total manifests=0 | Run scripts/run_formal_experiment.sh from a clean frozen commit and preserve its manifest. |
+| reproducibility | `clean_full_pipeline_manifest` | major | **pass** | successful clean manifests=1; total manifests=1 | none |
 | baselines | `published_baseline_implementation` | major | **open** | Current baselines are project-local implementations. | Add or justify at least one independently published topology-preserving/cartogram baseline and verify parameter parity. |
 | reproducibility | `backend_environment_lock` | major | **pass** | requirements-lock.txt present | none |
 

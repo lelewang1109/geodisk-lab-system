@@ -104,7 +104,11 @@ For a submission-grade run, start from a clean frozen commit:
 bash scripts/run_formal_experiment.sh --require-clean
 ```
 
-The pipeline writes a resumable stage/duration/environment manifest under `results/run_manifests/`. See `FORMAL_EXPERIMENT_PROTOCOL_CN.md` and `paper/FORMAL_EXPERIMENT_READINESS.md` for the ordered protocol and remaining publication blockers.
+The pipeline writes a resumable stage/duration/environment manifest under
+`results/run_manifests/` and mirrors each stage's output to
+`results/run_logs/`. See `FORMAL_EXPERIMENT_PROTOCOL_CN.md` and
+`paper/FORMAL_EXPERIMENT_READINESS.md` for the ordered protocol and remaining
+publication blockers.
 
 `scripts/run_all.sh` now runs the complete formal suite. `run_temporal_experiment.sh` runs temporal encoding, change metrics and user-study material generation independently.
 
@@ -116,7 +120,11 @@ The pipeline writes a resumable stage/duration/environment manifest under `resul
 - Canonical tables: `results/tables/`
 - Ablation and sensitivity: `results/ablation/`, `results/sensitivity/`
 - Manuscript-facing copies: `paper/tables/`, `paper/figures/`
-- External download provenance: `data/external/download_manifest.json`
+- External download provenance: `data/external/download_manifest.json`. Existing
+  files are reused as frozen inputs; pass `--refresh` to
+  `scripts/download_external_datasets.sh` only when intentionally updating the
+  external-data snapshot. NetCDF records include both the raw-file hash and an
+  attribute-independent scientific-content hash.
 - Formal extension results: `results/tables/Table_external_*`, `Table_synthetic_*`, and `Table_contact_tolerance_sensitivity.csv`
 - Phase II results: `Table_final_power_refinement.csv`, `Table_*weighted*`, `Table_*boundary*`, `Table_*neighbor*`, `Table_astronomy_generalization.csv`, `Table_temporal_*` and `Table_runtime_scalability.csv`
 - Formal hardening: `Table_final_objective_ablation.csv`, `Table_seed_stability.csv`, `Table_advanced_paired_statistics.csv`, `Table_local_failure_cases.csv` and `results/formal_readiness/`

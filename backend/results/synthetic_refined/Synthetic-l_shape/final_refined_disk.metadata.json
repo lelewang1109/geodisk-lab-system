@@ -3,6 +3,17 @@
   "view": "disk",
   "cell_count": 145,
   "optimization_target": "final_balanced_power_polygon_adjacency",
+  "contact_tolerance": 2e-05,
+  "objective_weights": {
+    "adjacency": 1.0,
+    "neighborhood": 0.18,
+    "local_direction": 0.06,
+    "angular": 0.04,
+    "radial": 0.04,
+    "area_cv": 0.035
+  },
+  "power_iterations": 3,
+  "force_iterations": 4,
   "candidate_schedule": [
     "topology",
     "harmonic",
@@ -20,7 +31,7 @@
   "initial_final_power_adj_f1": 0.5962732919254659,
   "optimized_final_power_adj_f1": 0.7813953488372093,
   "optimized_final_power_np2": 0.6432275728494368,
-  "area_cv": 1.1108331641255402,
+  "area_cv": 1.11083316412554,
   "weight_range": [
     -0.05715605190078298,
     0.008817998273067633
@@ -87,7 +98,7 @@
       "objective": 0.849869469722784,
       "adj_f1": 0.7813953488372093,
       "np2": 0.6432275728494368,
-      "area_cv": 1.1108331641255402
+      "area_cv": 1.11083316412554
     }
   ]
 }

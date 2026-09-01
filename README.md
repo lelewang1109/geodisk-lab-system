@@ -35,7 +35,13 @@ geodisk-lab-system/
 └── scripts/                      # setup, start and verification entry points
 ```
 
-The repository is self-contained. The integrated annual-state and migration-path views read the bundled snapshot in `frontend/public/data/legacy-insights.json`; they do not require the original sibling project folders.
+The hosted interface is self-contained: the integrated annual-state and
+migration-path views read the bundled snapshot in
+`frontend/public/data/legacy-insights.json`. A from-raw-data reproduction of the
+formal CEG experiments additionally requires the 366 source NetCDF files at the
+path declared in `backend/config/datasets.yaml`; those files are intentionally
+not described as redistributable until their source, citation and permission
+record is completed.
 
 ## Quick start
 

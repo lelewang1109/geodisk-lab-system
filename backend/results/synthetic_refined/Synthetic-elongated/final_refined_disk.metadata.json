@@ -3,6 +3,17 @@
   "view": "disk",
   "cell_count": 203,
   "optimization_target": "final_balanced_power_polygon_adjacency",
+  "contact_tolerance": 2e-05,
+  "objective_weights": {
+    "adjacency": 1.0,
+    "neighborhood": 0.18,
+    "local_direction": 0.06,
+    "angular": 0.04,
+    "radial": 0.04,
+    "area_cv": 0.035
+  },
+  "power_iterations": 3,
+  "force_iterations": 4,
   "candidate_schedule": [
     "topology",
     "harmonic",
@@ -16,14 +27,14 @@
   ],
   "selected_candidate": "force_1",
   "initial_final_power_objective": 0.5622574202281948,
-  "optimized_final_power_objective": 0.7974300966782865,
+  "optimized_final_power_objective": 0.7974301277876702,
   "initial_final_power_adj_f1": 0.5478260869565218,
   "optimized_final_power_adj_f1": 0.7370689655172414,
   "optimized_final_power_np2": 0.6107380088730303,
-  "area_cv": 1.1164268189503654,
+  "area_cv": 1.1164268189503652,
   "weight_range": [
-    -0.02804138687072825,
-    0.005097264191983027
+    -0.028041386870728248,
+    0.0050972641919830265
   ],
   "candidate_history": [
     {
@@ -63,31 +74,31 @@
     },
     {
       "candidate": "force_1",
-      "objective": 0.7974300966782865,
+      "objective": 0.7974301277876702,
       "adj_f1": 0.7370689655172414,
       "np2": 0.6107380088730303,
-      "area_cv": 1.1164268189503654
+      "area_cv": 1.1164268189503652
     },
     {
       "candidate": "force_2",
-      "objective": 0.7826609879557185,
+      "objective": 0.7826594886255002,
       "adj_f1": 0.7253218884120171,
       "np2": 0.5947524385612507,
       "area_cv": 1.1172803821447614
     },
     {
       "candidate": "force_3",
-      "objective": 0.7917235168498837,
+      "objective": 0.7917253185453382,
       "adj_f1": 0.7316017316017316,
       "np2": 0.6063085001577276,
-      "area_cv": 1.1177066370365187
+      "area_cv": 1.1177066370365183
     },
     {
       "candidate": "force_4",
-      "objective": 0.7857315246970278,
+      "objective": 0.7857346788283427,
       "adj_f1": 0.7253218884120171,
       "np2": 0.6062501816348909,
-      "area_cv": 1.1176050813984866
+      "area_cv": 1.1176050813984861
     }
   ]
 }

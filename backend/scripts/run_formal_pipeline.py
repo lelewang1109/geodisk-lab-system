@@ -104,6 +104,8 @@ def main() -> None:
     if args.skip_seed_stability: skipped.add("E26")
     timestamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     manifest_path = ROOT / "results/run_manifests" / f"run_{timestamp}.json"
+    log_dir = ROOT / "results/run_logs" / timestamp
+    log_dir.mkdir(parents=True, exist_ok=True)
     config_files = sorted((ROOT / "config").glob("*.yaml"))
     payload = {
         "run_id": timestamp, "status": "running", "started_at_utc": datetime.now(timezone.utc).isoformat(),
@@ -117,15 +119,37 @@ def main() -> None:
             if name in skipped:
                 payload["stages"].append({"name": name, "status": "skipped"}); _write_manifest(manifest_path, payload); continue
             print(f"\n[formal pipeline] {name}: {' '.join(command)}", flush=True)
-            started = time.perf_counter(); stage = {"name": name, "command": command, "status": "running"}
+            log_path = log_dir / f"{name}.log"
+            started = time.perf_counter(); stage = {
+                "name": name,
+                "command": command,
+                "status": "running",
+                "log_file": str(log_path.relative_to(ROOT)),
+            }
             payload["stages"].append(stage); _write_manifest(manifest_path, payload)
-            completed = subprocess.run(command, cwd=ROOT)
+            with log_path.open("w", encoding="utf-8") as log_stream:
+                process = subprocess.Popen(
+                    command,
+                    cwd=ROOT,
+                    stdout=subprocess.PIPE,
+                    stderr=subprocess.STDOUT,
+                    text=True,
+                    encoding="utf-8",
+                    errors="replace",
+                    bufsize=1,
+                )
+                assert process.stdout is not None
+                for line in process.stdout:
+                    print(line, end="", flush=True)
+                    log_stream.write(line)
+                    log_stream.flush()
+                return_code = process.wait()
             stage.update({"duration_seconds": time.perf_counter() - started,
-                          "return_code": completed.returncode,
-                          "status": "succeeded" if completed.returncode == 0 else "failed"})
+                          "return_code": return_code,
+                          "status": "succeeded" if return_code == 0 else "failed"})
             _write_manifest(manifest_path, payload)
-            if completed.returncode:
-                raise RuntimeError(f"Stage {name} failed with exit code {completed.returncode}")
+            if return_code:
+                raise RuntimeError(f"Stage {name} failed with exit code {return_code}")
         payload["status"] = "succeeded"
     except Exception as error:
         payload["status"] = "failed"; payload["failure"] = str(error)

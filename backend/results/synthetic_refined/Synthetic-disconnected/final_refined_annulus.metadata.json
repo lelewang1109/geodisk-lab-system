@@ -3,6 +3,17 @@
   "view": "annulus",
   "cell_count": 160,
   "optimization_target": "final_balanced_power_polygon_adjacency",
+  "contact_tolerance": 2e-05,
+  "objective_weights": {
+    "adjacency": 1.0,
+    "neighborhood": 0.18,
+    "local_direction": 0.06,
+    "angular": 0.04,
+    "radial": 0.04,
+    "area_cv": 0.035
+  },
+  "power_iterations": 3,
+  "force_iterations": 4,
   "candidate_schedule": [
     "topology",
     "harmonic",
@@ -16,11 +27,11 @@
   ],
   "selected_candidate": "force_1",
   "initial_final_power_objective": 0.6472801709297122,
-  "optimized_final_power_objective": 0.7931912836748483,
+  "optimized_final_power_objective": 0.7931912836748484,
   "initial_final_power_adj_f1": 0.6020558002936858,
   "optimized_final_power_adj_f1": 0.7231638418079096,
   "optimized_final_power_np2": 0.6038861406056477,
-  "area_cv": 0.910103491956177,
+  "area_cv": 0.9101034919561773,
   "weight_range": [
     -0.01947600646901202,
     0.006431029203331262
@@ -63,31 +74,31 @@
     },
     {
       "candidate": "force_1",
-      "objective": 0.7931912836748483,
+      "objective": 0.7931912836748484,
       "adj_f1": 0.7231638418079096,
       "np2": 0.6038861406056477,
-      "area_cv": 0.910103491956177
+      "area_cv": 0.9101034919561773
     },
     {
       "candidate": "force_2",
       "objective": 0.7665508208068129,
       "adj_f1": 0.7007092198581559,
       "np2": 0.5827704730027342,
-      "area_cv": 0.9129267324117686
+      "area_cv": 0.9129267324117685
     },
     {
       "candidate": "force_3",
       "objective": 0.7884346225651265,
       "adj_f1": 0.7193229901269392,
       "np2": 0.598628793135614,
-      "area_cv": 0.9120697280739618
+      "area_cv": 0.9120697280739619
     },
     {
       "candidate": "force_4",
       "objective": 0.7913119533107731,
       "adj_f1": 0.7213578500707214,
       "np2": 0.6025433849238997,
-      "area_cv": 0.9112157451176438
+      "area_cv": 0.9112157451176439
     }
   ]
 }
