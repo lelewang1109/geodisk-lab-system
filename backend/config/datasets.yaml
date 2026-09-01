@@ -3,7 +3,7 @@ dataset:
   full_name: China Environmental Grid PM2.5 2000
   naming_note: Internal project name; not an official provider dataset title.
   adapter: netcdf_daily_regular_grid
-  raw_dir: ../../data/2000
+  raw_dir: ../../../data/2000
   filename_glob: "*.nc"
   scalar_variable: null  # E0 resolves the real PM2.5 variable; never guessed by the loader.
   expected_year: 2000

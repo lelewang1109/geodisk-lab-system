@@ -82,6 +82,30 @@ class Phase2ExperimentTests(unittest.TestCase):
         self.assertEqual(len(final), 2)
         self.assertEqual(int(final.invalid_polygon_count.sum()), 0)
 
+    def test_final_objective_ablation_matches_frozen_full_result(self):
+        ablation = pd.read_csv(ROOT / "results/tables/Table_final_objective_ablation.csv")
+        self.assertEqual(ablation.variant.nunique(), 6)
+        full = ablation[ablation.variant == "Full objective"]
+        frozen = pd.read_csv(ROOT / "results/tables/Table_final_power_refinement.csv")
+        frozen = frozen[frozen.dataset.isin(full.region)].rename(columns={"dataset": "region"})
+        merged = full.merge(frozen, on=["region", "view"], suffixes=("_ablation", "_frozen"))
+        self.assertEqual(len(merged), len(full))
+        self.assertTrue((merged.adj_f1_ablation - merged.adj_f1_frozen).abs().max() < 1e-12)
+
+    def test_seed_stability_declared_repetitions(self):
+        table = pd.read_csv(ROOT / "results/tables/Table_seed_stability.csv")
+        self.assertGreaterEqual(table.seed.nunique(), 5)
+        self.assertEqual(table.region.nunique(), 8)
+        self.assertEqual(int(table.invalid_polygon_count.sum()), 0)
+
+    def test_advanced_statistics_and_failure_cases(self):
+        inference = pd.read_csv(ROOT / "results/tables/Table_advanced_paired_statistics.csv")
+        self.assertEqual(set(inference.analysis), {"shared_boundary_weighted", "boundary_interior"})
+        self.assertTrue(inference.paired_sign_flip_p_holm.between(0, 1).all())
+        failures = pd.read_csv(ROOT / "results/tables/Table_local_failure_cases.csv")
+        self.assertTrue({"GeoDisk-Final", "GeoAnnulus-Final"}.issubset(set(failures.method)))
+        self.assertTrue(failures.failure_rank.between(1, 10).all())
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -1,6 +1,8 @@
 {
-  "timing_scope": "single-process wall-clock seconds; one run per predeclared dataset size",
-  "warning": "Use as an order-of-magnitude scalability report, not a confidence interval.",
+  "timing_scope": "single-process wall-clock seconds after a per-dataset warm-up",
+  "warmup_repetitions": 1,
+  "measured_repetitions": 10,
+  "summary": "median, IQR, mean and sample standard deviation",
   "platform": "macOS-26.6.2-arm64-arm-64bit",
   "processor": "arm",
   "python": "3.9.24",

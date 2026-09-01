@@ -1,0 +1,17 @@
+{
+  "regions": [
+    "湖北",
+    "广东"
+  ],
+  "seed": 20260827,
+  "policy": "leave one final-Power objective term at zero; all schedules and budgets remain fixed",
+  "variants": {
+    "Full objective": null,
+    "No NP@2": "neighborhood",
+    "No local direction": "local_direction",
+    "No angular": "angular",
+    "No radial": "radial",
+    "No area CV": "area_cv"
+  },
+  "guardrail": "objectives differ across variants; compare external metric columns, not raw objective values"
+}

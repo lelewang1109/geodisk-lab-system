@@ -71,3 +71,10 @@ Adding another variable on the CEG grid is reserved for temporal/change evaluati
 - WP3: complete for node, boundary/interior, shared-boundary-weighted, bootstrap and contact-tolerance metrics. Rotation-aligned LDE remains an optional secondary metric; the primary LDE definition is unchanged to preserve comparability.
 - WP4: complete for deterministic multi-start and final-Power polygon-force refinement. Block moves were not retained because final-polygon forces provide the accepted local refinement mechanism.
 - WP5: algorithmic, temporal and user-study-material generation are complete. Human participant collection is intentionally not complete and is the only prerequisite for perceptual-efficiency claims.
+
+## Formal hardening update
+
+- Final-method tolerance, cross-domain node errors, objective-term ablation, five-seed stability, repeated runtime, advanced paired inference and failure-case retention are implemented in E14/E17/E23/E25–E29.
+- CEG file identity is frozen with 366 SHA-256 values, but official source URL, license/permission and citation remain unresolved publication blockers.
+- Human participant collection remains incomplete and blocks all perceptual-efficiency claims.
+- A clean end-to-end pipeline manifest and at least one independently published baseline remain required before submission.

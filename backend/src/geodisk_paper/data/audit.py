@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from datetime import datetime
+import hashlib
 from pathlib import Path
 import re
 
@@ -10,6 +11,14 @@ import xarray as xr
 
 from .adapters import DailyNetCDFAdapter
 from geodisk_paper.utils.io import write_csv, write_json
+
+
+def _sha256(path: Path, chunk_size: int = 1024 * 1024) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as stream:
+        for chunk in iter(lambda: stream.read(chunk_size), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
 
 
 def _date_from_file(path: Path, ds: xr.Dataset) -> str:
@@ -48,6 +57,7 @@ def audit_dataset(adapter: DailyNetCDFAdapter, output_dir: str | Path, dataset_m
                 raise ValueError(f"{schema.scalar!r} is absent from {path.name}")
             manifests.append({
                 "file": path.name, "date": date, "bytes": path.stat().st_size,
+                "sha256": _sha256(path),
                 "latitude_count": len(lat), "longitude_count": len(lon),
                 "same_grid_as_first": same_grid, "scalar_variable": schema.scalar,
             })
@@ -100,6 +110,10 @@ def audit_dataset(adapter: DailyNetCDFAdapter, output_dir: str | Path, dataset_m
         },
         "resolution_degrees": {"latitude": float(np.median(np.diff(lat0))), "longitude": float(np.median(np.diff(lon0)))},
         "all_files_same_grid": bool(manifest.same_grid_as_first.all()),
+        "file_hash_algorithm": "sha256",
+        "dataset_manifest_sha256": hashlib.sha256("\n".join(
+            f"{row.file}\t{row.date}\t{row.bytes}\t{row.sha256}" for row in manifest.itertuples()
+        ).encode("utf-8")).hexdigest(),
         "pm25_units": str(variable_summary.loc[variable_summary.variable == schema.scalar, "units"].iloc[0]),
     }
     write_json(summary, output_dir / "dataset_summary.json")
@@ -108,4 +122,3 @@ def audit_dataset(adapter: DailyNetCDFAdapter, output_dir: str | Path, dataset_m
     write_csv(missing_summary, output_dir / "missing_value_summary.csv")
     write_csv(missing_daily, output_dir / "missing_value_daily.csv")
     return summary
-

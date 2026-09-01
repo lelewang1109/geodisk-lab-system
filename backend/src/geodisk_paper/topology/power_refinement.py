@@ -48,12 +48,12 @@ def _project(points: np.ndarray, view: str, inner: float, outer: float) -> np.nd
 
 def _score_candidate(
     reference: RegionReference, ids: list[str], points: np.ndarray, view: str, inner: float, outer: float,
-    power_iterations: int, objective_weights: dict[str, float], label: str,
+    power_iterations: int, objective_weights: dict[str, float], label: str, contact_tolerance: float,
 ) -> Candidate:
     domain = circular_domain(view, inner, outer)
     points = _project(points, view, inner, outer)
     cells, weights, _ = balanced_power_cells(points, domain, iterations=power_iterations, balance=True)
-    edges = display_adjacency(ids, cells)
+    edges = display_adjacency(ids, cells, tolerance=contact_tolerance)
     source = {str(row.cell_id): (float(row.longitude), float(row.latitude)) for row in reference.cells.itertuples()}
     target = {cell_id: (float(cell.centroid.x), float(cell.centroid.y)) for cell_id, cell in zip(ids, cells)}
     theta = {str(row.cell_id): float(row.theta) for row in reference.cells.itertuples()}
@@ -72,9 +72,10 @@ def _score_candidate(
     return Candidate(label, points, cells, weights, float(score), metrics, float(validity["area_cv"]))
 
 
-def _topology_forces(candidate: Candidate, reference: RegionReference, ids: list[str]) -> np.ndarray:
+def _topology_forces(candidate: Candidate, reference: RegionReference, ids: list[str],
+                     contact_tolerance: float) -> np.ndarray:
     index = {cell_id: position for position, cell_id in enumerate(ids)}
-    display = display_adjacency(ids, candidate.cells)
+    display = display_adjacency(ids, candidate.cells, tolerance=contact_tolerance)
     lost = reference.edges - display
     new = display - reference.edges
     points = candidate.points
@@ -109,6 +110,7 @@ def refine_final_power_adjacency(
     reference: RegionReference, embedding: TopologyEmbedding, view: str, *, inner: float = .48,
     outer: float = 1.0, power_iterations: int = 4, force_iterations: int = 5,
     objective_weights: dict[str, float] | None = None,
+    candidate_schedule: list[str] | None = None, contact_tolerance: float = 2e-5,
 ) -> GeometryResult:
     """Multi-start refinement scored only on the final balanced Power cells.
 
@@ -121,26 +123,34 @@ def refine_final_power_adjacency(
     topology = topology_seed_positions(embedding, reference, view, inner, outer)
     harmonic = harmonic_seed_positions(reference, view, inner, outer)
     geographic = _geographic_positions(reference, view, inner, outer)
-    starts = [
-        ("topology", topology),
-        ("harmonic", harmonic),
-        ("geographic", geographic),
-        ("topology_harmonic_50", .5 * topology + .5 * harmonic),
-        ("topology_geographic_50", .5 * topology + .5 * geographic),
-    ]
+    candidates = {
+        "topology": topology,
+        "harmonic": harmonic,
+        "geographic": geographic,
+        "topology_harmonic_50": .5 * topology + .5 * harmonic,
+        "topology_geographic_50": .5 * topology + .5 * geographic,
+    }
+    schedule = candidate_schedule or list(candidates)
+    unknown = [label for label in schedule if label not in candidates]
+    if unknown:
+        raise ValueError(f"Unknown final-Power candidate labels: {unknown}")
+    if "topology" not in schedule:
+        raise ValueError("candidate_schedule must include the topology start")
+    starts = [(label, candidates[label]) for label in schedule]
     evaluated = [
-        _score_candidate(reference, ids, points, view, inner, outer, power_iterations, objective_weights, label)
+        _score_candidate(reference, ids, points, view, inner, outer, power_iterations, objective_weights,
+                         label, contact_tolerance)
         for label, points in starts
     ]
     best = max(evaluated, key=lambda candidate: candidate.score)
-    initial = evaluated[0]
+    initial = next(candidate for candidate in evaluated if candidate.label == "topology")
     anchor = best.points.copy()
     for iteration in range(force_iterations):
         step = .035 * (1.0 - .72 * iteration / max(force_iterations - 1, 1))
-        forces = _topology_forces(best, reference, ids)
+        forces = _topology_forces(best, reference, ids, contact_tolerance)
         trial_points = best.points + step * forces + .06 * (anchor - best.points)
         trial = _score_candidate(reference, ids, trial_points, view, inner, outer, power_iterations,
-                                 objective_weights, f"force_{iteration + 1}")
+                                 objective_weights, f"force_{iteration + 1}", contact_tolerance)
         evaluated.append(trial)
         if trial.score > best.score + 1e-10:
             best = trial
@@ -149,6 +159,10 @@ def refine_final_power_adjacency(
     method = "GeoDisk-Final" if view == "disk" else "GeoAnnulus-Final"
     return GeometryResult(method, view, ids, best.cells, circular_domain(view, inner, outer), {
         "optimization_target": "final_balanced_power_polygon_adjacency",
+        "contact_tolerance": contact_tolerance,
+        "objective_weights": dict(objective_weights),
+        "power_iterations": power_iterations,
+        "force_iterations": force_iterations,
         "candidate_schedule": [candidate.label for candidate in evaluated],
         "selected_candidate": best.label,
         "initial_final_power_objective": initial.score,

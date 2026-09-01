@@ -100,7 +100,7 @@ Single-process wall-clock measurements on the recorded local environment show:
 - 162 cells: 18.27 s.
 - 401 cells: 61.60 s, plus 42.54 s for the slot embedding.
 
-The final refinement is roughly 10–17 times slower than one original Power-partition generation in these cases. These are single-run engineering measurements, not runtime confidence intervals.
+The final refinement is roughly 9.7–18.1 times slower than one original Power-partition generation in these cases. Each dataset is warmed up once and measured ten times; the formal table reports median, IQR, mean and sample standard deviation. Peak process memory remains unmeasured.
 
 ## 9. User study readiness
 

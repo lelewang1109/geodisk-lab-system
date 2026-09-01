@@ -18,12 +18,13 @@ def _run_dataset(dataset: str, reference_root: Path, output_root: Path, family: 
     reference = load_region_reference(reference_root, dataset)
     revision = config["method_revision"]
     refinement = config["final_power_refinement"]
+    embedding_group = "ceg" if family == "ceg" else "other"
     layer_count = int(revision["layer_count"] if family != "synthetic" else config["synthetic"]["layer_count"])
     embedding = build_topology_embedding(
         reference, layer_count=layer_count,
-        optimize_passes=5 if family == "ceg" else 3,
+        optimize_passes=int(refinement["embedding_optimize_passes"][embedding_group]),
         seed=seed, weights=dict(revision["topology_weights"]), radial_constraint=True,
-        search_mode="expanded_cross", candidate_budget=250 if family == "ceg" else 120,
+        search_mode="expanded_cross", candidate_budget=int(refinement["embedding_candidate_budget"][embedding_group]),
     )
     large = len(reference.cells) >= int(refinement["large_dataset_cell_threshold"])
     power_iterations = int(refinement["power_iterations_large"] if large else refinement["power_iterations_small"])
@@ -34,6 +35,8 @@ def _run_dataset(dataset: str, reference_root: Path, output_root: Path, family: 
             reference, embedding, view, inner=inner, outer=outer,
             power_iterations=power_iterations, force_iterations=force_iterations,
             objective_weights=dict(refinement["objective_weights"]),
+            candidate_schedule=list(refinement["candidate_schedule"]),
+            contact_tolerance=float(refinement["contact_tolerance"]),
         )
         path = output_root / dataset / f"final_refined_{view}.geojson"
         save_geometry(result, path)
@@ -81,6 +84,10 @@ def main() -> None:
         "candidate_policy": ["topology", "harmonic", "geographic", "two fixed 50/50 blends", "deterministic topology force iterations"],
         "selection_policy": "same deterministic multi-start schedule for every dataset; no dataset-specific hand tuning",
         "objective_weights": dict(config["final_power_refinement"]["objective_weights"]),
+        "contact_tolerance": float(config["final_power_refinement"]["contact_tolerance"]),
+        "embedding_optimize_passes": dict(config["final_power_refinement"]["embedding_optimize_passes"]),
+        "embedding_candidate_budget": dict(config["final_power_refinement"]["embedding_candidate_budget"]),
+        "seed": seed,
     }, ROOT / "results/spatial_refined/refinement_manifest.json")
     print(summary.to_string(index=False))
 

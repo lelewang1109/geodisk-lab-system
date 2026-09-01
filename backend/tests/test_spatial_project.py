@@ -89,7 +89,8 @@ class SpatialProjectTests(unittest.TestCase):
 
     def test_proposed_contact_tolerance_stability(self):
         frame = pd.read_csv(ROOT / "results/tables/Table_contact_tolerance_sensitivity.csv")
-        proposed = frame[frame.method.isin(["GeoDisk", "GeoAnnulus"])]
+        proposed = frame[frame.method.isin(["GeoDisk", "GeoAnnulus", "GeoDisk-Final", "GeoAnnulus-Final"])]
+        self.assertIn("GeoDisk-Final", set(proposed.method))
         spread = proposed.groupby(["dataset", "method", "view"]).adj_f1.agg(lambda values: values.max() - values.min())
         self.assertTrue((spread < .01).all())
 
