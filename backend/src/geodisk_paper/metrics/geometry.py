@@ -18,7 +18,7 @@ def display_adjacency(cell_ids: list[str], geometries: list, tolerance: float = 
         if geom is None or geom.is_empty or geom.boundary is None:
             continue
         query = tree.query(geom.buffer(tolerance))
-        for right in np.asarray(query, dtype=int):
+        for right in np.sort(np.asarray(query, dtype=int)):
             if int(right) <= left:
                 continue
             other = geometries[int(right)]
@@ -51,7 +51,7 @@ def shared_boundary_lengths(
     for left, geom in enumerate(safe_geometries):
         if geom is None or geom.is_empty or geom.boundary is None:
             continue
-        for right in np.asarray(tree.query(geom.buffer(tolerance)), dtype=int):
+        for right in np.sort(np.asarray(tree.query(geom.buffer(tolerance)), dtype=int)):
             right = int(right)
             if right <= left:
                 continue

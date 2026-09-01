@@ -25,14 +25,14 @@
   ],
   "selected_candidate": "force_2",
   "initial_final_power_objective": 0.6023428625501198,
-  "optimized_final_power_objective": 0.7614597033252215,
+  "optimized_final_power_objective": 0.7614597387048901,
   "initial_final_power_adj_f1": 0.577623590633131,
   "optimized_final_power_adj_f1": 0.7077435470441299,
   "optimized_final_power_np2": 0.5909624316857846,
-  "area_cv": 1.310838834121419,
+  "area_cv": 1.3108388341214188,
   "weight_range": [
     -0.02581423356610562,
-    0.0028892162842142893
+    0.0028892162842142897
   ],
   "candidate_history": [
     {
@@ -72,17 +72,17 @@
     },
     {
       "candidate": "force_1",
-      "objective": 0.7459218674020824,
+      "objective": 0.7459219976937841,
       "adj_f1": 0.695,
       "np2": 0.5793827699926777,
       "area_cv": 1.318600251453386
     },
     {
       "candidate": "force_2",
-      "objective": 0.7614597033252215,
+      "objective": 0.7614597387048901,
       "adj_f1": 0.7077435470441299,
       "np2": 0.5909624316857846,
-      "area_cv": 1.310838834121419
+      "area_cv": 1.3108388341214188
     }
   ]
 }

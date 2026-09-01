@@ -72,7 +72,7 @@ def grid_edges(cells: pd.DataFrame) -> set[tuple[str, str]]:
 
 def k_hop_neighborhoods(cell_ids: list[str], edges: set[tuple[str, str]], maximum: int = 3) -> dict[str, dict[str, list[str]]]:
     graph = {cell_id: set() for cell_id in cell_ids}
-    for left, right in edges:
+    for left, right in sorted(edges):
         graph[left].add(right)
         graph[right].add(left)
     output: dict[str, dict[str, list[str]]] = {}
@@ -83,7 +83,7 @@ def k_hop_neighborhoods(cell_ids: list[str], edges: set[tuple[str, str]], maximu
             current = queue.popleft()
             if distance[current] == maximum:
                 continue
-            for nxt in graph[current]:
+            for nxt in sorted(graph[current]):
                 if nxt not in distance:
                     distance[nxt] = distance[current] + 1
                     queue.append(nxt)

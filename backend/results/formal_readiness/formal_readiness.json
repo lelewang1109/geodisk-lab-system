@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-09-01T07:59:12.925492+00:00",
-  "open_count": 3,
+  "generated_at_utc": "2026-09-01T08:42:26.464817+00:00",
+  "open_count": 4,
   "checks": [
     {
       "check_id": "primary_data_provenance",
@@ -66,6 +66,15 @@
       "required_action": "none"
     },
     {
+      "check_id": "runtime_peak_memory",
+      "area": "efficiency",
+      "severity": "minor",
+      "status": "pass",
+      "claim_scope": "algorithmic",
+      "evidence": "suite-process high-water RSS recorded",
+      "required_action": "none"
+    },
+    {
       "check_id": "advanced_paired_inference",
       "area": "statistics",
       "severity": "major",
@@ -98,7 +107,7 @@
       "severity": "major",
       "status": "pass",
       "claim_scope": "algorithmic",
-      "evidence": "successful clean manifests=1; total manifests=1",
+      "evidence": "successful clean manifests=1; total manifests=2",
       "required_action": "none"
     },
     {
@@ -109,6 +118,24 @@
       "claim_scope": "algorithmic",
       "evidence": "Current baselines are project-local implementations.",
       "required_action": "Add or justify at least one independently published topology-preserving/cartogram baseline and verify parameter parity."
+    },
+    {
+      "check_id": "confirmatory_holdout_dataset",
+      "area": "study_design",
+      "severity": "major",
+      "status": "open",
+      "claim_scope": "algorithmic",
+      "evidence": "The eight CEG regions were available during method development.",
+      "required_action": "Freeze an untouched year or region before tuning, then run the declared primary comparison once."
+    },
+    {
+      "check_id": "machine_readable_analysis_plan",
+      "area": "study_design",
+      "severity": "major",
+      "status": "pass",
+      "claim_scope": "algorithmic",
+      "evidence": "post-hoc plan frozen for future reruns",
+      "required_action": "none"
     },
     {
       "check_id": "backend_environment_lock",

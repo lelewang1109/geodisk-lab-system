@@ -5,11 +5,14 @@ from datetime import datetime, timezone
 import hashlib
 from importlib.metadata import PackageNotFoundError, version
 import json
+import os
 from pathlib import Path
 import platform
 import subprocess
 import sys
 import time
+
+import yaml
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -107,11 +110,15 @@ def main() -> None:
     log_dir = ROOT / "results/run_logs" / timestamp
     log_dir.mkdir(parents=True, exist_ok=True)
     config_files = sorted((ROOT / "config").glob("*.yaml"))
+    experiment_settings = yaml.safe_load((ROOT / "config/experiment.yaml").read_text(encoding="utf-8"))
+    stage_environment = os.environ.copy()
+    stage_environment["PYTHONHASHSEED"] = str(int(experiment_settings["seed"]))
     payload = {
         "run_id": timestamp, "status": "running", "started_at_utc": datetime.now(timezone.utc).isoformat(),
         "git_commit": _git("rev-parse", "HEAD"), "git_dirty_at_start": dirty,
         "config_sha256": {str(path.relative_to(ROOT)): _sha256(path) for path in config_files},
-        "environment": _environment(), "options": vars(args), "stages": [],
+        "environment": {**_environment(), "python_hash_seed": stage_environment["PYTHONHASHSEED"]},
+        "options": vars(args), "stages": [],
     }
     _write_manifest(manifest_path, payload)
     try:
@@ -137,6 +144,7 @@ def main() -> None:
                     encoding="utf-8",
                     errors="replace",
                     bufsize=1,
+                    env=stage_environment,
                 )
                 assert process.stdout is not None
                 for line in process.stdout:

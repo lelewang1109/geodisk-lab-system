@@ -1,24 +1,24 @@
 ﻿analysis,view,node_group,metric,refined_method,comparator,region_count,mean_difference,ci95_low,ci95_high,paired_sign_flip_p,refined_better_count,paired_sign_flip_p_holm,holm_family_size
-shared_boundary_weighted,disk,all_edges,weighted_adj_f1,GeoDisk-Final,GeoDisk,8,0.16441412274531159,0.1355844297955256,0.1908756028049208,0.0078125,8,0.0390625,5
-shared_boundary_weighted,disk,all_edges,weighted_adj_f1,GeoDisk-Final,Direct Polar,8,-0.10963128160629682,-0.13964173520580303,-0.08163114774585231,0.0078125,0,0.0390625,5
-shared_boundary_weighted,disk,all_edges,weighted_adj_f1,GeoDisk-Final,Harmonic,8,0.05395016102313059,0.013208565517854765,0.11036869662360935,0.03125,6,0.0390625,5
-shared_boundary_weighted,disk,all_edges,weighted_adj_f1,GeoDisk-Final,Area-balanced,8,0.07167468021914841,0.06272353310362966,0.08141783222598022,0.0078125,8,0.0390625,5
-shared_boundary_weighted,disk,all_edges,weighted_adj_f1,GeoDisk-Final,Regular Topology,8,0.2077184209970161,0.18533475907926367,0.22717424780572484,0.0078125,8,0.0390625,5
-shared_boundary_weighted,annulus,all_edges,weighted_adj_f1,GeoAnnulus-Final,GeoAnnulus,8,0.13450927430561632,0.12189468549622651,0.14800225206721943,0.0078125,8,0.0390625,5
-shared_boundary_weighted,annulus,all_edges,weighted_adj_f1,GeoAnnulus-Final,Direct Polar,8,-0.18955081107672933,-0.21958341233088963,-0.16244591402334746,0.0078125,0,0.0390625,5
-shared_boundary_weighted,annulus,all_edges,weighted_adj_f1,GeoAnnulus-Final,Harmonic,8,0.04985247189416123,0.02007236245664809,0.08283560418274945,0.0078125,8,0.0390625,5
-shared_boundary_weighted,annulus,all_edges,weighted_adj_f1,GeoAnnulus-Final,Area-balanced,8,0.11019170043428766,0.09863055859341154,0.12283553348334367,0.0078125,8,0.0390625,5
-shared_boundary_weighted,annulus,all_edges,weighted_adj_f1,GeoAnnulus-Final,Regular Topology,8,0.15451793524230734,0.1261717050268482,0.1852930855458274,0.0078125,8,0.0390625,5
-shared_boundary_weighted,disk,all_edges,weighted_edge_overlap,GeoDisk-Final,GeoDisk,8,0.04897426340485893,0.026516975765702996,0.06971427549905757,0.015625,7,0.046875,5
-shared_boundary_weighted,disk,all_edges,weighted_edge_overlap,GeoDisk-Final,Direct Polar,8,-0.07668131489583789,-0.1029873663266164,-0.05337521099735364,0.0078125,0,0.0390625,5
-shared_boundary_weighted,disk,all_edges,weighted_edge_overlap,GeoDisk-Final,Harmonic,8,0.004962980014159155,-0.001982831577378425,0.0119153329736634,0.21875,6,0.21875,5
-shared_boundary_weighted,disk,all_edges,weighted_edge_overlap,GeoDisk-Final,Area-balanced,8,0.02477406694174747,0.012984576430167677,0.03658295448712237,0.0078125,8,0.0390625,5
-shared_boundary_weighted,disk,all_edges,weighted_edge_overlap,GeoDisk-Final,Regular Topology,8,0.0506547640878425,0.022996596675636666,0.0791695707400853,0.015625,7,0.046875,5
-shared_boundary_weighted,annulus,all_edges,weighted_edge_overlap,GeoAnnulus-Final,GeoAnnulus,8,0.041799896383505036,0.019246471344739013,0.0619249898942619,0.03125,6,0.09375,5
-shared_boundary_weighted,annulus,all_edges,weighted_edge_overlap,GeoAnnulus-Final,Direct Polar,8,-0.08767023308216215,-0.10233768610286721,-0.07505542390261198,0.0078125,0,0.0390625,5
-shared_boundary_weighted,annulus,all_edges,weighted_edge_overlap,GeoAnnulus-Final,Harmonic,8,0.007545186926810235,-0.003715573292617392,0.019328594297731167,0.2578125,5,0.359375,5
-shared_boundary_weighted,annulus,all_edges,weighted_edge_overlap,GeoAnnulus-Final,Area-balanced,8,0.02794780116168159,0.018809205858467317,0.0374301538782109,0.0078125,8,0.0390625,5
-shared_boundary_weighted,annulus,all_edges,weighted_edge_overlap,GeoAnnulus-Final,Regular Topology,8,0.029559391657566308,-0.009874705125169699,0.059186185215848605,0.1796875,7,0.359375,5
+shared_boundary_weighted,disk,all_edges,weighted_adj_f1,GeoDisk-Final,GeoDisk,8,0.16393359473686653,0.1347418381014314,0.19096029971345785,0.0078125,8,0.0390625,5
+shared_boundary_weighted,disk,all_edges,weighted_adj_f1,GeoDisk-Final,Direct Polar,8,-0.11011180961474175,-0.14112032294653032,-0.08170734303282177,0.0078125,0,0.0390625,5
+shared_boundary_weighted,disk,all_edges,weighted_adj_f1,GeoDisk-Final,Harmonic,8,0.05343589645305655,0.012831265659687719,0.10892937147678136,0.03125,6,0.0390625,5
+shared_boundary_weighted,disk,all_edges,weighted_adj_f1,GeoDisk-Final,Area-balanced,8,0.07119415221070349,0.062479636877878914,0.08087722605413458,0.0078125,8,0.0390625,5
+shared_boundary_weighted,disk,all_edges,weighted_adj_f1,GeoDisk-Final,Regular Topology,8,0.2072378929885711,0.18396807582107247,0.2273281082426566,0.0078125,8,0.0390625,5
+shared_boundary_weighted,annulus,all_edges,weighted_adj_f1,GeoAnnulus-Final,GeoAnnulus,8,0.13479375658515,0.12257339216425439,0.14776131570623302,0.0078125,8,0.0390625,5
+shared_boundary_weighted,annulus,all_edges,weighted_adj_f1,GeoAnnulus-Final,Direct Polar,8,-0.18926632879719563,-0.2194265839906609,-0.16242634385933066,0.0078125,0,0.0390625,5
+shared_boundary_weighted,annulus,all_edges,weighted_adj_f1,GeoAnnulus-Final,Harmonic,8,0.05050141682196829,0.02170429253076578,0.08214120914192109,0.0078125,8,0.0390625,5
+shared_boundary_weighted,annulus,all_edges,weighted_adj_f1,GeoAnnulus-Final,Area-balanced,8,0.11047618271382119,0.09902675318796798,0.12393885240187084,0.0078125,8,0.0390625,5
+shared_boundary_weighted,annulus,all_edges,weighted_adj_f1,GeoAnnulus-Final,Regular Topology,8,0.15480241752184093,0.12717887409406187,0.18521596035310203,0.0078125,8,0.0390625,5
+shared_boundary_weighted,disk,all_edges,weighted_edge_overlap,GeoDisk-Final,GeoDisk,8,0.049695584830443965,0.026431105675292343,0.07164747385725737,0.015625,7,0.0625,5
+shared_boundary_weighted,disk,all_edges,weighted_edge_overlap,GeoDisk-Final,Direct Polar,8,-0.0759599934702529,-0.10257060824008557,-0.05238414638284804,0.0078125,0,0.0390625,5
+shared_boundary_weighted,disk,all_edges,weighted_edge_overlap,GeoDisk-Final,Harmonic,8,0.005716110057922469,-0.0015301797056453436,0.013093784859135746,0.1953125,5,0.1953125,5
+shared_boundary_weighted,disk,all_edges,weighted_edge_overlap,GeoDisk-Final,Area-balanced,8,0.02549538836733251,0.012489945877404738,0.03871331944241865,0.015625,7,0.0625,5
+shared_boundary_weighted,disk,all_edges,weighted_edge_overlap,GeoDisk-Final,Regular Topology,8,0.05137608551342754,0.023701913135442853,0.08112155419971759,0.015625,7,0.0625,5
+shared_boundary_weighted,annulus,all_edges,weighted_edge_overlap,GeoAnnulus-Final,GeoAnnulus,8,0.046088892051369984,0.02924302654018039,0.06090634373022752,0.0078125,8,0.0390625,5
+shared_boundary_weighted,annulus,all_edges,weighted_edge_overlap,GeoAnnulus-Final,Direct Polar,8,-0.08338123741429716,-0.09780628809454014,-0.06800825930025786,0.0078125,0,0.0390625,5
+shared_boundary_weighted,annulus,all_edges,weighted_edge_overlap,GeoAnnulus-Final,Harmonic,8,0.013259700534238653,0.005706805011228083,0.020116581962985228,0.03125,6,0.0625,5
+shared_boundary_weighted,annulus,all_edges,weighted_edge_overlap,GeoAnnulus-Final,Area-balanced,8,0.03223679682954661,0.023475157278411266,0.041689508428239236,0.0078125,8,0.0390625,5
+shared_boundary_weighted,annulus,all_edges,weighted_edge_overlap,GeoAnnulus-Final,Regular Topology,8,0.03384838732543136,-0.0002144540308213129,0.05960935771222053,0.09375,7,0.09375,5
 boundary_interior,disk,boundary,node_adj_f1,GeoDisk-Final,GeoDisk,8,0.08731720841435887,0.06576529029833261,0.1065595779129634,0.0078125,8,0.0390625,5
 boundary_interior,disk,boundary,node_adj_f1,GeoDisk-Final,Direct Polar,8,-0.11332618444332734,-0.13708435532556695,-0.08975414237553489,0.0078125,0,0.0390625,5
 boundary_interior,disk,boundary,node_adj_f1,GeoDisk-Final,Harmonic,8,0.0754874394662724,0.02818891750527909,0.1426841904015816,0.015625,7,0.0390625,5
@@ -49,16 +49,16 @@ boundary_interior,annulus,boundary,degree_absolute_error,GeoAnnulus-Final,Direct
 boundary_interior,annulus,boundary,degree_absolute_error,GeoAnnulus-Final,Harmonic,8,0.2933806865160023,0.11005256738952399,0.5434357544107973,0.015625,1,0.046875,5
 boundary_interior,annulus,boundary,degree_absolute_error,GeoAnnulus-Final,Area-balanced,8,-0.08252470136416526,-0.19079042546013927,0.0428615479494297,0.2265625,6,0.3125,5
 boundary_interior,annulus,boundary,degree_absolute_error,GeoAnnulus-Final,Regular Topology,8,-0.6681484987968993,-0.8572095535006035,-0.47016145865545167,0.0078125,8,0.0390625,5
-boundary_interior,disk,boundary,node_direction_error_deg,GeoDisk-Final,GeoDisk,8,-5.69470793250988,-7.073070928669351,-4.1943269975794975,0.0078125,8,0.0390625,5
-boundary_interior,disk,boundary,node_direction_error_deg,GeoDisk-Final,Direct Polar,8,1.7044108347972327,0.4894224239328992,2.90827708895746,0.046875,2,0.09375,5
-boundary_interior,disk,boundary,node_direction_error_deg,GeoDisk-Final,Harmonic,8,-5.840806241712416,-9.521393415088177,-2.975785307755771,0.015625,7,0.046875,5
-boundary_interior,disk,boundary,node_direction_error_deg,GeoDisk-Final,Area-balanced,8,-0.48429645492556395,-2.0894159039989466,1.213830560501573,0.59375,4,0.59375,5
-boundary_interior,disk,boundary,node_direction_error_deg,GeoDisk-Final,Regular Topology,8,-14.292093100086433,-16.40862960495842,-12.269356887414192,0.0078125,8,0.0390625,5
-boundary_interior,annulus,boundary,node_direction_error_deg,GeoAnnulus-Final,GeoAnnulus,8,-1.3749354353781673,-3.704671030927996,0.5560178487396499,0.3125,5,0.625,5
-boundary_interior,annulus,boundary,node_direction_error_deg,GeoAnnulus-Final,Direct Polar,8,0.9780965281750895,-0.4615963461036381,2.2800845521977666,0.203125,3,0.609375,5
-boundary_interior,annulus,boundary,node_direction_error_deg,GeoAnnulus-Final,Harmonic,8,-3.286721044069028,-6.37875719324892,-0.8833634032235842,0.0234375,7,0.09375,5
-boundary_interior,annulus,boundary,node_direction_error_deg,GeoAnnulus-Final,Area-balanced,8,0.3337962259105922,-1.804487870704835,2.050952707966738,0.765625,2,0.765625,5
-boundary_interior,annulus,boundary,node_direction_error_deg,GeoAnnulus-Final,Regular Topology,8,-12.075642167621558,-15.873132413845447,-8.719590198477848,0.0078125,8,0.0390625,5
+boundary_interior,disk,boundary,node_direction_error_deg,GeoDisk-Final,GeoDisk,8,-5.694707932509876,-7.07307092866934,-4.194326997579495,0.0078125,8,0.0390625,5
+boundary_interior,disk,boundary,node_direction_error_deg,GeoDisk-Final,Direct Polar,8,1.7044108347972375,0.48942242393290186,2.908277088957472,0.046875,2,0.09375,5
+boundary_interior,disk,boundary,node_direction_error_deg,GeoDisk-Final,Harmonic,8,-5.8408062417124125,-9.521393415088175,-2.9757853077557668,0.015625,7,0.046875,5
+boundary_interior,disk,boundary,node_direction_error_deg,GeoDisk-Final,Area-balanced,8,-0.48429645492555906,-2.0894159039989475,1.213830560501577,0.59375,4,0.59375,5
+boundary_interior,disk,boundary,node_direction_error_deg,GeoDisk-Final,Regular Topology,8,-14.292093100086426,-16.408629604958417,-12.269356887414178,0.0078125,8,0.0390625,5
+boundary_interior,annulus,boundary,node_direction_error_deg,GeoAnnulus-Final,GeoAnnulus,8,-1.3749354353781635,-3.704671030927992,0.556017848739657,0.3125,5,0.625,5
+boundary_interior,annulus,boundary,node_direction_error_deg,GeoAnnulus-Final,Direct Polar,8,0.9780965281750933,-0.46159634610362943,2.280084552197765,0.203125,3,0.609375,5
+boundary_interior,annulus,boundary,node_direction_error_deg,GeoAnnulus-Final,Harmonic,8,-3.286721044069023,-6.378757193248913,-0.8833634032235806,0.0234375,7,0.09375,5
+boundary_interior,annulus,boundary,node_direction_error_deg,GeoAnnulus-Final,Area-balanced,8,0.333796225910596,-1.8044878707048297,2.0509527079667405,0.765625,2,0.765625,5
+boundary_interior,annulus,boundary,node_direction_error_deg,GeoAnnulus-Final,Regular Topology,8,-12.075642167621554,-15.873132413845443,-8.719590198477844,0.0078125,8,0.0390625,5
 boundary_interior,disk,boundary,node_neighbor_order_accuracy,GeoDisk-Final,GeoDisk,8,0.0914795432581681,0.05583455205425009,0.12816623581957368,0.0078125,8,0.0390625,5
 boundary_interior,disk,boundary,node_neighbor_order_accuracy,GeoDisk-Final,Direct Polar,8,0.03401535631152837,0.013417974004009542,0.05393316584526487,0.03125,6,0.09375,5
 boundary_interior,disk,boundary,node_neighbor_order_accuracy,GeoDisk-Final,Harmonic,8,0.030400648446323605,-0.003226256849280148,0.0671253733894393,0.1875,5,0.1875,5
@@ -100,15 +100,15 @@ boundary_interior,annulus,interior,degree_absolute_error,GeoAnnulus-Final,Harmon
 boundary_interior,annulus,interior,degree_absolute_error,GeoAnnulus-Final,Area-balanced,8,0.17734846963865167,0.1285006127243898,0.2338741868131,0.0078125,0,0.0390625,5
 boundary_interior,annulus,interior,degree_absolute_error,GeoAnnulus-Final,Regular Topology,8,0.10614295052517353,0.0022203792584227777,0.2011067042852275,0.09375,1,0.28125,5
 boundary_interior,disk,interior,node_direction_error_deg,GeoDisk-Final,GeoDisk,8,-13.93217106378464,-14.734184795880882,-12.968874223825814,0.0078125,8,0.0390625,5
-boundary_interior,disk,interior,node_direction_error_deg,GeoDisk-Final,Direct Polar,8,-0.10392819025882649,-1.0328631351925373,0.7058662017623709,0.84375,3,1.0,5
-boundary_interior,disk,interior,node_direction_error_deg,GeoDisk-Final,Harmonic,8,-0.16232224667062722,-2.472365715003187,1.570772546080259,0.8984375,3,1.0,5
-boundary_interior,disk,interior,node_direction_error_deg,GeoDisk-Final,Area-balanced,8,-4.126367598763095,-5.097870295715896,-3.177577980654046,0.0078125,8,0.0390625,5
-boundary_interior,disk,interior,node_direction_error_deg,GeoDisk-Final,Regular Topology,8,-20.21733060313612,-21.08116423042199,-19.39740095306726,0.0078125,8,0.0390625,5
-boundary_interior,annulus,interior,node_direction_error_deg,GeoAnnulus-Final,GeoAnnulus,8,-8.461890820411476,-9.123678859997119,-7.633215415571128,0.0078125,8,0.0390625,5
-boundary_interior,annulus,interior,node_direction_error_deg,GeoAnnulus-Final,Direct Polar,8,-0.24502658103035202,-1.0099101170275517,0.5307636827821336,0.5546875,5,0.953125,5
-boundary_interior,annulus,interior,node_direction_error_deg,GeoAnnulus-Final,Harmonic,8,-0.44463611906497524,-1.5183556466153885,0.45467589628401495,0.4765625,4,0.953125,5
-boundary_interior,annulus,interior,node_direction_error_deg,GeoAnnulus-Final,Area-balanced,8,-2.885284611104559,-3.41267582301883,-2.2654623057848173,0.0078125,8,0.0390625,5
-boundary_interior,annulus,interior,node_direction_error_deg,GeoAnnulus-Final,Regular Topology,8,-13.276077489683136,-14.25369935531217,-12.41603080095179,0.0078125,8,0.0390625,5
+boundary_interior,disk,interior,node_direction_error_deg,GeoDisk-Final,Direct Polar,8,-0.10392819025882616,-1.0328631351925344,0.7058662017623705,0.84375,3,1.0,5
+boundary_interior,disk,interior,node_direction_error_deg,GeoDisk-Final,Harmonic,8,-0.1623222466706269,-2.4723657150031877,1.5707725460802588,0.8984375,3,1.0,5
+boundary_interior,disk,interior,node_direction_error_deg,GeoDisk-Final,Area-balanced,8,-4.126367598763095,-5.0978702957158974,-3.177577980654046,0.0078125,8,0.0390625,5
+boundary_interior,disk,interior,node_direction_error_deg,GeoDisk-Final,Regular Topology,8,-20.21733060313612,-21.08116423042199,-19.397400953067265,0.0078125,8,0.0390625,5
+boundary_interior,annulus,interior,node_direction_error_deg,GeoAnnulus-Final,GeoAnnulus,8,-8.461890820411476,-9.123678859997122,-7.633215415571128,0.0078125,8,0.0390625,5
+boundary_interior,annulus,interior,node_direction_error_deg,GeoAnnulus-Final,Direct Polar,8,-0.24502658103035246,-1.0099101170275535,0.5307636827821314,0.5546875,5,0.953125,5
+boundary_interior,annulus,interior,node_direction_error_deg,GeoAnnulus-Final,Harmonic,8,-0.44463611906497436,-1.5183556466153894,0.4546758962840185,0.4765625,4,0.953125,5
+boundary_interior,annulus,interior,node_direction_error_deg,GeoAnnulus-Final,Area-balanced,8,-2.8852846111045594,-3.4126758230188297,-2.2654623057848196,0.0078125,8,0.0390625,5
+boundary_interior,annulus,interior,node_direction_error_deg,GeoAnnulus-Final,Regular Topology,8,-13.276077489683134,-14.25369935531217,-12.416030800951791,0.0078125,8,0.0390625,5
 boundary_interior,disk,interior,node_neighbor_order_accuracy,GeoDisk-Final,GeoDisk,8,0.06625632430174597,0.04492801478757318,0.08342440343568944,0.0078125,8,0.0390625,5
 boundary_interior,disk,interior,node_neighbor_order_accuracy,GeoDisk-Final,Direct Polar,8,-0.00707526086421327,-0.015321647616016239,0.0007151237340207589,0.1796875,2,0.21875,5
 boundary_interior,disk,interior,node_neighbor_order_accuracy,GeoDisk-Final,Harmonic,8,0.016431076349096144,0.004630074479046458,0.03019526598507415,0.0390625,7,0.1171875,5

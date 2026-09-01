@@ -86,14 +86,17 @@ def _topology_forces(candidate: Candidate, reference: RegionReference, ids: list
         distances[i] = np.inf
         nearest.append(float(np.min(distances)))
     scale = max(float(np.median(nearest)), .015)
-    for left, right in lost:
+    # Set iteration follows Python's randomized hash order.  Sorting is
+    # essential here because floating-point force accumulation can otherwise
+    # select a different later candidate under the same declared RNG seed.
+    for left, right in sorted(lost):
         a, b = index[left], index[right]
         vector = points[b] - points[a]
         distance = max(float(np.linalg.norm(vector)), 1e-12)
         unit = vector / distance
         magnitude = min(distance / scale, 2.5)
         forces[a] += magnitude * unit; forces[b] -= magnitude * unit
-    for left, right in new:
+    for left, right in sorted(new):
         a, b = index[left], index[right]
         vector = points[b] - points[a]
         distance = max(float(np.linalg.norm(vector)), 1e-12)

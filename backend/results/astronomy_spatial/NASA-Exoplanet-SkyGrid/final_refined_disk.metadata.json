@@ -27,14 +27,14 @@
   ],
   "selected_candidate": "force_1",
   "initial_final_power_objective": 0.7081658167802435,
-  "optimized_final_power_objective": 0.8382387897401216,
+  "optimized_final_power_objective": 0.8382388033002433,
   "initial_final_power_adj_f1": 0.6666666666666666,
   "optimized_final_power_adj_f1": 0.7638326585695007,
   "optimized_final_power_np2": 0.6420298001431185,
-  "area_cv": 0.9608674678390438,
+  "area_cv": 0.9608674678390434,
   "weight_range": [
     -0.037730283921059676,
-    0.006963310919479332
+    0.006963310919479331
   ],
   "candidate_history": [
     {
@@ -74,10 +74,10 @@
     },
     {
       "candidate": "force_1",
-      "objective": 0.8382387897401216,
+      "objective": 0.8382388033002433,
       "adj_f1": 0.7638326585695007,
       "np2": 0.6420298001431185,
-      "area_cv": 0.9608674678390438
+      "area_cv": 0.9608674678390434
     },
     {
       "candidate": "force_2",
@@ -91,14 +91,14 @@
       "objective": 0.8132745182281068,
       "adj_f1": 0.7402422611036339,
       "np2": 0.6329115652212886,
-      "area_cv": 0.9574151321115607
+      "area_cv": 0.957415132111561
     },
     {
       "candidate": "force_4",
       "objective": 0.8240740739727169,
       "adj_f1": 0.7510094212651414,
       "np2": 0.6338684036192674,
-      "area_cv": 0.9589252741079182
+      "area_cv": 0.9589252741079177
     }
   ]
 }

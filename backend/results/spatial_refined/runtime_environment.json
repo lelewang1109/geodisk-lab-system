@@ -1,5 +1,6 @@
 {
   "timing_scope": "single-process wall-clock seconds after a per-dataset warm-up",
+  "memory_scope": "suite-process cumulative high-water RSS; includes native allocations and is an upper bound rather than an isolated per-method delta",
   "warmup_repetitions": 1,
   "measured_repetitions": 10,
   "summary": "median, IQR, mean and sample standard deviation",

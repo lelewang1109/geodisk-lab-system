@@ -11,11 +11,14 @@
 | ablation | `final_objective_ablation` | major | **pass** | variant_count=6 | none |
 | robustness | `multi_seed_stability` | major | **pass** | seeds=5; regions=8/8 | none |
 | efficiency | `runtime_repetitions` | major | **pass** | minimum repeat_count=10 | none |
+| efficiency | `runtime_peak_memory` | minor | **pass** | suite-process high-water RSS recorded | none |
 | statistics | `advanced_paired_inference` | major | **pass** | advanced paired table exists | none |
 | diagnostics | `failure_case_retention` | minor | **pass** | ranked failure table exists | none |
 | user_study | `human_participant_results` | blocker | **open** | response rows=0 | Collect the preregistered participant study before making perceptual-efficiency claims. |
-| reproducibility | `clean_full_pipeline_manifest` | major | **pass** | successful clean manifests=1; total manifests=1 | none |
+| reproducibility | `clean_full_pipeline_manifest` | major | **pass** | successful clean manifests=1; total manifests=2 | none |
 | baselines | `published_baseline_implementation` | major | **open** | Current baselines are project-local implementations. | Add or justify at least one independently published topology-preserving/cartogram baseline and verify parameter parity. |
+| study_design | `confirmatory_holdout_dataset` | major | **open** | The eight CEG regions were available during method development. | Freeze an untouched year or region before tuning, then run the declared primary comparison once. |
+| study_design | `machine_readable_analysis_plan` | major | **pass** | post-hoc plan frozen for future reruns | none |
 | reproducibility | `backend_environment_lock` | major | **pass** | requirements-lock.txt present | none |
 
 ## Interpretation

@@ -1,5 +1,9 @@
 from pathlib import Path
 from tempfile import TemporaryDirectory
+import os
+import subprocess
+import sys
+import textwrap
 import unittest
 
 import pandas as pd
@@ -15,6 +19,39 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class Phase2ExperimentTests(unittest.TestCase):
+    def test_topology_forces_are_python_hash_seed_invariant(self):
+        script = textwrap.dedent("""
+            import numpy as np
+            from types import SimpleNamespace
+            import geodisk_paper.topology.power_refinement as module
+
+            count = 80
+            ids = [f"node_{index}" for index in range(count)]
+            angles = np.linspace(0.0, 2.0 * np.pi, count, endpoint=False)
+            radius = 0.55 + 0.3 * np.sin(angles * 3.0) ** 2
+            points = np.column_stack([radius * np.cos(angles), radius * np.sin(angles)])
+            edges = {
+                tuple(sorted((ids[left], ids[(left + offset) % count])))
+                for left in range(count) for offset in (1, 2, 7, 13)
+            }
+            candidate = SimpleNamespace(points=points, cells=[])
+            reference = SimpleNamespace(edges=edges)
+            module.display_adjacency = lambda *args, **kwargs: set()
+            forces = module._topology_forces(candidate, reference, ids, 2e-5)
+            print(forces.tobytes().hex())
+        """)
+        outputs = []
+        for hash_seed in ("11", "97"):
+            environment = os.environ.copy()
+            environment["PYTHONHASHSEED"] = hash_seed
+            environment["PYTHONPATH"] = str(ROOT / "src")
+            completed = subprocess.run(
+                [sys.executable, "-c", script], check=True, capture_output=True,
+                text=True, env=environment, cwd=ROOT,
+            )
+            outputs.append(completed.stdout.strip())
+        self.assertEqual(outputs[0], outputs[1])
+
     def test_weighted_adjacency_definition(self):
         values = weighted_adjacency_scores({("a", "b"): 2.0, ("b", "c"): 1.0},
                                            {("a", "b"): 3.0, ("a", "c"): 1.0})
