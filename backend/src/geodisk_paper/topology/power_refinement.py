@@ -12,6 +12,8 @@ from geodisk_paper.metrics.geometry import display_adjacency, geometry_validity
 from geodisk_paper.metrics.spatial import evaluate_spatial
 from geodisk_paper.topology.embedding import TopologyEmbedding, topology_seed_positions
 
+GEOMETRY_ADMISSIBILITY_TOLERANCE = 1e-7
+
 
 @dataclass
 class Candidate:
@@ -22,6 +24,10 @@ class Candidate:
     score: float
     metrics: dict[str, float]
     area_cv: float
+    overlap_ratio: float
+    gap_ratio: float
+    invalid_polygon_count: int
+    admissible: bool
 
 
 def _geographic_positions(reference: RegionReference, view: str, inner: float, outer: float) -> np.ndarray:
@@ -69,7 +75,16 @@ def _score_candidate(
         - objective_weights.get("radial", .04) * (1.0 - radial) / 2.0
         - objective_weights.get("area_cv", .035) * min(validity["area_cv"], 2.0)
     )
-    return Candidate(label, points, cells, weights, float(score), metrics, float(validity["area_cv"]))
+    admissible = (
+        int(validity["invalid_polygon_count"]) == 0
+        and float(validity["overlap_ratio"]) <= GEOMETRY_ADMISSIBILITY_TOLERANCE
+        and float(validity["gap_ratio"]) <= GEOMETRY_ADMISSIBILITY_TOLERANCE
+    )
+    return Candidate(
+        label, points, cells, weights, float(score), metrics, float(validity["area_cv"]),
+        float(validity["overlap_ratio"]), float(validity["gap_ratio"]),
+        int(validity["invalid_polygon_count"]), admissible,
+    )
 
 
 def _topology_forces(candidate: Candidate, reference: RegionReference, ids: list[str],
@@ -145,20 +160,26 @@ def refine_final_power_adjacency(
                          label, contact_tolerance)
         for label, points in starts
     ]
-    best = max(evaluated, key=lambda candidate: candidate.score)
+    admissible_starts = [candidate for candidate in evaluated if candidate.admissible]
+    if not admissible_starts:
+        raise ValueError(f"No geometrically admissible final-Power start for {reference.name} {view}")
+    best = max(admissible_starts, key=lambda candidate: candidate.score)
+    trajectory = max(evaluated, key=lambda candidate: candidate.score)
     initial = next(candidate for candidate in evaluated if candidate.label == "topology")
-    anchor = best.points.copy()
+    anchor = trajectory.points.copy()
     for iteration in range(force_iterations):
         step = .035 * (1.0 - .72 * iteration / max(force_iterations - 1, 1))
-        forces = _topology_forces(best, reference, ids, contact_tolerance)
-        trial_points = best.points + step * forces + .06 * (anchor - best.points)
+        forces = _topology_forces(trajectory, reference, ids, contact_tolerance)
+        trial_points = trajectory.points + step * forces + .06 * (anchor - trajectory.points)
         trial = _score_candidate(reference, ids, trial_points, view, inner, outer, power_iterations,
                                  objective_weights, f"force_{iteration + 1}", contact_tolerance)
         evaluated.append(trial)
-        if trial.score > best.score + 1e-10:
-            best = trial
+        if trial.score > trajectory.score + 1e-10:
+            trajectory = trial
         else:
-            anchor = .85 * anchor + .15 * best.points
+            anchor = .85 * anchor + .15 * trajectory.points
+        if trial.admissible and trial.score > best.score + 1e-10:
+            best = trial
     method = "GeoDisk-Final" if view == "disk" else "GeoAnnulus-Final"
     return GeometryResult(method, view, ids, best.cells, circular_domain(view, inner, outer), {
         "optimization_target": "final_balanced_power_polygon_adjacency",
@@ -174,10 +195,16 @@ def refine_final_power_adjacency(
         "optimized_final_power_adj_f1": best.metrics["adj_f1"],
         "optimized_final_power_np2": best.metrics["np2"],
         "area_cv": best.area_cv,
+        "overlap_ratio": best.overlap_ratio,
+        "gap_ratio": best.gap_ratio,
+        "invalid_polygon_count": best.invalid_polygon_count,
+        "geometry_admissibility_tolerance": GEOMETRY_ADMISSIBILITY_TOLERANCE,
         "weight_range": [float(best.weights.min()), float(best.weights.max())],
         "candidate_history": [
             {"candidate": candidate.label, "objective": candidate.score, "adj_f1": candidate.metrics["adj_f1"],
-             "np2": candidate.metrics["np2"], "area_cv": candidate.area_cv}
+             "np2": candidate.metrics["np2"], "area_cv": candidate.area_cv,
+             "overlap_ratio": candidate.overlap_ratio, "gap_ratio": candidate.gap_ratio,
+             "invalid_polygon_count": candidate.invalid_polygon_count, "admissible": candidate.admissible}
             for candidate in evaluated
         ],
     })

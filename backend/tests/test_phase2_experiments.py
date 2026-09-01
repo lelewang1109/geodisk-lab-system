@@ -89,6 +89,8 @@ class Phase2ExperimentTests(unittest.TestCase):
         table = pd.read_csv(ROOT / "results/tables/Table_final_power_refinement.csv")
         self.assertTrue((table.adj_f1 + 1e-12 >= table.final_power_f1_before_refinement).all())
         self.assertEqual(int(table.invalid_polygon_count.sum()), 0)
+        self.assertLessEqual(float(table.overlap_ratio.max()), 1e-7)
+        self.assertLessEqual(float(table.gap_ratio.max()), 1e-7)
         inference = pd.read_csv(ROOT / "results/tables/Table_refined_paired_bootstrap.csv")
         self.assertIn("paired_permutation_p_holm", inference.columns)
         self.assertTrue(inference.paired_permutation_p_holm.between(0, 1).all())

@@ -39,6 +39,21 @@ def main() -> None:
     _record(rows, "final_contact_tolerance", "topology", "major", final_methods.issubset(tolerance_methods),
             f"methods={sorted(tolerance_methods)}", "Rerun E14 so the final methods are included in all five tolerances.")
 
+    final_path = ROOT / "results/tables/Table_final_power_refinement.csv"
+    final_frame = pd.read_csv(final_path) if final_path.exists() else pd.DataFrame()
+    geometry_ok = (
+        len(final_frame) > 0
+        and {"invalid_polygon_count", "overlap_ratio", "gap_ratio"}.issubset(final_frame.columns)
+        and int(final_frame.invalid_polygon_count.sum()) == 0
+        and float(final_frame.overlap_ratio.max()) <= 1e-7
+        and float(final_frame.gap_ratio.max()) <= 1e-7
+    )
+    _record(rows, "final_geometry_admissibility", "geometry", "blocker", geometry_ok,
+            (f"rows={len(final_frame)}; invalid={int(final_frame.invalid_polygon_count.sum())}; "
+             f"max_overlap={float(final_frame.overlap_ratio.max()):.3g}; max_gap={float(final_frame.gap_ratio.max()):.3g}")
+            if len(final_frame) else "final refinement table missing",
+            "Reject non-admissible candidates during final-Power selection and rerun E19 onward.")
+
     advanced_path = ROOT / "results/tables/Table_boundary_interior_errors.csv"
     advanced = pd.read_csv(advanced_path) if advanced_path.exists() else pd.DataFrame()
     datasets = set(advanced.dataset.astype(str)) if "dataset" in advanced else set()

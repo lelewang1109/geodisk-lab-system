@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-09-01T08:42:26.464817+00:00",
-  "open_count": 4,
+  "generated_at_utc": "2026-09-01T15:14:26.599211+00:00",
+  "open_count": 5,
   "checks": [
     {
       "check_id": "primary_data_provenance",
@@ -27,6 +27,15 @@
       "status": "pass",
       "claim_scope": "algorithmic",
       "evidence": "methods=['Area-balanced', 'Direct Polar', 'GeoAnnulus', 'GeoAnnulus-Final', 'GeoDisk', 'GeoDisk-Final', 'Harmonic', 'Regular Topology']",
+      "required_action": "none"
+    },
+    {
+      "check_id": "final_geometry_admissibility",
+      "area": "geometry",
+      "severity": "blocker",
+      "status": "pass",
+      "claim_scope": "algorithmic",
+      "evidence": "rows=32; invalid=0; max_overlap=1.7e-15; max_gap=2.83e-15",
       "required_action": "none"
     },
     {
@@ -105,10 +114,10 @@
       "check_id": "clean_full_pipeline_manifest",
       "area": "reproducibility",
       "severity": "major",
-      "status": "pass",
+      "status": "open",
       "claim_scope": "algorithmic",
-      "evidence": "successful clean manifests=1; total manifests=2",
-      "required_action": "none"
+      "evidence": "successful clean manifests=0; total manifests=3",
+      "required_action": "Run scripts/run_formal_experiment.sh from a clean frozen commit and preserve its manifest."
     },
     {
       "check_id": "published_baseline_implementation",
