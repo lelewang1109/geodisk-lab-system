@@ -50,6 +50,8 @@ STAGES = [
     ("E21", [PYTHON, "experiments/E21_user_study_materials.py"]),
     ("TESTS", [PYTHON, "-m", "unittest", "discover", "-s", "tests", "-v"]),
     ("E29", [PYTHON, "experiments/E29_formal_readiness_audit.py"]),
+    ("EXPORT_FRONTEND", [PYTHON, "../scripts/export_workbench_snapshots.py"]),
+    ("E30", [PYTHON, "experiments/E30_tvcg_submission_audit.py"]),
 ]
 
 

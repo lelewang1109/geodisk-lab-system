@@ -13,7 +13,7 @@ BACKEND = ROOT / "backend"
 OUTPUT = ROOT / "frontend" / "public" / "data"
 sys.path.insert(0, str(BACKEND / "src"))
 
-from geodisk_paper.api import WORKBENCH_DATASETS, workbench  # noqa: E402
+from geodisk_paper.api import WORKBENCH_DATASETS, evidence_payload, workbench  # noqa: E402
 
 
 SLUGS = {
@@ -36,6 +36,11 @@ def main() -> None:
             path = OUTPUT / f"workbench-{slug}-{view}.json"
             path.write_text(json.dumps(payload, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
             print(f"[snapshot] {dataset} {view}: {path.relative_to(ROOT)}")
+    evidence_path = OUTPUT / "experiment-evidence.json"
+    evidence_path.write_text(
+        json.dumps(evidence_payload(), ensure_ascii=False, separators=(",", ":")), encoding="utf-8"
+    )
+    print(f"[snapshot] formal evidence: {evidence_path.relative_to(ROOT)}")
 
 
 if __name__ == "__main__":

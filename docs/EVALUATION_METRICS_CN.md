@@ -238,22 +238,22 @@ S = F_1 + 0.18NP@2
 - `final_refinement_seconds`：最终 Power 邻接优化时间。
 - `refinement_over_original_ratio`：细化时间与单次原始分区时间之比。
 
-当前正式效率实验对每个规模先预热 1 次，再测量 10 次，报告中位数、IQR、均值和样本标准差。峰值内存仍未完成可信的独立进程 RSS 测量，因此不得声称内存效率优势。
+当前正式效率实验对每个规模先预热 1 次，再测量 10 次，报告中位数、IQR、均值和样本标准差。进程高水位 RSS 已记录为约 149.3 MB，但它是整套顺序运行的累计上界，不是逐方法隔离内存，因此不得声称内存效率优势。
 
 ## 14. 当前结果的正确解释
 
 | 数据族 | 方法 | 视图 | 优化前 F1 | 最终 F1 | NP@2 | Invalid |
 |---|---|---|---:|---:|---:|---:|
-| CEG (8) | GeoDisk-Final | Disk | 0.660 | 0.780 | 0.644 | 0 |
+| CEG (8) | GeoDisk-Final | Disk | 0.660 | 0.778 | 0.642 | 0 |
 | CEG (8) | GeoAnnulus-Final | Annulus | 0.630 | 0.748 | 0.640 | 0 |
 | External (2) | GeoDisk-Final | Disk | 0.560 | 0.738 | 0.636 | 0 |
 | External (2) | GeoAnnulus-Final | Annulus | 0.510 | 0.650 | 0.545 | 0 |
 | Synthetic (6) | GeoDisk-Final | Disk | 0.618 | 0.771 | 0.636 | 0 |
-| Synthetic (6) | GeoAnnulus-Final | Annulus | 0.605 | 0.715 | 0.605 | 0 |
+| Synthetic (6) | GeoAnnulus-Final | Annulus | 0.605 | 0.700 | 0.593 | 0 |
 
 在 8 个 CEG 区域上：
 
-- GeoDisk-Final 对 Harmonic 的 F1 平均差为 `+0.053`，95% CI `[+0.017,+0.103]`；对 Area-balanced 为 `+0.046`，95% CI `[+0.031,+0.061]`。
+- GeoDisk-Final 对 Harmonic 的 F1 平均差为 `+0.051`，95% CI `[+0.017,+0.101]`；对 Area-balanced 为 `+0.044`，95% CI `[+0.031,+0.057]`。
 - GeoAnnulus-Final 对 Harmonic 的 F1 平均差为 `+0.057`，对 Area-balanced 为 `+0.097`。
 - Direct Polar 的平均邻接 F1 仍更高（Disk 0.862，Annulus 0.824），但部分输出存在无效、重叠或未覆盖几何。
 
