@@ -1,10 +1,12 @@
 {
   "selected_candidate_counts": {
-    "force_4": 19,
-    "force_1": 6,
-    "force_3": 3,
+    "force_4": 17,
+    "force_1": 5,
+    "force_3": 4,
     "harmonic": 1,
-    "force_2": 4,
+    "force_2": 3,
+    "topology_harmonic_50": 1,
+    "geographic": 2,
     "topology_geographic_50": 1
   },
   "interpretation": "multi-start and force gains are measured against the same final-Power objective, not slot adjacency"

@@ -54,7 +54,7 @@ Area CV means display-area balance; it is not geographic-area preservation. Temp
 
 ## Current result, without outcome polishing
 
-The original Proposed implementation remains below the baselines reported in the first-round tables. Phase II improves mean CEG Adj. F1 to 0.780 for GeoDisk-Final and 0.748 for GeoAnnulus-Final, with zero invalid polygons. Paired bootstrap comparisons establish gains over Harmonic and Area-balanced, but Direct Polar remains higher at 0.862/0.824 and can produce invalid/overlapping geometry. The valid-layout topology advantage is now supported; a universal advantage over Direct Polar is not.
+The original Proposed implementation remains below the baselines reported in the first-round tables. Phase II improves mean CEG Adj. F1 to 0.778 for GeoDisk-Final and 0.748 for GeoAnnulus-Final, with zero invalid polygons. Paired bootstrap comparisons establish gains over Harmonic and Area-balanced, but Direct Polar remains higher at 0.862/0.824 and can produce invalid/overlapping geometry. The valid-layout topology advantage is now supported; a universal advantage over Direct Polar is not.
 
 See `SPATIAL_EXPERIMENT_REPORT.md` for the first round and `PHASE2_METHOD_AND_EXPERIMENT_REPORT.md` for the refined method, astronomy, temporal and user-study-ready phases.
 
