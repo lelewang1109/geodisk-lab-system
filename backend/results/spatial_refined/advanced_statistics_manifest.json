@@ -1,0 +1,6 @@
+{
+  "resampling_unit": "province/region",
+  "bootstrap_samples": 10000,
+  "test": "exact paired sign-flip",
+  "multiple_comparison": "Holm within each view/group/metric family"
+}

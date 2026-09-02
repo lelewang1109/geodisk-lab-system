@@ -238,22 +238,22 @@ S = F_1 + 0.18NP@2
 - `final_refinement_seconds`：最终 Power 邻接优化时间。
 - `refinement_over_original_ratio`：细化时间与单次原始分区时间之比。
 
-当前每个规模只运行 1 次，所以只是工程量级参考。正式效率结论建议在固定设备上预热后至少重复 10 次，补充中位数、IQR 和峰值内存。
+当前正式效率实验对每个规模先预热 1 次，再测量 10 次，报告中位数、IQR、均值和样本标准差。进程高水位 RSS 已记录为约 149.3 MB，但它是整套顺序运行的累计上界，不是逐方法隔离内存，因此不得声称内存效率优势。
 
 ## 14. 当前结果的正确解释
 
 | 数据族 | 方法 | 视图 | 优化前 F1 | 最终 F1 | NP@2 | Invalid |
 |---|---|---|---:|---:|---:|---:|
-| CEG (8) | GeoDisk-Final | Disk | 0.660 | 0.780 | 0.644 | 0 |
+| CEG (8) | GeoDisk-Final | Disk | 0.660 | 0.778 | 0.642 | 0 |
 | CEG (8) | GeoAnnulus-Final | Annulus | 0.630 | 0.748 | 0.640 | 0 |
 | External (2) | GeoDisk-Final | Disk | 0.560 | 0.738 | 0.636 | 0 |
 | External (2) | GeoAnnulus-Final | Annulus | 0.510 | 0.650 | 0.545 | 0 |
 | Synthetic (6) | GeoDisk-Final | Disk | 0.618 | 0.771 | 0.636 | 0 |
-| Synthetic (6) | GeoAnnulus-Final | Annulus | 0.605 | 0.715 | 0.605 | 0 |
+| Synthetic (6) | GeoAnnulus-Final | Annulus | 0.605 | 0.700 | 0.593 | 0 |
 
 在 8 个 CEG 区域上：
 
-- GeoDisk-Final 对 Harmonic 的 F1 平均差为 `+0.053`，95% CI `[+0.017,+0.103]`；对 Area-balanced 为 `+0.046`，95% CI `[+0.031,+0.061]`。
+- GeoDisk-Final 对 Harmonic 的 F1 平均差为 `+0.051`，95% CI `[+0.017,+0.101]`；对 Area-balanced 为 `+0.044`，95% CI `[+0.031,+0.057]`。
 - GeoAnnulus-Final 对 Harmonic 的 F1 平均差为 `+0.057`，对 Area-balanced 为 `+0.097`。
 - Direct Polar 的平均邻接 F1 仍更高（Disk 0.862，Annulus 0.824），但部分输出存在无效、重叠或未覆盖几何。
 
@@ -329,7 +329,7 @@ NASA 天球网格上，GeoDisk-Final F1 为 0.764，高于最优合法 Disk 基�
 
 ### 附录或探索性内容
 
-NP@3、边数详细分解、单次运行时间、年度状态摘要、当前尚弱的迁移路径快照和尚未实施的用户实验。
+NP@3、边数详细分解、完整运行时间分布、年度状态摘要、当前尚弱的迁移路径快照和尚未实施的用户实验。
 
 ## 18. 当前不能推出的结论
 
@@ -337,8 +337,8 @@ NP@3、边数详细分解、单次运行时间、年度状态摘要、当前尚�
 - 不能忽略 Direct Polar 的几何非法性，也不能隐藏它在 CEG 邻接 F1 上仍更高。
 - 不能将 Area CV 描述为地理面积保真。
 - 不能将跨月份几何不变描述为用户认知性能证据。
-- 不能把旧工程结果快照视为与当前 E0–E24 一样可完整复现的实验。
-- 不能用单次运行时间声称稳定效率优势。
+- 不能把旧工程结果快照视为与当前 E0–E29 一样可完整复现的实验。
+- 不能用运行时间结果声称内存效率优势；当前尚缺独立进程峰值 RSS。
 - 用户实验完成前，不能声称“更易读”、“更快”或“认知负担更低”。
 
 ## 19. 指标与代码/结果的对应
@@ -355,6 +355,11 @@ NP@3、边数详细分解、单次运行时间、年度状态摘要、当前尚�
 | 时间变化指标 | `backend/experiments/E6_change_metrics.py` |
 | 用户实验 | `backend/experiments/E21_user_study_materials.py` 和 `backend/user_study/PREREGISTRATION_DRAFT.md` |
 | 运行时间 | `backend/experiments/E23_runtime_scalability.py` |
+| 最终目标逐项消融 | `backend/experiments/E25_final_objective_ablation.py` |
+| 多随机种子稳定性 | `backend/experiments/E26_seed_stability.py` |
+| 加权及边界/内部成对统计 | `backend/experiments/E27_advanced_statistics.py` |
+| 局部失败案例 | `backend/experiments/E28_failure_cases.py` |
+| 正式就绪审计 | `backend/experiments/E29_formal_readiness_audit.py` |
 | 核心结果表 | `backend/results/tables/` |
 | 论文用表 | `backend/paper/tables/` |
 | 历史状态/迁移快照 | `frontend/public/data/legacy-insights.json` |
@@ -362,4 +367,3 @@ NP@3、边数详细分解、单次运行时间、年度状态摘要、当前尚�
 ## 20. 可直接用于论文的总结表述
 
 > 我们将几何合法性与空间忠实度分开评价。所有邻接均从最终显示多边形中重新提取。主要拓扑指标为 Adjacency F1，辅以 NP@2、共享边界长度加权 F1、边界/内部节点误差、局部方向误差、角度误差和径向 Spearman 相关。方法差异在区域级成对计算，使用 10,000 次 bootstrap 置信区间和成对符号翻转检验，并在同一视图—指标族内进行 Holm 校正。结果表明，GeoDisk-Final 和 GeoAnnulus-Final 在保持零无效多边形的同时，优于 Harmonic 和 Area-balanced 等合法几何基线；但 Direct Polar 在 CEG 邻接 F1 上仍更高且伴随几何无效与重叠，因此我们不作无条件全面优越的声称。
-

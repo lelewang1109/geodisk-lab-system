@@ -1,5 +1,9 @@
 from pathlib import Path
 from tempfile import TemporaryDirectory
+import os
+import subprocess
+import sys
+import textwrap
 import unittest
 
 import pandas as pd
@@ -15,6 +19,39 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class Phase2ExperimentTests(unittest.TestCase):
+    def test_topology_forces_are_python_hash_seed_invariant(self):
+        script = textwrap.dedent("""
+            import numpy as np
+            from types import SimpleNamespace
+            import geodisk_paper.topology.power_refinement as module
+
+            count = 80
+            ids = [f"node_{index}" for index in range(count)]
+            angles = np.linspace(0.0, 2.0 * np.pi, count, endpoint=False)
+            radius = 0.55 + 0.3 * np.sin(angles * 3.0) ** 2
+            points = np.column_stack([radius * np.cos(angles), radius * np.sin(angles)])
+            edges = {
+                tuple(sorted((ids[left], ids[(left + offset) % count])))
+                for left in range(count) for offset in (1, 2, 7, 13)
+            }
+            candidate = SimpleNamespace(points=points, cells=[])
+            reference = SimpleNamespace(edges=edges)
+            module.display_adjacency = lambda *args, **kwargs: set()
+            forces = module._topology_forces(candidate, reference, ids, 2e-5)
+            print(forces.tobytes().hex())
+        """)
+        outputs = []
+        for hash_seed in ("11", "97"):
+            environment = os.environ.copy()
+            environment["PYTHONHASHSEED"] = hash_seed
+            environment["PYTHONPATH"] = str(ROOT / "src")
+            completed = subprocess.run(
+                [sys.executable, "-c", script], check=True, capture_output=True,
+                text=True, env=environment, cwd=ROOT,
+            )
+            outputs.append(completed.stdout.strip())
+        self.assertEqual(outputs[0], outputs[1])
+
     def test_weighted_adjacency_definition(self):
         values = weighted_adjacency_scores({("a", "b"): 2.0, ("b", "c"): 1.0},
                                            {("a", "b"): 3.0, ("a", "c"): 1.0})
@@ -52,6 +89,8 @@ class Phase2ExperimentTests(unittest.TestCase):
         table = pd.read_csv(ROOT / "results/tables/Table_final_power_refinement.csv")
         self.assertTrue((table.adj_f1 + 1e-12 >= table.final_power_f1_before_refinement).all())
         self.assertEqual(int(table.invalid_polygon_count.sum()), 0)
+        self.assertLessEqual(float(table.overlap_ratio.max()), 1e-7)
+        self.assertLessEqual(float(table.gap_ratio.max()), 1e-7)
         inference = pd.read_csv(ROOT / "results/tables/Table_refined_paired_bootstrap.csv")
         self.assertIn("paired_permutation_p_holm", inference.columns)
         self.assertTrue(inference.paired_permutation_p_holm.between(0, 1).all())
@@ -81,6 +120,30 @@ class Phase2ExperimentTests(unittest.TestCase):
         final = table[table.method.isin(["GeoDisk-Final", "GeoAnnulus-Final"])]
         self.assertEqual(len(final), 2)
         self.assertEqual(int(final.invalid_polygon_count.sum()), 0)
+
+    def test_final_objective_ablation_matches_frozen_full_result(self):
+        ablation = pd.read_csv(ROOT / "results/tables/Table_final_objective_ablation.csv")
+        self.assertEqual(ablation.variant.nunique(), 6)
+        full = ablation[ablation.variant == "Full objective"]
+        frozen = pd.read_csv(ROOT / "results/tables/Table_final_power_refinement.csv")
+        frozen = frozen[frozen.dataset.isin(full.region)].rename(columns={"dataset": "region"})
+        merged = full.merge(frozen, on=["region", "view"], suffixes=("_ablation", "_frozen"))
+        self.assertEqual(len(merged), len(full))
+        self.assertTrue((merged.adj_f1_ablation - merged.adj_f1_frozen).abs().max() < 1e-12)
+
+    def test_seed_stability_declared_repetitions(self):
+        table = pd.read_csv(ROOT / "results/tables/Table_seed_stability.csv")
+        self.assertGreaterEqual(table.seed.nunique(), 5)
+        self.assertEqual(table.region.nunique(), 8)
+        self.assertEqual(int(table.invalid_polygon_count.sum()), 0)
+
+    def test_advanced_statistics_and_failure_cases(self):
+        inference = pd.read_csv(ROOT / "results/tables/Table_advanced_paired_statistics.csv")
+        self.assertEqual(set(inference.analysis), {"shared_boundary_weighted", "boundary_interior"})
+        self.assertTrue(inference.paired_sign_flip_p_holm.between(0, 1).all())
+        failures = pd.read_csv(ROOT / "results/tables/Table_local_failure_cases.csv")
+        self.assertTrue({"GeoDisk-Final", "GeoAnnulus-Final"}.issubset(set(failures.method)))
+        self.assertTrue(failures.failure_rank.between(1, 10).all())
 
 
 if __name__ == "__main__":

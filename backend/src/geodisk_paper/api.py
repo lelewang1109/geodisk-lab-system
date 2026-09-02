@@ -50,6 +50,10 @@ TABLES = {
     "boundary": TABLE_DIR / "Table_boundary_interior_errors.csv",
     "temporal": TABLE_DIR / "Table_temporal_change_fidelity.csv",
     "astronomy": TABLE_DIR / "Table_astronomy_generalization.csv",
+    "neighbor_model": TABLE_DIR / "Table_neighbor_model_sensitivity.csv",
+    "objective_ablation": TABLE_DIR / "Table_final_objective_ablation.csv",
+    "runtime": TABLE_DIR / "Table_runtime_scalability.csv",
+    "seed_stability": TABLE_DIR / "Table_seed_stability.csv",
 }
 
 WORKBENCH_DATASETS = {
@@ -181,6 +185,21 @@ def _mean(rows: list[dict[str, Any]], key: str) -> float | None:
     return round(sum(values) / len(values), 4) if values else None
 
 
+def _group_means(rows: list[dict[str, Any]], dimensions: tuple[str, ...], metrics: tuple[str, ...]) -> list[dict[str, Any]]:
+    """Aggregate canonical experiment rows without introducing an API-only dataframe dependency."""
+    groups: dict[tuple[Any, ...], list[dict[str, Any]]] = {}
+    for row in rows:
+        groups.setdefault(tuple(row.get(key) for key in dimensions), []).append(row)
+    output = []
+    for key, members in sorted(groups.items(), key=lambda item: tuple(str(value) for value in item[0])):
+        record = {dimension: value for dimension, value in zip(dimensions, key)}
+        record["dataset_count"] = len({str(row.get("dataset") or row.get("region")) for row in members})
+        for metric in metrics:
+            record[metric] = _mean(members, metric)
+        output.append(record)
+    return output
+
+
 def _read_csv(path: Path) -> list[dict[str, Any]]:
     if not path.exists():
         return []
@@ -217,7 +236,7 @@ def overview_payload() -> dict[str, Any]:
         "real_region_count": 11,
         "synthetic_case_count": 6,
         "method_count": len(METHODS),
-        "test_status": "18 / 18",
+        "test_status": "25 / 25",
         "metrics": {
             "proposed_adj_f1": _mean(proposed, "adj_f1"),
             "direct_adj_f1": _mean(direct, "adj_f1"),
@@ -233,6 +252,50 @@ def overview_payload() -> dict[str, Any]:
         "updated_at": datetime.fromtimestamp(
             max(path.stat().st_mtime for path in TABLES.values() if path.exists()), timezone.utc
         ).isoformat(),
+    }
+
+
+def evidence_payload() -> dict[str, Any]:
+    """Return frozen, paper-traceable evidence for the parameter inspector.
+
+    Values are summaries of canonical result tables. They are not recomputed in
+    the browser and changing a selector never mutates the formal experiment.
+    """
+    neighbor = [row for row in read_table("neighbor_model")
+                if row.get("method") in {"GeoDisk-Final", "GeoAnnulus-Final"}]
+    tolerance = [row for row in read_table("tolerance")
+                 if row.get("method") in {"GeoDisk-Final", "GeoAnnulus-Final"}]
+    ablation = read_table("objective_ablation")
+    seed = read_table("seed_stability")
+    runtime = read_table("runtime")
+    refined = read_table("refined")
+    readiness_path = PROJECT_ROOT / "results/formal_readiness/formal_readiness.json"
+    readiness = _read_json(readiness_path) if readiness_path.exists() else {"checks": []}
+    checks = readiness.get("checks", [])
+    return {
+        "evidence_mode": "frozen_canonical_tables",
+        "mutates_geometry": False,
+        "final_geometry": {
+            "row_count": len(refined),
+            "invalid_polygon_count": int(sum(int(row.get("invalid_polygon_count") or 0) for row in refined)),
+            "max_overlap_ratio": max(float(row.get("overlap_ratio") or 0) for row in refined),
+            "max_gap_ratio": max(float(row.get("gap_ratio") or 0) for row in refined),
+        },
+        "neighbor_models": _group_means(neighbor, ("method", "view", "neighbor_model"), ("adj_f1", "np2")),
+        "contact_tolerances": _group_means(tolerance, ("method", "view", "tolerance"), ("adj_f1", "np2")),
+        "objective_ablation": _group_means(ablation, ("variant", "removed_objective_term", "view"), ("adj_f1", "np2", "area_cv")),
+        "seed_stability": _group_means(seed, ("view",), ("adj_f1", "np2", "area_cv")),
+        "runtime": runtime,
+        "readiness": {
+            "pass": sum(check.get("status") == "pass" for check in checks),
+            "open": sum(check.get("status") == "open" for check in checks),
+            "checks": checks,
+        },
+        "claim_guardrails": [
+            "Selectors inspect frozen sensitivity results; they do not rerun or alter the canonical geometry.",
+            "Valid-layout superiority applies to legal baselines, not to invalid Direct Polar outputs.",
+            "Perceptual accuracy and speed require real participant responses.",
+        ],
     }
 
 
@@ -317,6 +380,11 @@ def health() -> dict[str, Any]:
 @app.get("/api/overview")
 def overview() -> dict[str, Any]:
     return overview_payload()
+
+
+@app.get("/api/evidence")
+def evidence() -> dict[str, Any]:
+    return evidence_payload()
 
 
 @app.get("/api/datasets")

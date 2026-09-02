@@ -1,0 +1,8 @@
+{
+  "selection": "ten lowest node adjacency F1 cases per dataset/method/view/boundary group",
+  "tie_breakers": [
+    "higher degree error",
+    "higher direction error"
+  ],
+  "guardrail": "failure cases are retained rather than excluded from aggregate statistics"
+}

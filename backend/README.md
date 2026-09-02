@@ -2,7 +2,7 @@
 
 This is the independent, reproducible first-round paper artifact for **Dataset 01 + Spatial Fidelity Benchmark**. It does not modify or import runtime code from the three historical repositories.
 
-This directory is now the backend of the experiment system. The complete E0–E24 suite covers spatial fidelity, final-Power refinement, reference sensitivity, cross-domain generalization, temporal encoding, ablation and runtime. `geodisk_paper.api` exposes canonical result tables, figures, dataset metadata and a whitelist-based experiment runner to the sibling `frontend/` application.
+This directory is now the backend of the experiment system. The complete E0–E29 suite covers spatial fidelity, final-Power refinement, reference sensitivity, cross-domain generalization, temporal encoding, objective ablation, multi-seed stability, paired inference, failure analysis, repeated runtime and formal-readiness auditing. `geodisk_paper.api` exposes canonical result tables, figures, dataset metadata and a whitelist-based experiment runner to the sibling `frontend/` application.
 
 ## Research question
 
@@ -54,7 +54,7 @@ Area CV means display-area balance; it is not geographic-area preservation. Temp
 
 ## Current result, without outcome polishing
 
-The original Proposed implementation remains below the baselines reported in the first-round tables. Phase II improves mean CEG Adj. F1 to 0.780 for GeoDisk-Final and 0.748 for GeoAnnulus-Final, with zero invalid polygons. Paired bootstrap comparisons establish gains over Harmonic and Area-balanced, but Direct Polar remains higher at 0.862/0.824 and can produce invalid/overlapping geometry. The valid-layout topology advantage is now supported; a universal advantage over Direct Polar is not.
+The original Proposed implementation remains below the baselines reported in the first-round tables. Phase II improves mean CEG Adj. F1 to 0.778 for GeoDisk-Final and 0.748 for GeoAnnulus-Final, with zero invalid polygons. Paired bootstrap comparisons establish gains over Harmonic and Area-balanced, but Direct Polar remains higher at 0.862/0.824 and can produce invalid/overlapping geometry. The valid-layout topology advantage is now supported; a universal advantage over Direct Polar is not.
 
 See `SPATIAL_EXPERIMENT_REPORT.md` for the first round and `PHASE2_METHOD_AND_EXPERIMENT_REPORT.md` for the refined method, astronomy, temporal and user-study-ready phases.
 
@@ -98,6 +98,18 @@ Run the expanded formal suite, including verified external downloads:
 bash scripts/run_formal_experiment.sh
 ```
 
+For a submission-grade run, start from a clean frozen commit:
+
+```bash
+bash scripts/run_formal_experiment.sh --require-clean
+```
+
+The pipeline writes a resumable stage/duration/environment manifest under
+`results/run_manifests/` and mirrors each stage's output to
+`results/run_logs/`. See `FORMAL_EXPERIMENT_PROTOCOL_CN.md` and
+`paper/FORMAL_EXPERIMENT_READINESS.md` for the ordered protocol and remaining
+publication blockers.
+
 `scripts/run_all.sh` now runs the complete formal suite. `run_temporal_experiment.sh` runs temporal encoding, change metrics and user-study material generation independently.
 
 ## Outputs
@@ -108,8 +120,13 @@ bash scripts/run_formal_experiment.sh
 - Canonical tables: `results/tables/`
 - Ablation and sensitivity: `results/ablation/`, `results/sensitivity/`
 - Manuscript-facing copies: `paper/tables/`, `paper/figures/`
-- External download provenance: `data/external/download_manifest.json`
+- External download provenance: `data/external/download_manifest.json`. Existing
+  files are reused as frozen inputs; pass `--refresh` to
+  `scripts/download_external_datasets.sh` only when intentionally updating the
+  external-data snapshot. NetCDF records include both the raw-file hash and an
+  attribute-independent scientific-content hash.
 - Formal extension results: `results/tables/Table_external_*`, `Table_synthetic_*`, and `Table_contact_tolerance_sensitivity.csv`
 - Phase II results: `Table_final_power_refinement.csv`, `Table_*weighted*`, `Table_*boundary*`, `Table_*neighbor*`, `Table_astronomy_generalization.csv`, `Table_temporal_*` and `Table_runtime_scalability.csv`
+- Formal hardening: `Table_final_objective_ablation.csv`, `Table_seed_stability.csv`, `Table_advanced_paired_statistics.csv`, `Table_local_failure_cases.csv` and `results/formal_readiness/`
 
 Raw NetCDF files remain outside the project and are never overwritten. Boundary provenance and redistribution licensing must be resolved before public release.

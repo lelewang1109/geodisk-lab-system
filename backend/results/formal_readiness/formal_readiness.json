@@ -1,0 +1,159 @@
+{
+  "generated_at_utc": "2026-09-02T01:20:13.014631+00:00",
+  "open_count": 4,
+  "checks": [
+    {
+      "check_id": "primary_data_provenance",
+      "area": "data",
+      "severity": "blocker",
+      "status": "open",
+      "claim_scope": "algorithmic",
+      "evidence": "missing fields: ['source_url', 'license', 'citation']",
+      "required_action": "Obtain and freeze the official CEG source URL, license/permission and citation before submission."
+    },
+    {
+      "check_id": "primary_file_hashes",
+      "area": "data",
+      "severity": "major",
+      "status": "pass",
+      "claim_scope": "algorithmic",
+      "evidence": "366 files; sha256 column=True",
+      "required_action": "none"
+    },
+    {
+      "check_id": "final_contact_tolerance",
+      "area": "topology",
+      "severity": "major",
+      "status": "pass",
+      "claim_scope": "algorithmic",
+      "evidence": "methods=['Area-balanced', 'Direct Polar', 'GeoAnnulus', 'GeoAnnulus-Final', 'GeoDisk', 'GeoDisk-Final', 'Harmonic', 'Regular Topology']",
+      "required_action": "none"
+    },
+    {
+      "check_id": "final_geometry_admissibility",
+      "area": "geometry",
+      "severity": "blocker",
+      "status": "pass",
+      "claim_scope": "algorithmic",
+      "evidence": "rows=32; invalid=0; max_overlap=1.7e-15; max_gap=2.83e-15",
+      "required_action": "none"
+    },
+    {
+      "check_id": "advanced_cross_domain_errors",
+      "area": "local_error",
+      "severity": "major",
+      "status": "pass",
+      "claim_scope": "algorithmic",
+      "evidence": "dataset_count=17",
+      "required_action": "none"
+    },
+    {
+      "check_id": "final_objective_ablation",
+      "area": "ablation",
+      "severity": "major",
+      "status": "pass",
+      "claim_scope": "algorithmic",
+      "evidence": "variant_count=6",
+      "required_action": "none"
+    },
+    {
+      "check_id": "multi_seed_stability",
+      "area": "robustness",
+      "severity": "major",
+      "status": "pass",
+      "claim_scope": "algorithmic",
+      "evidence": "seeds=5; regions=8/8",
+      "required_action": "none"
+    },
+    {
+      "check_id": "runtime_repetitions",
+      "area": "efficiency",
+      "severity": "major",
+      "status": "pass",
+      "claim_scope": "algorithmic",
+      "evidence": "minimum repeat_count=10",
+      "required_action": "none"
+    },
+    {
+      "check_id": "runtime_peak_memory",
+      "area": "efficiency",
+      "severity": "minor",
+      "status": "pass",
+      "claim_scope": "algorithmic",
+      "evidence": "suite-process high-water RSS recorded",
+      "required_action": "none"
+    },
+    {
+      "check_id": "advanced_paired_inference",
+      "area": "statistics",
+      "severity": "major",
+      "status": "pass",
+      "claim_scope": "algorithmic",
+      "evidence": "advanced paired table exists",
+      "required_action": "none"
+    },
+    {
+      "check_id": "failure_case_retention",
+      "area": "diagnostics",
+      "severity": "minor",
+      "status": "pass",
+      "claim_scope": "algorithmic",
+      "evidence": "ranked failure table exists",
+      "required_action": "none"
+    },
+    {
+      "check_id": "human_participant_results",
+      "area": "user_study",
+      "severity": "blocker",
+      "status": "open",
+      "claim_scope": "perceptual_only",
+      "evidence": "response rows=0",
+      "required_action": "Collect the preregistered participant study before making perceptual-efficiency claims."
+    },
+    {
+      "check_id": "clean_full_pipeline_manifest",
+      "area": "reproducibility",
+      "severity": "major",
+      "status": "pass",
+      "claim_scope": "algorithmic",
+      "evidence": "successful clean manifests=1; total manifests=4",
+      "required_action": "none"
+    },
+    {
+      "check_id": "published_baseline_implementation",
+      "area": "baselines",
+      "severity": "major",
+      "status": "open",
+      "claim_scope": "algorithmic",
+      "evidence": "Current baselines are project-local implementations.",
+      "required_action": "Add or justify at least one independently published topology-preserving/cartogram baseline and verify parameter parity."
+    },
+    {
+      "check_id": "confirmatory_holdout_dataset",
+      "area": "study_design",
+      "severity": "major",
+      "status": "open",
+      "claim_scope": "algorithmic",
+      "evidence": "The eight CEG regions were available during method development.",
+      "required_action": "Freeze an untouched year or region before tuning, then run the declared primary comparison once."
+    },
+    {
+      "check_id": "machine_readable_analysis_plan",
+      "area": "study_design",
+      "severity": "major",
+      "status": "pass",
+      "claim_scope": "algorithmic",
+      "evidence": "post-hoc plan frozen for future reruns",
+      "required_action": "none"
+    },
+    {
+      "check_id": "backend_environment_lock",
+      "area": "reproducibility",
+      "severity": "major",
+      "status": "pass",
+      "claim_scope": "algorithmic",
+      "evidence": "requirements-lock.txt present",
+      "required_action": "none"
+    }
+  ]
+}

@@ -3,6 +3,17 @@
   "view": "annulus",
   "cell_count": 149,
   "optimization_target": "final_balanced_power_polygon_adjacency",
+  "contact_tolerance": 2e-05,
+  "objective_weights": {
+    "adjacency": 1.0,
+    "neighborhood": 0.18,
+    "local_direction": 0.06,
+    "angular": 0.04,
+    "radial": 0.04,
+    "area_cv": 0.035
+  },
+  "power_iterations": 3,
+  "force_iterations": 4,
   "candidate_schedule": [
     "topology",
     "harmonic",
@@ -14,13 +25,17 @@
     "force_3",
     "force_4"
   ],
-  "selected_candidate": "force_1",
+  "selected_candidate": "topology_harmonic_50",
   "initial_final_power_objective": 0.7788355876239274,
-  "optimized_final_power_objective": 0.8770891410215315,
+  "optimized_final_power_objective": 0.8378137812047728,
   "initial_final_power_adj_f1": 0.6943164362519201,
-  "optimized_final_power_adj_f1": 0.7723076923076924,
-  "optimized_final_power_np2": 0.6680684100624051,
-  "area_cv": 0.3094482120023774,
+  "optimized_final_power_adj_f1": 0.7384615384615384,
+  "optimized_final_power_np2": 0.6421324088712502,
+  "area_cv": 0.304237297802202,
+  "overlap_ratio": 0.0,
+  "gap_ratio": 1.2857548588135778e-15,
+  "invalid_polygon_count": 0,
+  "geometry_admissibility_tolerance": 1e-07,
   "weight_range": [
     0.0,
     0.0
@@ -31,63 +46,99 @@
       "objective": 0.7788355876239274,
       "adj_f1": 0.6943164362519201,
       "np2": 0.60594343700508,
-      "area_cv": 0.4893563594227042
+      "area_cv": 0.4893563594227042,
+      "overlap_ratio": 7.347170621791874e-16,
+      "gap_ratio": 0.0,
+      "invalid_polygon_count": 0,
+      "admissible": true
     },
     {
       "candidate": "harmonic",
       "objective": 0.8639708421614807,
       "adj_f1": 0.7569955817378499,
       "np2": 0.6501901783980406,
-      "area_cv": 0.1527959986393652
+      "area_cv": 0.1527959986393652,
+      "overlap_ratio": 0.03179473465190514,
+      "gap_ratio": 0.0,
+      "invalid_polygon_count": 0,
+      "admissible": false
     },
     {
       "candidate": "geographic",
       "objective": 0.7989732514958577,
       "adj_f1": 0.7035330261136712,
       "np2": 0.6247183996641162,
-      "area_cv": 0.32235836486150055
+      "area_cv": 0.32235836486150055,
+      "overlap_ratio": 0.0,
+      "gap_ratio": 3.673585310895937e-16,
+      "invalid_polygon_count": 0,
+      "admissible": true
     },
     {
       "candidate": "topology_harmonic_50",
       "objective": 0.8378137812047728,
       "adj_f1": 0.7384615384615384,
       "np2": 0.6421324088712502,
-      "area_cv": 0.304237297802202
+      "area_cv": 0.304237297802202,
+      "overlap_ratio": 0.0,
+      "gap_ratio": 1.2857548588135778e-15,
+      "invalid_polygon_count": 0,
+      "admissible": true
     },
     {
       "candidate": "topology_geographic_50",
       "objective": 0.831206793720335,
       "adj_f1": 0.7331288343558282,
       "np2": 0.637182813193748,
-      "area_cv": 0.29761728312448776
+      "area_cv": 0.29761728312448776,
+      "overlap_ratio": 1.102075593268781e-15,
+      "gap_ratio": 0.0,
+      "invalid_polygon_count": 0,
+      "admissible": true
     },
     {
       "candidate": "force_1",
-      "objective": 0.8770891410215315,
+      "objective": 0.8769822598884964,
       "adj_f1": 0.7723076923076924,
       "np2": 0.6680684100624051,
-      "area_cv": 0.3094482120023774
+      "area_cv": 0.3094482120023774,
+      "overlap_ratio": 0.0021356894839181014,
+      "gap_ratio": 7.347170621791874e-16,
+      "invalid_polygon_count": 0,
+      "admissible": false
     },
     {
       "candidate": "force_2",
-      "objective": 0.8522981229517637,
+      "objective": 0.8521921715199243,
       "adj_f1": 0.7450980392156863,
       "np2": 0.6576215768057146,
-      "area_cv": 0.17546564914110824
+      "area_cv": 0.1754656491411081,
+      "overlap_ratio": 0.019560050835860637,
+      "gap_ratio": 0.0,
+      "invalid_polygon_count": 0,
+      "admissible": false
     },
     {
       "candidate": "force_3",
-      "objective": 0.8605550642071871,
+      "objective": 0.8605550464867217,
       "adj_f1": 0.7565084226646248,
       "np2": 0.6626674673726225,
-      "area_cv": 0.3061243550181141
+      "area_cv": 0.306124355018114,
+      "overlap_ratio": 0.007257925388921748,
+      "gap_ratio": 1.6531133899031716e-15,
+      "invalid_polygon_count": 0,
+      "admissible": false
     },
     {
       "candidate": "force_4",
-      "objective": 0.8714989848301851,
+      "objective": 0.8714989494105356,
       "adj_f1": 0.766412213740458,
       "np2": 0.6693361929139008,
-      "area_cv": 0.30343755734286076
+      "area_cv": 0.30343755734286076,
+      "overlap_ratio": 0.007505583098507766,
+      "gap_ratio": 1.6531133899031716e-15,
+      "invalid_polygon_count": 0,
+      "admissible": false
     }
   ]
 }

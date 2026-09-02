@@ -1,0 +1,192 @@
+{
+  "generated_at_utc": "2026-09-02T01:40:51.859128+00:00",
+  "venue": "IEEE Transactions on Visualization and Computer Graphics",
+  "verdict": "algorithmic_artifact_ready_but_full_submission_not_ready",
+  "pass_count": 10,
+  "partial_count": 1,
+  "open_count": 4,
+  "research_goal": "将固定地理或空间分区转换为紧凑的圆盘与圆环 Power Diagram，在几何合法的前提下尽可能 保留参考邻接、局部邻域、方向和中心—边缘次序，并复用相同单元身份与几何进行稳定的时间 比较和联动诊断。",
+  "research_questions": [
+    {
+      "id": "RQ1",
+      "question": "方法能否始终返回满足几何准入条件的最终 Power 分区？",
+      "evidence": [
+        "geometry_validity",
+        "overlap_ratio",
+        "gap_ratio"
+      ]
+    },
+    {
+      "id": "RQ2",
+      "question": "直接优化最终多边形邻接，能否相对合法基线提高拓扑保持？",
+      "evidence": [
+        "adjacency_f1",
+        "weighted_adjacency_f1",
+        "np2",
+        "paired_inference"
+      ]
+    },
+    {
+      "id": "RQ3",
+      "question": "剩余错误集中在哪里，结论能否跨参考定义、参数和数据领域保持稳定？",
+      "evidence": [
+        "boundary_interior",
+        "failure_taxonomy",
+        "reference_sensitivity",
+        "cross_domain",
+        "seed_stability"
+      ]
+    },
+    {
+      "id": "RQ4",
+      "question": "固定几何能否支持数值忠实的时间变化编码？",
+      "evidence": [
+        "temporal_change_fidelity"
+      ]
+    },
+    {
+      "id": "RQ5",
+      "question": "联动系统能否提高人的准确率、速度或理解质量？",
+      "evidence": [
+        "preregistered_user_study"
+      ]
+    }
+  ],
+  "contributions": [
+    {
+      "id": "C1",
+      "kind": "algorithm",
+      "statement": "一种参考拓扑监督的多起点圆盘/圆环布局：在真实最终面积平衡 Power 多边形上评价候选， 并使用全局几何硬门槛约束最终选择。"
+    },
+    {
+      "id": "C2",
+      "kind": "diagnostic_evaluation",
+      "statement": "一套结合二值邻接、共享边界长度加权邻接、k-hop 邻域、边界/内部节点误差和局部失败案例的 拓扑诊断协议。"
+    },
+    {
+      "id": "C3",
+      "kind": "temporal_representation",
+      "statement": "一种固定身份的 DeltaAnnulus 时间表示，将有符号变化与标量值分开编码，并在无几何漂移的 月份序列上评价。"
+    },
+    {
+      "id": "C4",
+      "kind": "system",
+      "statement": "一个 D3 联动分析系统，连接地理上下文、最终分区、年度状态、时间轮廓与局部邻接诊断。"
+    }
+  ],
+  "claim_boundaries": [
+    "Power Diagram、调和嵌入与力优化都是已有技术；新意在受约束的统一流程与最终多边形接受策略。",
+    "方法使用参考邻接监督，不是无监督拓扑发现算法。",
+    "Direct Polar 可能有更高原始邻接分数，但在多边形非法或重叠时不能支持合法分区优势结论。",
+    "固定身份和零几何漂移是构造保证，不是感知收益证据。",
+    "准确率、速度、可用性与认知负担结论需要真实参与者数据。",
+    "当前基准最大为 401 个单元，不能证明渐近复杂度或大规模交互性能。"
+  ],
+  "checks": [
+    {
+      "check_id": "tvcg_scope_fit",
+      "area": "positioning",
+      "status": "pass",
+      "evidence": "topology-based visualization, geometric processing, visual analytics and interaction",
+      "required_action": "Keep the title, abstract and index terms centered on the visualization contribution."
+    },
+    {
+      "check_id": "final_geometry_gate",
+      "area": "method",
+      "status": "pass",
+      "evidence": "rows=32; invalid=0; max overlap=1.7e-15; max gap=2.83e-15",
+      "required_action": "none"
+    },
+    {
+      "check_id": "cross_domain_evaluation",
+      "area": "experiments",
+      "status": "pass",
+      "evidence": "final-Power families=['ceg', 'external', 'synthetic'] plus astronomy evaluation",
+      "required_action": "Retain geographic, irregular, large-grid, synthetic and non-geographic cases."
+    },
+    {
+      "check_id": "paired_statistical_inference",
+      "area": "experiments",
+      "status": "pass",
+      "evidence": "paired rows=50; advanced rows=120; Holm correction present=True",
+      "required_action": "Use region/dataset as the independent unit and retain multiplicity correction."
+    },
+    {
+      "check_id": "robustness_and_ablation",
+      "area": "experiments",
+      "status": "pass",
+      "evidence": "seeds=5; regions=8; objective variants=6",
+      "required_action": "Report all declared seeds and negative ablation results."
+    },
+    {
+      "check_id": "runtime_scalability",
+      "area": "experiments",
+      "status": "pass",
+      "evidence": "sizes=[50, 130, 162, 401]; minimum repetitions=10; maximum cells=401",
+      "required_action": "Do not claim asymptotic or interactive scalability beyond the evaluated 401 cells."
+    },
+    {
+      "check_id": "temporal_encoding_evaluation",
+      "area": "experiments",
+      "status": "pass",
+      "evidence": "conditions=['derived_from_value_bins', 'direct_diverging_delta']; rows=8",
+      "required_action": "Keep numerical encoding fidelity separate from perceptual effectiveness."
+    },
+    {
+      "check_id": "clean_reproducible_artifact",
+      "area": "reproducibility",
+      "status": "pass",
+      "evidence": "clean run=20260901T151745Z; stages=32",
+      "required_action": "Preserve a successful clean manifest, exact environment and table-generating code."
+    },
+    {
+      "check_id": "hosted_snapshot_parity",
+      "area": "frontend",
+      "status": "pass",
+      "evidence": "snapshots=22; all expose final geometry gate=True",
+      "required_action": "Regenerate hosted snapshots from canonical backend artifacts."
+    },
+    {
+      "check_id": "linked_visual_analytics_system",
+      "area": "frontend",
+      "status": "pass",
+      "evidence": "D3 partition, map, ego-neighborhood, temporal-profile and coordinated selection views",
+      "required_action": "Retain task-driven linked interaction and avoid presenting decorative dashboard widgets."
+    },
+    {
+      "check_id": "human_system_evaluation",
+      "area": "frontend",
+      "status": "open",
+      "evidence": "participant response rows=0; prepared trials=96",
+      "required_action": "Run the preregistered study and report accuracy, response time, confidence, exclusions and ethics approval status."
+    },
+    {
+      "check_id": "primary_data_provenance",
+      "area": "data",
+      "status": "open",
+      "evidence": "missing fields: ['source_url', 'license', 'citation']",
+      "required_action": "Obtain and freeze the official CEG source URL, license/permission and citation before submission."
+    },
+    {
+      "check_id": "published_baseline_implementation",
+      "area": "related_work",
+      "status": "open",
+      "evidence": "Current baselines are project-local implementations.",
+      "required_action": "Add or justify at least one independently published topology-preserving/cartogram baseline and verify parameter parity."
+    },
+    {
+      "check_id": "confirmatory_holdout_dataset",
+      "area": "study_design",
+      "status": "open",
+      "evidence": "The eight CEG regions were available during method development.",
+      "required_action": "Freeze an untouched year or region before tuning, then run the declared primary comparison once."
+    },
+    {
+      "check_id": "manuscript_package",
+      "area": "writing",
+      "status": "partial",
+      "evidence": "method/evaluation/readiness reports and paper tables exist; no final IEEE-formatted manuscript is present",
+      "required_action": "Prepare a concise regular-paper manuscript, teaser, method diagram, main comparison figure and supplemental index."
+    }
+  ]
+}

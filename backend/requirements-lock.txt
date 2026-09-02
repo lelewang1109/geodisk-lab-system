@@ -1,0 +1,13 @@
+# Exact direct dependency versions used for the audited Python 3.9 artifact.
+# The formal run manifest additionally records the active platform and package versions.
+fastapi==0.128.8
+matplotlib==3.9.4
+netCDF4==1.7.2
+numpy==2.0.2
+pandas==2.3.3
+PyYAML==6.0.3
+pyshp==3.1.6
+scipy==1.13.1
+shapely==2.0.7
+xarray==2024.7.0
+uvicorn==0.39.0

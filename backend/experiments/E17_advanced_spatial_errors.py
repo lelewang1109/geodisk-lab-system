@@ -101,6 +101,14 @@ def main() -> None:
     for dataset in ("NE-Admin0-Africa", "NCEP-AirTemp-Africa-2000"):
         _evaluate_dataset(dataset, ROOT / "data/processed/external_regions", ROOT / "results/external_spatial", ROOT / "results/external_refined",
                           inner, outer, node_rows, group_rows, weight_rows)
+    _evaluate_dataset("NASA-Exoplanet-SkyGrid", ROOT / "data/processed/external_regions",
+                      ROOT / "results/astronomy_spatial", ROOT / "results/astronomy_spatial",
+                      inner, outer, node_rows, group_rows, weight_rows)
+    synthetic_root = ROOT / "data/processed/synthetic_regions"
+    for directory in sorted(path for path in synthetic_root.iterdir() if path.is_dir() and path.name.startswith("Synthetic-")):
+        _evaluate_dataset(directory.name, synthetic_root, ROOT / "results/synthetic_spatial",
+                          ROOT / "results/synthetic_refined", inner, outer,
+                          node_rows, group_rows, weight_rows)
     node = pd.DataFrame(node_rows); grouped = pd.DataFrame(group_rows); weighted = pd.DataFrame(weight_rows)
     write_csv(node, ROOT / "results/tables/Table_node_level_errors.csv")
     write_csv(grouped, ROOT / "results/tables/Table_boundary_interior_errors.csv")

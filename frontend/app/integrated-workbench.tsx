@@ -34,6 +34,12 @@ type WorkbenchData={
 };
 type AnnualData={annulus:{features:GeoFeature[]};state_intervals:Row[];monthly_summary:Row[];monthly_values:Row[];frequency:Row[];membership:Row[]};
 type LegacyData={annual_states:AnnualData;migration_paths:{provinces:{features:GeoFeature[]};case:Record<string,unknown>}};
+type EvidenceData={
+  evidence_mode:string;mutates_geometry:boolean;
+  final_geometry:{row_count:number;invalid_polygon_count:number;max_overlap_ratio:number;max_gap_ratio:number};
+  neighbor_models:Row[];contact_tolerances:Row[];objective_ablation:Row[];seed_stability:Row[];runtime:Row[];
+  readiness:{pass:number;open:number;checks:Row[]};claim_guardrails:string[];
+};
 
 const normalizedEdge=(edge:string[])=>[...edge].sort().join('\u0000');
 
@@ -53,11 +59,9 @@ export default function IntegratedWorkbench(){
   const [paramsOpen,setParamsOpen]=useState(false);
   const [neighborModel,setNeighborModel]=useState<'4'|'8'>('4');
   const [toleranceIndex,setToleranceIndex]=useState(2);
-  const [layers,setLayers]=useState(6);
-  const [areaPenalty,setAreaPenalty]=useState(.035);
-  const [weightedEdges,setWeightedEdges]=useState(true);
   const [workbench,setWorkbench]=useState<WorkbenchData|null>(null);
   const [legacy,setLegacy]=useState<LegacyData|null>(null);
+  const [evidence,setEvidence]=useState<EvidenceData|null>(null);
   const [online,setOnline]=useState(false);
 
   useEffect(()=>{
@@ -72,6 +76,8 @@ export default function IntegratedWorkbench(){
   useEffect(()=>{
     fetch(`${API}/api/legacy-insights`).then(response=>{if(!response.ok)throw new Error();return response.json()}).then(setLegacy)
       .catch(()=>fetch('/data/legacy-insights.json').then(response=>response.json()).then(setLegacy).catch(()=>setLegacy(null)));
+    fetch(`${API}/api/evidence`).then(response=>{if(!response.ok)throw new Error();return response.json()}).then(setEvidence)
+      .catch(()=>fetch('/data/experiment-evidence.json').then(response=>response.json()).then(setEvidence).catch(()=>setEvidence(null)));
   },[]);
 
   const original=useMemo(()=>workbench?.original.features||[],[workbench]);
@@ -121,6 +127,9 @@ export default function IntegratedWorkbench(){
   const mainTitle=lens==='topology'?(representation==='reference'?'Geographic reference':workbench?.method||'Final Power partition'):lens==='states'?`${stateId} annual pollution state`:'Regional transition field';
   const mainSubtitle=lens==='topology'?`${workbench?.label||currentDataset.name} · ${MONTHS[month]} · ${colorMode}`:lens==='states'?'Fixed annual geometry · linked month and state selection':`${labels[step]} · directional gateway evidence`;
   const toleranceValues=['1e-6','5e-6','2e-5','1e-4','5e-4'];
+  const selectedMethod=view==='disk'?'GeoDisk-Final':'GeoAnnulus-Final';
+  const neighborEvidence=evidence?.neighbor_models.find(row=>row.method===selectedMethod&&row.view===view&&row.neighbor_model===`${neighborModel}-neighbor`);
+  const toleranceEvidence=evidence?.contact_tolerances.find(row=>row.method===selectedMethod&&row.view===view&&Math.abs(Number(row.tolerance)-Number(toleranceValues[toleranceIndex]))<1e-12);
 
   function chooseProvince(name:string){
     setSelectedProvince(name);
@@ -212,10 +221,10 @@ export default function IntegratedWorkbench(){
     </section>
 
     {paramsOpen&&<div className="drawer-backdrop" onClick={()=>setParamsOpen(false)}><aside className="parameter-drawer" onClick={event=>event.stopPropagation()}>
-      <header><div><small>EXPERIMENT CONFIGURATION</small><h2>Parameter laboratory</h2><p>Visual controls update immediately. Geometry controls define the next reproducible backend rerun.</p></div><button onClick={()=>setParamsOpen(false)} aria-label="Close parameter panel">×</button></header>
-      <section><h3>Reference topology</h3><label><span>Neighborhood model</span><div className="drawer-segment"><button className={neighborModel==='4'?'active':''} onClick={()=>setNeighborModel('4')}>4-neighbor</button><button className={neighborModel==='8'?'active':''} onClick={()=>setNeighborModel('8')}>8-neighbor</button></div></label><label><span>Contact tolerance <b>ε = {toleranceValues[toleranceIndex]}</b></span><input type="range" min="0" max="4" value={toleranceIndex} onChange={event=>setToleranceIndex(Number(event.target.value))}/><small>Declared sensitivity range: 1e-6 → 5e-4</small></label><label className="drawer-check"><input type="checkbox" checked={weightedEdges} onChange={event=>setWeightedEdges(event.target.checked)}/><span>Shared-boundary-length weighting</span></label></section>
-      <section><h3>Final Power refinement</h3><label><span>Radial layers <b>{layers}</b></span><input type="range" min="4" max="6" value={layers} onChange={event=>setLayers(Number(event.target.value))}/></label><label><span>Area-CV penalty <b>{areaPenalty.toFixed(3)}</b></span><input type="range" min="0" max="0.1" step="0.005" value={areaPenalty} onChange={event=>setAreaPenalty(Number(event.target.value))}/></label><div className="objective-preview"><span>Candidate objective</span><code>F1 + 0.18 NP@2 − direction − angle − radial − {areaPenalty.toFixed(3)} CV</code></div></section>
-      <section className="drawer-note"><h3>Recommended next run</h3><p>Report {neighborModel}-neighbor results at ε={toleranceValues[toleranceIndex]}, with {layers} radial layers and {weightedEdges?'weighted':'binary'} adjacency. Keep the current fixed candidate schedule for every dataset.</p></section>
+      <header><div><small>FROZEN EXPERIMENT EVIDENCE</small><h2>Sensitivity inspector</h2><p>Selectors read canonical result tables. They never rewrite the displayed geometry or the formal experiment.</p></div><button onClick={()=>setParamsOpen(false)} aria-label="Close parameter panel">×</button></header>
+      <section><h3>Reference topology</h3><label><span>Neighborhood model</span><div className="drawer-segment"><button className={neighborModel==='4'?'active':''} onClick={()=>setNeighborModel('4')}>4-neighbor</button><button className={neighborModel==='8'?'active':''} onClick={()=>setNeighborModel('8')}>8-neighbor</button></div></label><div className="evidence-card"><span>MEASURED ACROSS {Number(neighborEvidence?.dataset_count??0)} CEG REGIONS</span><strong>F1 {Number(neighborEvidence?.adj_f1??0).toFixed(3)}</strong><em>NP@2 {Number(neighborEvidence?.np2??0).toFixed(3)}</em></div><label><span>Contact tolerance <b>ε = {toleranceValues[toleranceIndex]}</b></span><input type="range" min="0" max="4" value={toleranceIndex} onChange={event=>setToleranceIndex(Number(event.target.value))}/><small>Five declared thresholds; current mean F1 {Number(toleranceEvidence?.adj_f1??0).toFixed(3)}</small></label></section>
+      <section><h3>Canonical Final Power configuration</h3><div className="frozen-config"><span><b>6</b> radial layers</span><span><b>5</b> deterministic starts</span><span><b>1e-7</b> geometry gate</span></div><div className="objective-preview"><span>Candidate objective · fixed for all datasets</span><code>F1 + 0.18 NP@2 − 0.06 direction − 0.04 angle − 0.04 radial − 0.035 CV</code></div><div className="gate-line"><b>{evidence?.final_geometry.invalid_polygon_count??'—'} invalid</b><span>max overlap {Number(evidence?.final_geometry.max_overlap_ratio??0).toExponential(1)}</span></div></section>
+      <section className="drawer-note"><h3>Evidence boundary</h3><p>{evidence?.readiness.pass??0} formal checks pass; {evidence?.readiness.open??0} remain open. Parameter selectors inspect measured sensitivity only. New geometry requires a versioned backend rerun.</p></section>
     </aside></div>}
   </main>;
 }

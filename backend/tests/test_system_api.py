@@ -1,8 +1,11 @@
+import json
+from pathlib import Path
 import unittest
 
 from geodisk_paper.api import (
     DATASETS,
     METHODS,
+    evidence_payload,
     legacy_insights,
     overview_payload,
     read_table,
@@ -11,6 +14,7 @@ from geodisk_paper.api import (
 
 
 class SystemApiTest(unittest.TestCase):
+    ROOT = Path(__file__).resolve().parents[1]
     def test_overview_uses_canonical_result_tables(self):
         overview = overview_payload()
         self.assertEqual(overview["dataset_count"], len(DATASETS))
@@ -50,6 +54,25 @@ class SystemApiTest(unittest.TestCase):
         self.assertEqual(len(paths["provinces"]["features"]), 8)
         self.assertEqual(len(paths["case"]["gateway_sequence"]), 4)
         self.assertEqual(len(paths["path_table"]), 3)
+
+    def test_evidence_payload_is_frozen_and_traceable(self):
+        payload = evidence_payload()
+        self.assertEqual(payload["evidence_mode"], "frozen_canonical_tables")
+        self.assertFalse(payload["mutates_geometry"])
+        self.assertEqual(payload["final_geometry"]["invalid_polygon_count"], 0)
+        self.assertLessEqual(payload["final_geometry"]["max_overlap_ratio"], 1e-7)
+        self.assertTrue(payload["neighbor_models"])
+        self.assertTrue(payload["contact_tolerances"])
+        self.assertGreaterEqual(payload["readiness"]["pass"], 10)
+
+    def test_tvcg_claim_evidence_audit_is_machine_readable(self):
+        path = self.ROOT / "results/formal_readiness/tvcg_submission_audit.json"
+        payload = json.loads(path.read_text(encoding="utf-8"))
+        self.assertEqual(payload["verdict"], "algorithmic_artifact_ready_but_full_submission_not_ready")
+        self.assertGreaterEqual(payload["pass_count"], 10)
+        self.assertTrue(payload["research_questions"])
+        self.assertTrue(payload["contributions"])
+        self.assertIn("human_system_evaluation", {row["check_id"] for row in payload["checks"]})
 
 
 if __name__ == "__main__":

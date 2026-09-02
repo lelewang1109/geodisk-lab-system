@@ -1,0 +1,399 @@
+{
+  "run_id": "20260901T151745Z",
+  "status": "succeeded",
+  "started_at_utc": "2026-09-01T15:17:45.329905+00:00",
+  "git_commit": "b5edcd2dfb806d121199a43edfef7abfff9b8b0f",
+  "git_dirty_at_start": false,
+  "config_sha256": {
+    "config/datasets.yaml": "5a51ae2cb41f78a483cebf9d2e114d82829872cb9c5d859eadf864e94957137c",
+    "config/experiment.yaml": "2091bea43d601890c61572ea6d95b702fae49bf8dc7e184e3c0b71422b475cc9",
+    "config/formal_hypotheses.yaml": "2ec01866a6b3ee03ed5ecd5bb00398cb9c7959869e744faf5c7e123e59bbe7e1",
+    "config/geometry.yaml": "87b762105af0dd8bcfd2fe7fdf3da9cbc3f0edd975c6114e1084220c77ab30fc"
+  },
+  "environment": {
+    "python": "3.9.24",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "processor": "arm",
+    "packages": {
+      "fastapi": "0.128.8",
+      "matplotlib": "3.9.4",
+      "netCDF4": "1.7.2",
+      "numpy": "2.0.2",
+      "pandas": "2.3.3",
+      "PyYAML": "6.0.3",
+      "scipy": "1.13.1",
+      "shapely": "2.0.7",
+      "xarray": "2024.7.0"
+    },
+    "python_hash_seed": "20260827"
+  },
+  "options": {
+    "from_stage": null,
+    "through_stage": null,
+    "skip_runtime": false,
+    "skip_seed_stability": false,
+    "require_clean": true,
+    "list_stages": false
+  },
+  "stages": [
+    {
+      "name": "E0",
+      "command": [
+        "/opt/homebrew/opt/python@3.9/bin/python3.9",
+        "experiments/E0_data_audit.py"
+      ],
+      "status": "succeeded",
+      "log_file": "results/run_logs/20260901T151745Z/E0.log",
+      "duration_seconds": 31.156579375,
+      "return_code": 0
+    },
+    {
+      "name": "E1",
+      "command": [
+        "/opt/homebrew/opt/python@3.9/bin/python3.9",
+        "experiments/E1_prepare_regions.py"
+      ],
+      "status": "succeeded",
+      "log_file": "results/run_logs/20260901T151745Z/E1.log",
+      "duration_seconds": 25.618609542,
+      "return_code": 0
+    },
+    {
+      "name": "E2",
+      "command": [
+        "/opt/homebrew/opt/python@3.9/bin/python3.9",
+        "experiments/E2_baseline_geometry.py"
+      ],
+      "status": "succeeded",
+      "log_file": "results/run_logs/20260901T151745Z/E2.log",
+      "duration_seconds": 78.32816075,
+      "return_code": 0
+    },
+    {
+      "name": "E3",
+      "command": [
+        "/opt/homebrew/opt/python@3.9/bin/python3.9",
+        "experiments/E3_geodisk_geoannulus.py"
+      ],
+      "status": "succeeded",
+      "log_file": "results/run_logs/20260901T151745Z/E3.log",
+      "duration_seconds": 88.503524917,
+      "return_code": 0
+    },
+    {
+      "name": "E4",
+      "command": [
+        "/opt/homebrew/opt/python@3.9/bin/python3.9",
+        "experiments/E4_spatial_fidelity.py"
+      ],
+      "status": "succeeded",
+      "log_file": "results/run_logs/20260901T151745Z/E4.log",
+      "duration_seconds": 42.020378582999996,
+      "return_code": 0
+    },
+    {
+      "name": "E7",
+      "command": [
+        "/opt/homebrew/opt/python@3.9/bin/python3.9",
+        "experiments/E7_ablation.py"
+      ],
+      "status": "succeeded",
+      "log_file": "results/run_logs/20260901T151745Z/E7.log",
+      "duration_seconds": 406.035809209,
+      "return_code": 0
+    },
+    {
+      "name": "E8",
+      "command": [
+        "/opt/homebrew/opt/python@3.9/bin/python3.9",
+        "experiments/E8_sensitivity.py"
+      ],
+      "status": "succeeded",
+      "log_file": "results/run_logs/20260901T151745Z/E8.log",
+      "duration_seconds": 331.55003891600006,
+      "return_code": 0
+    },
+    {
+      "name": "E9",
+      "command": [
+        "/opt/homebrew/opt/python@3.9/bin/python3.9",
+        "experiments/E9_case_study.py"
+      ],
+      "status": "succeeded",
+      "log_file": "results/run_logs/20260901T151745Z/E9.log",
+      "duration_seconds": 0.06461074999992888,
+      "return_code": 0
+    },
+    {
+      "name": "DOWNLOAD_EXTERNAL",
+      "command": [
+        "bash",
+        "scripts/download_external_datasets.sh"
+      ],
+      "status": "succeeded",
+      "log_file": "results/run_logs/20260901T151745Z/DOWNLOAD_EXTERNAL.log",
+      "duration_seconds": 1.0181764170000633,
+      "return_code": 0
+    },
+    {
+      "name": "E10",
+      "command": [
+        "/opt/homebrew/opt/python@3.9/bin/python3.9",
+        "experiments/E10_prepare_external_datasets.py"
+      ],
+      "status": "succeeded",
+      "log_file": "results/run_logs/20260901T151745Z/E10.log",
+      "duration_seconds": 2.6240882920000104,
+      "return_code": 0
+    },
+    {
+      "name": "E11",
+      "command": [
+        "/opt/homebrew/opt/python@3.9/bin/python3.9",
+        "experiments/E11_external_spatial_geometry.py"
+      ],
+      "status": "succeeded",
+      "log_file": "results/run_logs/20260901T151745Z/E11.log",
+      "duration_seconds": 174.53826612499995,
+      "return_code": 0
+    },
+    {
+      "name": "E12",
+      "command": [
+        "/opt/homebrew/opt/python@3.9/bin/python3.9",
+        "experiments/E12_external_spatial_fidelity.py"
+      ],
+      "status": "succeeded",
+      "log_file": "results/run_logs/20260901T151745Z/E12.log",
+      "duration_seconds": 52.1071662920001,
+      "return_code": 0
+    },
+    {
+      "name": "E13",
+      "command": [
+        "/opt/homebrew/opt/python@3.9/bin/python3.9",
+        "experiments/E13_synthetic_stress.py"
+      ],
+      "status": "succeeded",
+      "log_file": "results/run_logs/20260901T151745Z/E13.log",
+      "duration_seconds": 265.10534262500005,
+      "return_code": 0
+    },
+    {
+      "name": "E15",
+      "command": [
+        "/opt/homebrew/opt/python@3.9/bin/python3.9",
+        "experiments/E15_bootstrap_statistics.py"
+      ],
+      "status": "succeeded",
+      "log_file": "results/run_logs/20260901T151745Z/E15.log",
+      "duration_seconds": 1.501815582999825,
+      "return_code": 0
+    },
+    {
+      "name": "E16",
+      "command": [
+        "/opt/homebrew/opt/python@3.9/bin/python3.9",
+        "experiments/E16_method_revision.py"
+      ],
+      "status": "succeeded",
+      "log_file": "results/run_logs/20260901T151745Z/E16.log",
+      "duration_seconds": 272.76859579200004,
+      "return_code": 0
+    },
+    {
+      "name": "E18",
+      "command": [
+        "/opt/homebrew/opt/python@3.9/bin/python3.9",
+        "experiments/E18_reference_sensitivity.py"
+      ],
+      "status": "succeeded",
+      "log_file": "results/run_logs/20260901T151745Z/E18.log",
+      "duration_seconds": 227.13552833300014,
+      "return_code": 0
+    },
+    {
+      "name": "E19",
+      "command": [
+        "/opt/homebrew/opt/python@3.9/bin/python3.9",
+        "experiments/E19_final_power_refinement.py"
+      ],
+      "status": "succeeded",
+      "log_file": "results/run_logs/20260901T151745Z/E19.log",
+      "duration_seconds": 1511.1495163340003,
+      "return_code": 0
+    },
+    {
+      "name": "E22",
+      "command": [
+        "/opt/homebrew/opt/python@3.9/bin/python3.9",
+        "experiments/E22_astronomy_generalization.py"
+      ],
+      "status": "succeeded",
+      "log_file": "results/run_logs/20260901T151745Z/E22.log",
+      "duration_seconds": 158.13473345800003,
+      "return_code": 0
+    },
+    {
+      "name": "E14",
+      "command": [
+        "/opt/homebrew/opt/python@3.9/bin/python3.9",
+        "experiments/E14_contact_tolerance.py"
+      ],
+      "status": "succeeded",
+      "log_file": "results/run_logs/20260901T151745Z/E14.log",
+      "duration_seconds": 277.6515871249999,
+      "return_code": 0
+    },
+    {
+      "name": "E17",
+      "command": [
+        "/opt/homebrew/opt/python@3.9/bin/python3.9",
+        "experiments/E17_advanced_spatial_errors.py"
+      ],
+      "status": "succeeded",
+      "log_file": "results/run_logs/20260901T151745Z/E17.log",
+      "duration_seconds": 120.85472629199967,
+      "return_code": 0
+    },
+    {
+      "name": "E20",
+      "command": [
+        "/opt/homebrew/opt/python@3.9/bin/python3.9",
+        "experiments/E20_refined_statistics.py"
+      ],
+      "status": "succeeded",
+      "log_file": "results/run_logs/20260901T151745Z/E20.log",
+      "duration_seconds": 1.9277567500002988,
+      "return_code": 0
+    },
+    {
+      "name": "E24",
+      "command": [
+        "/opt/homebrew/opt/python@3.9/bin/python3.9",
+        "experiments/E24_refinement_ablation.py"
+      ],
+      "status": "succeeded",
+      "log_file": "results/run_logs/20260901T151745Z/E24.log",
+      "duration_seconds": 1.5848394169997846,
+      "return_code": 0
+    },
+    {
+      "name": "E25",
+      "command": [
+        "/opt/homebrew/opt/python@3.9/bin/python3.9",
+        "experiments/E25_final_objective_ablation.py"
+      ],
+      "status": "succeeded",
+      "log_file": "results/run_logs/20260901T151745Z/E25.log",
+      "duration_seconds": 653.3367737910003,
+      "return_code": 0
+    },
+    {
+      "name": "E26",
+      "command": [
+        "/opt/homebrew/opt/python@3.9/bin/python3.9",
+        "experiments/E26_seed_stability.py"
+      ],
+      "status": "succeeded",
+      "log_file": "results/run_logs/20260901T151745Z/E26.log",
+      "duration_seconds": 2808.0967941670006,
+      "return_code": 0
+    },
+    {
+      "name": "E27",
+      "command": [
+        "/opt/homebrew/opt/python@3.9/bin/python3.9",
+        "experiments/E27_advanced_statistics.py"
+      ],
+      "status": "succeeded",
+      "log_file": "results/run_logs/20260901T151745Z/E27.log",
+      "duration_seconds": 2.0060188750003363,
+      "return_code": 0
+    },
+    {
+      "name": "E28",
+      "command": [
+        "/opt/homebrew/opt/python@3.9/bin/python3.9",
+        "experiments/E28_failure_cases.py"
+      ],
+      "status": "succeeded",
+      "log_file": "results/run_logs/20260901T151745Z/E28.log",
+      "duration_seconds": 1.4584102079998047,
+      "return_code": 0
+    },
+    {
+      "name": "E23",
+      "command": [
+        "/opt/homebrew/opt/python@3.9/bin/python3.9",
+        "experiments/E23_runtime_scalability.py"
+      ],
+      "status": "succeeded",
+      "log_file": "results/run_logs/20260901T151745Z/E23.log",
+      "duration_seconds": 2320.326434875,
+      "return_code": 0
+    },
+    {
+      "name": "E5",
+      "command": [
+        "/opt/homebrew/opt/python@3.9/bin/python3.9",
+        "experiments/E5_temporal_delta.py"
+      ],
+      "status": "succeeded",
+      "log_file": "results/run_logs/20260901T151745Z/E5.log",
+      "duration_seconds": 5.672092583999984,
+      "return_code": 0
+    },
+    {
+      "name": "E6",
+      "command": [
+        "/opt/homebrew/opt/python@3.9/bin/python3.9",
+        "experiments/E6_change_metrics.py"
+      ],
+      "status": "succeeded",
+      "log_file": "results/run_logs/20260901T151745Z/E6.log",
+      "duration_seconds": 2.402207791999899,
+      "return_code": 0
+    },
+    {
+      "name": "E21",
+      "command": [
+        "/opt/homebrew/opt/python@3.9/bin/python3.9",
+        "experiments/E21_user_study_materials.py"
+      ],
+      "status": "succeeded",
+      "log_file": "results/run_logs/20260901T151745Z/E21.log",
+      "duration_seconds": 4.256069999999454,
+      "return_code": 0
+    },
+    {
+      "name": "TESTS",
+      "command": [
+        "/opt/homebrew/opt/python@3.9/bin/python3.9",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "status": "succeeded",
+      "log_file": "results/run_logs/20260901T151745Z/TESTS.log",
+      "duration_seconds": 4.01144291700075,
+      "return_code": 0
+    },
+    {
+      "name": "E29",
+      "command": [
+        "/opt/homebrew/opt/python@3.9/bin/python3.9",
+        "experiments/E29_formal_readiness_audit.py"
+      ],
+      "status": "succeeded",
+      "log_file": "results/run_logs/20260901T151745Z/E29.log",
+      "duration_seconds": 0.42398366700035695,
+      "return_code": 0
+    }
+  ],
+  "finished_at_utc": "2026-09-02T01:20:13.053665+00:00",
+  "git_dirty_at_end": true
+}

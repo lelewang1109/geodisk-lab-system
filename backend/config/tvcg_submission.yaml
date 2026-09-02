@@ -1,0 +1,54 @@
+venue: IEEE Transactions on Visualization and Computer Graphics
+article_type: regular_journal_article
+positioning: topology_based_geospatial_visualization_and_visual_analytics
+
+research_goal: >-
+  将固定地理或空间分区转换为紧凑的圆盘与圆环 Power Diagram，在几何合法的前提下尽可能
+  保留参考邻接、局部邻域、方向和中心—边缘次序，并复用相同单元身份与几何进行稳定的时间
+  比较和联动诊断。
+
+research_questions:
+  - id: RQ1
+    question: 方法能否始终返回满足几何准入条件的最终 Power 分区？
+    evidence: [geometry_validity, overlap_ratio, gap_ratio]
+  - id: RQ2
+    question: 直接优化最终多边形邻接，能否相对合法基线提高拓扑保持？
+    evidence: [adjacency_f1, weighted_adjacency_f1, np2, paired_inference]
+  - id: RQ3
+    question: 剩余错误集中在哪里，结论能否跨参考定义、参数和数据领域保持稳定？
+    evidence: [boundary_interior, failure_taxonomy, reference_sensitivity, cross_domain, seed_stability]
+  - id: RQ4
+    question: 固定几何能否支持数值忠实的时间变化编码？
+    evidence: [temporal_change_fidelity]
+  - id: RQ5
+    question: 联动系统能否提高人的准确率、速度或理解质量？
+    evidence: [preregistered_user_study]
+
+contributions:
+  - id: C1
+    kind: algorithm
+    statement: >-
+      一种参考拓扑监督的多起点圆盘/圆环布局：在真实最终面积平衡 Power 多边形上评价候选，
+      并使用全局几何硬门槛约束最终选择。
+  - id: C2
+    kind: diagnostic_evaluation
+    statement: >-
+      一套结合二值邻接、共享边界长度加权邻接、k-hop 邻域、边界/内部节点误差和局部失败案例的
+      拓扑诊断协议。
+  - id: C3
+    kind: temporal_representation
+    statement: >-
+      一种固定身份的 DeltaAnnulus 时间表示，将有符号变化与标量值分开编码，并在无几何漂移的
+      月份序列上评价。
+  - id: C4
+    kind: system
+    statement: >-
+      一个 D3 联动分析系统，连接地理上下文、最终分区、年度状态、时间轮廓与局部邻接诊断。
+
+claim_boundaries:
+  - Power Diagram、调和嵌入与力优化都是已有技术；新意在受约束的统一流程与最终多边形接受策略。
+  - 方法使用参考邻接监督，不是无监督拓扑发现算法。
+  - Direct Polar 可能有更高原始邻接分数，但在多边形非法或重叠时不能支持合法分区优势结论。
+  - 固定身份和零几何漂移是构造保证，不是感知收益证据。
+  - 准确率、速度、可用性与认知负担结论需要真实参与者数据。
+  - 当前基准最大为 401 个单元，不能证明渐近复杂度或大规模交互性能。

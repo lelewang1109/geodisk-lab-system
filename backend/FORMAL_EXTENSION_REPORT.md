@@ -1,5 +1,7 @@
 # Formal Experiment Extension Report
 
+> This document records the pre-final extension stage. It is retained for provenance; final hard-gated results and current claims are in `paper/TVCG_SUBMISSION_AUDIT_CN.md` and `FORMAL_EXPERIMENT_PROTOCOL_CN.md`.
+
 ## Completed extension
 
 The first formal extension adds independent spatial models rather than merely recoloring the CEG grid:
@@ -45,4 +47,3 @@ An explicitly separate revision adds six layers, NP2/local-direction objective t
 4. Optimize against the final power partition rather than only the regular slot graph.
 5. Add a license-clear non-environmental scientific scalar field.
 6. Complete DeltaAnnulus monthly/change correctness and the preregistered temporal-task benchmark.
-

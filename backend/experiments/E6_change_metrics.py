@@ -25,9 +25,14 @@ def _metrics(true: np.ndarray, predicted: np.ndarray, scale: float) -> dict[str,
     epsilon = max(scale * 1e-8, 1e-12)
     active = np.abs(true) > epsilon
     sign = float(np.mean(np.sign(true[active]) == np.sign(predicted[active]))) if np.any(active) else 1.0
-    rank = float(spearmanr(np.abs(true), np.abs(predicted)).statistic)
-    if not np.isfinite(rank):
+    absolute_true = np.abs(true)
+    absolute_predicted = np.abs(predicted)
+    if np.ptp(absolute_true) <= epsilon or np.ptp(absolute_predicted) <= epsilon:
         rank = 0.0
+    else:
+        rank = float(spearmanr(absolute_true, absolute_predicted).statistic)
+        if not np.isfinite(rank):
+            rank = 0.0
     true_top, predicted_top = _top_fraction(true, .10), _top_fraction(predicted, .10)
     top_jaccard = len(true_top & predicted_top) / len(true_top | predicted_top)
     threshold = float(np.quantile(np.abs(true), .75))

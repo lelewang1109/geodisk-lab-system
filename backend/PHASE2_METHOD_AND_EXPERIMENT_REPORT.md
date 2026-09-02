@@ -1,5 +1,7 @@
 # Phase II Method and Experiment Report
 
+> Final hard-gated results and TVCG-facing claim boundaries are maintained in `paper/TVCG_SUBMISSION_AUDIT_CN.md`. The values below have been synchronized to the successful clean formal run `20260901T151745Z`.
+
 ## 1. What changed
 
 Phase II replaces the earlier slot-graph-only search with a deterministic multi-start refinement whose acceptance test is computed from the **final balanced Power polygons**. Every candidate is fully reconstructed, polygon adjacency is re-extracted, and only then is the objective evaluated. The resulting methods are named `GeoDisk-Final` and `GeoAnnulus-Final`; the original `GeoDisk` and `GeoAnnulus` outputs remain unchanged for an honest before/after comparison.
@@ -42,18 +44,18 @@ Changing from full retained macro-cells to province-clipped reference polygons m
 
 | Family | Method | View | Before F1 | Refined F1 | NP@2 | Invalid |
 |---|---|---:|---:|---:|---:|---:|
-| CEG (8) | GeoDisk-Final | Disk | 0.660 | 0.780 | 0.644 | 0 |
+| CEG (8) | GeoDisk-Final | Disk | 0.660 | 0.778 | 0.642 | 0 |
 | CEG (8) | GeoAnnulus-Final | Annulus | 0.630 | 0.748 | 0.640 | 0 |
 | External (2) | GeoDisk-Final | Disk | 0.560 | 0.738 | 0.636 | 0 |
 | External (2) | GeoAnnulus-Final | Annulus | 0.510 | 0.650 | 0.545 | 0 |
 | Synthetic (6) | GeoDisk-Final | Disk | 0.618 | 0.771 | 0.636 | 0 |
-| Synthetic (6) | GeoAnnulus-Final | Annulus | 0.605 | 0.715 | 0.605 | 0 |
+| Synthetic (6) | GeoAnnulus-Final | Annulus | 0.605 | 0.700 | 0.593 | 0 |
 
 On the 8 CEG regions, paired bootstrap differences and exact paired sign-flip tests show (raw p followed by Holm-adjusted p across the five comparators in the same view/metric family):
 
-- GeoDisk-Final versus Harmonic: `+0.053` F1, 95% CI `[+0.017, +0.103]`, `p=0.0156`, Holm `p=0.0391`.
-- GeoDisk-Final versus Area-balanced: `+0.046`, CI `[+0.031, +0.061]`, `p=0.0078`, Holm `p=0.0391`.
-- GeoDisk-Final versus Direct Polar: `-0.082`, CI `[-0.095, -0.070]`, `p=0.0078`, Holm `p=0.0391`.
+- GeoDisk-Final versus Harmonic: `+0.051` F1, 95% CI `[+0.017, +0.101]`, `p=0.0156`, Holm `p=0.0391`.
+- GeoDisk-Final versus Area-balanced: `+0.044`, CI `[+0.031, +0.057]`, `p=0.0078`, Holm `p=0.0391`.
+- GeoDisk-Final versus Direct Polar: `-0.084`, CI `[-0.096, -0.072]`, `p=0.0078`, Holm `p=0.0391`.
 - GeoAnnulus-Final versus Harmonic: `+0.057`, CI `[+0.032, +0.083]`, `p=0.0156`, Holm `p=0.0391`.
 - GeoAnnulus-Final versus Area-balanced: `+0.097`, CI `[+0.077, +0.113]`, `p=0.0078`, Holm `p=0.0391`.
 - GeoAnnulus-Final versus Direct Polar: `-0.076`, CI `[-0.098, -0.057]`, `p=0.0078`, Holm `p=0.0391`.
@@ -95,12 +97,12 @@ Fixed identity accuracy 1.0, centroid drift 0 and temporal adjacency Jaccard 1.0
 
 Single-process wall-clock measurements on the recorded local environment show:
 
-- 50 cells: 1.69 s final refinement.
-- 130 cells: 12.13 s.
-- 162 cells: 18.27 s.
-- 401 cells: 61.60 s, plus 42.54 s for the slot embedding.
+- 50 cells: 4.54 s final-refinement median.
+- 130 cells: 32.53 s.
+- 162 cells: 48.83 s.
+- 401 cells: 39.71 s, plus 33.09 s for the slot embedding.
 
-The final refinement is roughly 10–17 times slower than one original Power-partition generation in these cases. These are single-run engineering measurements, not runtime confidence intervals.
+The final refinement is roughly 9.9–18.1 times slower than one original Power-partition generation in these cases. Each dataset is warmed up once and measured ten times; the formal table reports median, IQR, mean and sample standard deviation. Suite-process high-water RSS is about 149.3 MB, which is a cumulative upper bound rather than an isolated per-method memory delta.
 
 ## 9. User study readiness
 

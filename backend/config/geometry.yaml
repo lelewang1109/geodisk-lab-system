@@ -32,11 +32,18 @@ method_revision:
     local_direction: 0.08
     radial: 0.08
 final_power_refinement:
+  contact_tolerance: 0.00002
   power_iterations_small: 3
   power_iterations_large: 2
   force_iterations_small: 4
   force_iterations_large: 2
   large_dataset_cell_threshold: 250
+  embedding_optimize_passes:
+    ceg: 5
+    other: 3
+  embedding_candidate_budget:
+    ceg: 250
+    other: 120
   candidate_schedule: [topology, harmonic, geographic, topology_harmonic_50, topology_geographic_50]
   objective_weights:
     adjacency: 1.0

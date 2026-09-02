@@ -23,7 +23,7 @@ def adjacency_scores(reference: set[tuple[str, str]], display: set[tuple[str, st
 
 def _within_k(nodes: list[str], edges: set[tuple[str, str]], k: int) -> dict[str, set[str]]:
     graph = {node: set() for node in nodes}
-    for left, right in edges:
+    for left, right in sorted(edges):
         if left in graph and right in graph:
             graph[left].add(right)
             graph[right].add(left)
@@ -35,7 +35,7 @@ def _within_k(nodes: list[str], edges: set[tuple[str, str]], k: int) -> dict[str
             current = queue.popleft()
             if seen[current] >= k:
                 continue
-            for nxt in graph[current]:
+            for nxt in sorted(graph[current]):
                 if nxt not in seen:
                     seen[nxt] = seen[current] + 1
                     queue.append(nxt)
@@ -66,14 +66,14 @@ def weighted_adjacency_scores(
     reference = {tuple(sorted(edge)): max(float(value), 0.0) for edge, value in reference.items()}
     display = {tuple(sorted(edge)): max(float(value), 0.0) for edge, value in display.items()}
     common = set(reference) & set(display)
-    reference_total = sum(reference.values())
-    display_total = sum(display.values())
-    precision = sum(display[edge] for edge in common) / display_total if display_total else (1.0 if not reference_total else 0.0)
-    recall = sum(reference[edge] for edge in common) / reference_total if reference_total else 1.0
+    reference_total = sum(reference[edge] for edge in sorted(reference))
+    display_total = sum(display[edge] for edge in sorted(display))
+    precision = sum(display[edge] for edge in sorted(common)) / display_total if display_total else (1.0 if not reference_total else 0.0)
+    recall = sum(reference[edge] for edge in sorted(common)) / reference_total if reference_total else 1.0
     f1 = 2.0 * precision * recall / (precision + recall) if precision + recall else 0.0
     if reference_total and display_total:
         overlap = sum(min(reference.get(edge, 0.0) / reference_total, display.get(edge, 0.0) / display_total)
-                      for edge in set(reference) | set(display))
+                      for edge in sorted(set(reference) | set(display)))
     else:
         overlap = 1.0 if not reference_total and not display_total else 0.0
     return {
@@ -98,7 +98,7 @@ def local_direction_error_deg(
 ) -> float:
     values = []
     cosine = math.cos(math.radians(reference_latitude))
-    for left, right in reference_edges:
+    for left, right in sorted(reference_edges):
         lon1, lat1 = original_centroids[left]
         lon2, lat2 = original_centroids[right]
         original = math.atan2(lat2 - lat1, (lon2 - lon1) * cosine)
@@ -135,10 +135,10 @@ def node_level_fidelity(
     """Return per-cell topology and positional errors for error decomposition."""
     reference_graph = {cell_id: set() for cell_id in cell_ids}
     display_graph = {cell_id: set() for cell_id in cell_ids}
-    for left, right in reference_edges:
+    for left, right in sorted(reference_edges):
         if left in reference_graph and right in reference_graph:
             reference_graph[left].add(right); reference_graph[right].add(left)
-    for left, right in display_edges:
+    for left, right in sorted(display_edges):
         if left in display_graph and right in display_graph:
             display_graph[left].add(right); display_graph[right].add(left)
     display_radius = {cell_id: math.hypot(*display_centroids[cell_id]) for cell_id in cell_ids}
@@ -157,7 +157,7 @@ def node_level_fidelity(
         order_matches = []
         lon1, lat1 = original_centroids[cell_id]
         x1, y1 = display_centroids[cell_id]
-        for other in expected:
+        for other in sorted(expected):
             lon2, lat2 = original_centroids[other]
             x2, y2 = display_centroids[other]
             original = math.atan2(lat2 - lat1, (lon2 - lon1) * cosine)

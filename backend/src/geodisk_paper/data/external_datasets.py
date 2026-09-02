@@ -74,7 +74,7 @@ def shared_boundary_edges(ids: list[str], polygons: list, minimum_length: float 
 
 def _largest_connected_component(ids: list[str], edges: set[tuple[str, str]]) -> set[str]:
     graph = {cell_id: set() for cell_id in ids}
-    for left, right in edges:
+    for left, right in sorted(edges):
         graph[left].add(right); graph[right].add(left)
     components, seen = [], set()
     for start in ids:
@@ -85,7 +85,7 @@ def _largest_connected_component(ids: list[str], edges: set[tuple[str, str]]) ->
             node = stack.pop()
             if node in component:
                 continue
-            component.add(node); seen.add(node); stack.extend(graph[node] - component)
+            component.add(node); seen.add(node); stack.extend(sorted(graph[node] - component, reverse=True))
         components.append(component)
     return max(components, key=len)
 
@@ -293,7 +293,7 @@ def prepare_synthetic_references(output_root: str | Path) -> dict[str, RegionRef
         point = domain.representative_point(); anchor = (float(point.x), float(point.y))
         theta_values, rho_values, boundary_values = [], [], []
         degrees = defaultdict(int)
-        for left, right in edges: degrees[left] += 1; degrees[right] += 1
+        for left, right in sorted(edges): degrees[left] += 1; degrees[right] += 1
         for item in cells.itertuples():
             x, y = _local_xy(item.longitude, item.latitude, *anchor)
             theta = math.atan2(float(y), float(x))

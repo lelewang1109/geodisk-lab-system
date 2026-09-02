@@ -48,6 +48,8 @@ def main() -> None:
         baseline_results.append(refine_final_power_adjacency(
             reference, embedding, view, inner=inner, outer=outer, power_iterations=3, force_iterations=4,
             objective_weights=dict(config["final_power_refinement"]["objective_weights"]),
+            candidate_schedule=list(config["final_power_refinement"]["candidate_schedule"]),
+            contact_tolerance=float(config["final_power_refinement"]["contact_tolerance"]),
         ))
         stems = ["direct_polar", "harmonic", "area_balanced", "regular_topology", "proposed", "final_refined"]
         for stem, result in zip(stems, baseline_results):

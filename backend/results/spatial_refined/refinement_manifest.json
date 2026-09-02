@@ -15,5 +15,15 @@
     "angular": 0.04,
     "radial": 0.04,
     "area_cv": 0.035
-  }
+  },
+  "contact_tolerance": 2e-05,
+  "embedding_optimize_passes": {
+    "ceg": 5,
+    "other": 3
+  },
+  "embedding_candidate_budget": {
+    "ceg": 250,
+    "other": 120
+  },
+  "seed": 20260827
 }

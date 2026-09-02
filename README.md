@@ -35,7 +35,13 @@ geodisk-lab-system/
 └── scripts/                      # setup, start and verification entry points
 ```
 
-The repository is self-contained. The integrated annual-state and migration-path views read the bundled snapshot in `frontend/public/data/legacy-insights.json`; they do not require the original sibling project folders.
+The hosted interface is self-contained: the integrated annual-state and
+migration-path views read the bundled snapshot in
+`frontend/public/data/legacy-insights.json`. A from-raw-data reproduction of the
+formal CEG experiments additionally requires the 366 source NetCDF files at the
+path declared in `backend/config/datasets.yaml`; those files are intentionally
+not described as redistributable until their source, citation and permission
+record is completed.
 
 ## Quick start
 
@@ -108,5 +114,7 @@ The local API exposes only canonical artifacts and a whitelist of experiment com
 - [Evaluation metrics and experiment protocol (Chinese)](docs/EVALUATION_METRICS_CN.md)
 - [Top-conference interface redesign and experiment linkage (Chinese)](docs/INTERFACE_REDESIGN_CN.md)
 - [Experiment roadmap](backend/FORMAL_EXPERIMENT_ROADMAP.md)
+- [Formal experiment protocol and backend gap audit (Chinese)](backend/FORMAL_EXPERIMENT_PROTOCOL_CN.md)
+- [Machine-generated formal readiness audit](backend/paper/FORMAL_EXPERIMENT_READINESS.md)
 - [Phase 2 method and experiment report](backend/PHASE2_METHOD_AND_EXPERIMENT_REPORT.md)
 - [User-study protocol](backend/user_study/USER_STUDY_PROTOCOL.md)

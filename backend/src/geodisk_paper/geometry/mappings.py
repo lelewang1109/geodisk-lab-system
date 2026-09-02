@@ -65,7 +65,7 @@ def harmonic_seed_positions(reference: RegionReference, view: str, inner: float,
     ids = frame.cell_id.astype(str).tolist()
     index = {cell_id: i for i, cell_id in enumerate(ids)}
     neighbors = [set() for _ in ids]
-    for left, right in reference.edges:
+    for left, right in sorted(reference.edges):
         a, b = index[left], index[right]
         neighbors[a].add(b); neighbors[b].add(a)
     theta = frame.theta.to_numpy(float)
@@ -90,7 +90,7 @@ def harmonic_seed_positions(reference: RegionReference, view: str, inner: float,
         row = free_index[node]
         degree = max(len(neighbors[node]), 1)
         matrix[row, row] = degree + 1e-8
-        for other in neighbors[node]:
+        for other in sorted(neighbors[node]):
             if other in fixed:
                 rhs[row] += fixed[other]
             else:

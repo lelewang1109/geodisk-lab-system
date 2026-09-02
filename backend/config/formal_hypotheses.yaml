@@ -1,0 +1,43 @@
+analysis_plan:
+  status: post_hoc_frozen_for_future_reruns
+  caveat: This plan was added after exploratory development and is not a preregistration.
+  independent_unit: region_or_dataset
+  random_seed_policy: report_all_declared_seeds_not_best_seed
+  uncertainty: region_level_paired_bootstrap_95_ci
+  hypothesis_test: exact_paired_sign_flip
+  multiplicity: holm_within_each_declared_view_group_metric_family
+
+primary_hypotheses:
+  - id: H1_geometry_admissibility
+    question: Do the final Disk and Annulus layouts satisfy polygon validity and overlap constraints?
+    methods: [GeoDisk-Final, GeoAnnulus-Final]
+    outcomes: [invalid_polygon_count, overlap_ratio, gap_ratio]
+    direction: invalid_polygon_count_equals_zero
+  - id: H2_final_adjacency
+    question: Under valid geometry, does final-Power refinement preserve reference adjacency better than legal baselines?
+    methods: [GeoDisk-Final, GeoAnnulus-Final]
+    comparators: [Harmonic, Area-balanced, Regular Topology]
+    primary_outcome: weighted_adj_f1
+    secondary_outcomes: [adj_f1, adj_precision, adj_recall, np2]
+    direction: higher_is_better
+  - id: H3_local_topology
+    question: Is the adjacency advantage present for both boundary and interior nodes?
+    groups: [boundary, interior]
+    primary_outcome: node_adj_f1
+    secondary_outcomes: [node_neighbor_jaccard, degree_absolute_error, node_direction_error_deg, node_neighbor_order_accuracy]
+
+robustness_questions:
+  - id: R1_reference_definition
+    factors: [4-neighbor, 8-neighbor, full_macro_cell, province_clipped]
+  - id: R2_contact_tolerance
+    factors: [1.0e-6, 5.0e-6, 2.0e-5, 1.0e-4, 5.0e-4]
+  - id: R3_random_seed
+    report: [mean, sample_standard_deviation, minimum, maximum]
+  - id: R4_objective_ablation
+    report: [full_objective, leave_one_term_out]
+
+claim_guardrails:
+  - Direct Polar may score well on adjacency but is excluded from valid-geometry superiority claims when it produces invalid polygons.
+  - Perceptual accuracy, speed and cognitive-load claims require real participant responses.
+  - Existing CEG regions are exploratory/development benchmarks, not a preregistered holdout.
+  - A non-significant result is not evidence that two methods are equivalent.
