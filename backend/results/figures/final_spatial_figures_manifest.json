@@ -1,0 +1,102 @@
+{
+  "producer": "E31_final_spatial_figures.py",
+  "figures": [
+    {
+      "region": "湖北",
+      "figure": "results/figures/Fig_final_spatial_comparison_Hubei.png",
+      "inputs": [
+        "results/spatial/湖北/direct_polar_annulus.geojson",
+        "results/spatial/湖北/harmonic_annulus.geojson",
+        "results/spatial/湖北/area_balanced_annulus.geojson",
+        "results/spatial/湖北/regular_topology_annulus.geojson",
+        "results/spatial_refined/湖北/final_refined_disk.geojson",
+        "results/spatial_refined/湖北/final_refined_annulus.geojson"
+      ]
+    },
+    {
+      "region": "湖南",
+      "figure": "results/figures/Fig_final_spatial_comparison_Hunan.png",
+      "inputs": [
+        "results/spatial/湖南/direct_polar_annulus.geojson",
+        "results/spatial/湖南/harmonic_annulus.geojson",
+        "results/spatial/湖南/area_balanced_annulus.geojson",
+        "results/spatial/湖南/regular_topology_annulus.geojson",
+        "results/spatial_refined/湖南/final_refined_disk.geojson",
+        "results/spatial_refined/湖南/final_refined_annulus.geojson"
+      ]
+    },
+    {
+      "region": "江西",
+      "figure": "results/figures/Fig_final_spatial_comparison_Jiangxi.png",
+      "inputs": [
+        "results/spatial/江西/direct_polar_annulus.geojson",
+        "results/spatial/江西/harmonic_annulus.geojson",
+        "results/spatial/江西/area_balanced_annulus.geojson",
+        "results/spatial/江西/regular_topology_annulus.geojson",
+        "results/spatial_refined/江西/final_refined_disk.geojson",
+        "results/spatial_refined/江西/final_refined_annulus.geojson"
+      ]
+    },
+    {
+      "region": "广东",
+      "figure": "results/figures/Fig_final_spatial_comparison_Guangdong.png",
+      "inputs": [
+        "results/spatial/广东/direct_polar_annulus.geojson",
+        "results/spatial/广东/harmonic_annulus.geojson",
+        "results/spatial/广东/area_balanced_annulus.geojson",
+        "results/spatial/广东/regular_topology_annulus.geojson",
+        "results/spatial_refined/广东/final_refined_disk.geojson",
+        "results/spatial_refined/广东/final_refined_annulus.geojson"
+      ]
+    },
+    {
+      "region": "福建",
+      "figure": "results/figures/Fig_final_spatial_comparison_Fujian.png",
+      "inputs": [
+        "results/spatial/福建/direct_polar_annulus.geojson",
+        "results/spatial/福建/harmonic_annulus.geojson",
+        "results/spatial/福建/area_balanced_annulus.geojson",
+        "results/spatial/福建/regular_topology_annulus.geojson",
+        "results/spatial_refined/福建/final_refined_disk.geojson",
+        "results/spatial_refined/福建/final_refined_annulus.geojson"
+      ]
+    },
+    {
+      "region": "广西",
+      "figure": "results/figures/Fig_final_spatial_comparison_Guangxi.png",
+      "inputs": [
+        "results/spatial/广西/direct_polar_annulus.geojson",
+        "results/spatial/广西/harmonic_annulus.geojson",
+        "results/spatial/广西/area_balanced_annulus.geojson",
+        "results/spatial/广西/regular_topology_annulus.geojson",
+        "results/spatial_refined/广西/final_refined_disk.geojson",
+        "results/spatial_refined/广西/final_refined_annulus.geojson"
+      ]
+    },
+    {
+      "region": "安徽",
+      "figure": "results/figures/Fig_final_spatial_comparison_Anhui.png",
+      "inputs": [
+        "results/spatial/安徽/direct_polar_annulus.geojson",
+        "results/spatial/安徽/harmonic_annulus.geojson",
+        "results/spatial/安徽/area_balanced_annulus.geojson",
+        "results/spatial/安徽/regular_topology_annulus.geojson",
+        "results/spatial_refined/安徽/final_refined_disk.geojson",
+        "results/spatial_refined/安徽/final_refined_annulus.geojson"
+      ]
+    },
+    {
+      "region": "浙江",
+      "figure": "results/figures/Fig_final_spatial_comparison_Zhejiang.png",
+      "inputs": [
+        "results/spatial/浙江/direct_polar_annulus.geojson",
+        "results/spatial/浙江/harmonic_annulus.geojson",
+        "results/spatial/浙江/area_balanced_annulus.geojson",
+        "results/spatial/浙江/regular_topology_annulus.geojson",
+        "results/spatial_refined/浙江/final_refined_disk.geojson",
+        "results/spatial_refined/浙江/final_refined_annulus.geojson"
+      ]
+    }
+  ],
+  "visual_policy": "identical scalar, colormap, normalization, boundaries, typography, size and 300 dpi within every figure"
+}

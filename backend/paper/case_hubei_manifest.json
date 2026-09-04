@@ -1,0 +1,142 @@
+{
+  "producer": "E38_case_study_hubei_temporal.py",
+  "region": "湖北",
+  "selection_rule": "Equal-weight mean of min-max normalized mean absolute delta, p95 absolute delta, and high-change cell fraction over all 11 transitions; earliest month breaks an exact tie.",
+  "high_change_threshold": 11.397376008699077,
+  "selected_month": 12,
+  "selected_transition": "M11-M12",
+  "selected_event_score": 1.0,
+  "all_transition_scores": [
+    {
+      "month": 2,
+      "transition": "M01-M02",
+      "mean_absolute_delta": 8.45615199538882,
+      "p95_absolute_delta": 13.553423181952226,
+      "high_change_cell_fraction": 0.2692307692307692,
+      "normalized_mean_absolute_delta": 0.4637288178410603,
+      "normalized_p95_absolute_delta": 0.4932710861168624,
+      "normalized_high_change_cell_fraction": 0.3333333333333333,
+      "event_score": 0.4301110790970853
+    },
+    {
+      "month": 3,
+      "transition": "M02-M03",
+      "mean_absolute_delta": 8.479501102008904,
+      "p95_absolute_delta": 11.619319371552796,
+      "high_change_cell_fraction": 0.07692307692307693,
+      "normalized_mean_absolute_delta": 0.46526129493252305,
+      "normalized_p95_absolute_delta": 0.40169333237631205,
+      "normalized_high_change_cell_fraction": 0.09523809523809525,
+      "event_score": 0.3207309075156434
+    },
+    {
+      "month": 4,
+      "transition": "M03-M04",
+      "mean_absolute_delta": 11.882657660052553,
+      "p95_absolute_delta": 14.546366115556594,
+      "high_change_cell_fraction": 0.5923076923076923,
+      "normalized_mean_absolute_delta": 0.688621423811177,
+      "normalized_p95_absolute_delta": 0.5402858755832362,
+      "normalized_high_change_cell_fraction": 0.7333333333333333,
+      "event_score": 0.6540802109092488
+    },
+    {
+      "month": 5,
+      "transition": "M04-M05",
+      "mean_absolute_delta": 3.592398167841104,
+      "p95_absolute_delta": 7.287982620265467,
+      "high_change_cell_fraction": 0.0,
+      "normalized_mean_absolute_delta": 0.14450498454800192,
+      "normalized_p95_absolute_delta": 0.19660915424480335,
+      "normalized_high_change_cell_fraction": 0.0,
+      "event_score": 0.11370471293093509
+    },
+    {
+      "month": 6,
+      "transition": "M05-M06",
+      "mean_absolute_delta": 14.38199267380478,
+      "p95_absolute_delta": 19.86187979674381,
+      "high_change_cell_fraction": 0.6692307692307692,
+      "normalized_mean_absolute_delta": 0.8526608328895381,
+      "normalized_p95_absolute_delta": 0.7919697822499413,
+      "normalized_high_change_cell_fraction": 0.8285714285714285,
+      "event_score": 0.8244006812369693
+    },
+    {
+      "month": 7,
+      "transition": "M06-M07",
+      "mean_absolute_delta": 3.6575713325521138,
+      "p95_absolute_delta": 6.0530394742289815,
+      "high_change_cell_fraction": 0.0,
+      "normalized_mean_absolute_delta": 0.14878250931684456,
+      "normalized_p95_absolute_delta": 0.13813591268288647,
+      "normalized_high_change_cell_fraction": 0.0,
+      "event_score": 0.09563947399991035
+    },
+    {
+      "month": 8,
+      "transition": "M07-M08",
+      "mean_absolute_delta": 1.3906932874606965,
+      "p95_absolute_delta": 3.1356366754019565,
+      "high_change_cell_fraction": 0.0,
+      "normalized_mean_absolute_delta": 0.0,
+      "normalized_p95_absolute_delta": 0.0,
+      "normalized_high_change_cell_fraction": 0.0,
+      "event_score": 0.0
+    },
+    {
+      "month": 9,
+      "transition": "M08-M09",
+      "mean_absolute_delta": 3.7130254529342244,
+      "p95_absolute_delta": 7.078292775930675,
+      "high_change_cell_fraction": 0.0,
+      "normalized_mean_absolute_delta": 0.15242214189446568,
+      "normalized_p95_absolute_delta": 0.1866805636370323,
+      "normalized_high_change_cell_fraction": 0.0,
+      "event_score": 0.113034235177166
+    },
+    {
+      "month": 10,
+      "transition": "M09-M10",
+      "mean_absolute_delta": 1.647960225081833,
+      "p95_absolute_delta": 5.52673456365711,
+      "high_change_cell_fraction": 0.0,
+      "normalized_mean_absolute_delta": 0.016885257954840357,
+      "normalized_p95_absolute_delta": 0.113215936188533,
+      "normalized_high_change_cell_fraction": 0.0,
+      "event_score": 0.04336706471445778
+    },
+    {
+      "month": 11,
+      "transition": "M10-M11",
+      "mean_absolute_delta": 10.521877427844109,
+      "p95_absolute_delta": 22.216441360658646,
+      "high_change_cell_fraction": 0.3384615384615385,
+      "normalized_mean_absolute_delta": 0.5993090331357598,
+      "normalized_p95_absolute_delta": 0.9034557624273067,
+      "normalized_high_change_cell_fraction": 0.41904761904761906,
+      "event_score": 0.6406041382035619
+    },
+    {
+      "month": 12,
+      "transition": "M11-M12",
+      "mean_absolute_delta": 16.626879687999985,
+      "p95_absolute_delta": 24.255436314503772,
+      "high_change_cell_fraction": 0.8076923076923077,
+      "normalized_mean_absolute_delta": 1.0,
+      "normalized_p95_absolute_delta": 1.0,
+      "normalized_high_change_cell_fraction": 1.0,
+      "event_score": 1.0
+    }
+  ],
+  "inputs": [
+    "results/temporal/湖北/monthly_delta_encoding.csv",
+    "results/spatial_refined/湖北/final_refined_annulus.geojson",
+    "data/processed/regions/湖北/original_adjacency.csv"
+  ],
+  "outputs": [
+    "results/figures/Fig_case_hubei_temporal.png",
+    "results/tables/Table_case_hubei_top_changes.csv"
+  ],
+  "interpretation_guardrail": "Supported language is observational: spatially coherent increase/decrease, center-periphery shift, localized/distributed change, persistent/reversed change. No meteorological or transport causality is inferred."
+}

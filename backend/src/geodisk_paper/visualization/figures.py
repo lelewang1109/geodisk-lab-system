@@ -23,9 +23,12 @@ def _patches(geometries, values, cmap, norm):
 
 
 def comparison_figure(reference, boundary, results_by_label: dict, output: str | Path, english_name: str,
-                      value_column: str = "annual_mean_pm25", value_label: str = "Annual mean PM2.5 (µg/m³)") -> None:
-    labels = ["Original Geographic Grid", "Direct Polar", "Harmonic", "Area-balanced",
-              "Regular Topology", "GeoDisk", "GeoAnnulus"]
+                      value_column: str = "annual_mean_pm25", value_label: str = "Annual mean PM2.5 (µg/m³)",
+                      labels: list[str] | None = None, dpi: int = 260) -> None:
+    labels = labels or ["Original Geographic Grid", "Direct Polar", "Harmonic", "Area-balanced",
+                        "Regular Topology", "GeoDisk", "GeoAnnulus"]
+    if len(labels) != 7:
+        raise ValueError("comparison_figure requires exactly seven panel labels")
     if value_column not in reference.cells.columns:
         raise ValueError(f"Missing figure value column {value_column!r}")
     values_by_id = {str(row.cell_id): float(getattr(row, value_column)) for row in reference.cells.itertuples()}
@@ -44,7 +47,7 @@ def comparison_figure(reference, boundary, results_by_label: dict, output: str |
             bx, by = part.exterior.xy
             axes[0].plot(bx, by, color="black", linewidth=.8)
     axes[0].autoscale_view(); axes[0].set_aspect("equal")
-    axes[0].set_title("A  Original Geographic Grid", fontsize=9)
+    axes[0].set_title(f"A  {labels[0]}", fontsize=9)
     for index, label in enumerate(labels[1:], start=1):
         result = results_by_label[label]
         collection = _patches(result.geometries, [values_by_id[i] for i in result.cell_ids], cmap, norm)
@@ -58,7 +61,7 @@ def comparison_figure(reference, boundary, results_by_label: dict, output: str |
     cbar.set_label(f"{value_label}; identical scale in every panel", fontsize=8)
     fig.suptitle(f"{english_name}: identical cells and scalar encoding", fontsize=12)
     output = Path(output); output.parent.mkdir(parents=True, exist_ok=True)
-    fig.savefig(output, dpi=260, bbox_inches="tight", facecolor="white")
+    fig.savefig(output, dpi=dpi, bbox_inches="tight", facecolor="white")
     plt.close(fig)
 
 

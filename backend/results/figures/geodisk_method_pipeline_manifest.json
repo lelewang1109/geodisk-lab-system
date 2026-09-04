@@ -1,0 +1,23 @@
+{
+  "producer": "E34_geodisk_method_figure.py",
+  "region": "湖北",
+  "seed": 20260827,
+  "inputs": [
+    "data/processed/regions/湖北/*",
+    "results/spatial_refined/湖北/final_refined_disk.geojson",
+    "results/spatial_refined/湖北/final_refined_annulus.geojson"
+  ],
+  "topology_objective": {
+    "initial": 0.5409996345901458,
+    "final": 0.5655722018316786
+  },
+  "final_edges": {
+    "preserved": 214,
+    "lost": 11,
+    "new": 136
+  },
+  "outputs": [
+    "results/figures/Fig_geodisk_method_pipeline_Hubei.png",
+    "results/figures/Fig_geodisk_method_pipeline_Hubei.pdf"
+  ]
+}

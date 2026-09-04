@@ -1,0 +1,21 @@
+{
+  "producer": "E33_reference_structure_figure.py",
+  "region": "湖北",
+  "inputs": [
+    "data/processed/regions/湖北/cells.csv",
+    "data/processed/regions/湖北/original_geometry.geojson",
+    "data/processed/regions/湖北/original_adjacency.csv",
+    "data/processed/regions/湖北/original_local_directions.csv",
+    "data/processed/regions/湖北/neighborhoods.json",
+    "data/processed/regions/湖北/reference_metadata.json"
+  ],
+  "boundary_definitions": {
+    "topological": "reference_degree < 4 in the default four-neighbor macro-cell graph",
+    "geographic": "unclipped macro-cell intersects/touches or is within tolerance of the real region boundary",
+    "geographic_tolerance_degrees": 1e-09
+  },
+  "outputs": [
+    "results/figures/Fig_reference_structure_Hubei.png",
+    "results/figures/Fig_reference_structure_Hubei.pdf"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "design": "within-subject four-condition decomposition",
+  "conditions": {
+    "C1_geographic_state_comparison": "Geographic State Comparison",
+    "C2_geographic_direct_delta": "Geographic Direct Delta",
+    "C3_canonical_geoannulus_direct_delta": "Canonical GeoAnnulus Direct Delta",
+    "C4_integrated_deltaannulus": "Integrated DeltaAnnulus"
+  },
+  "contrasts": {
+    "C1_vs_C2": "direct delta encoding",
+    "C2_vs_C3": "canonicalization",
+    "C3_vs_C4": "integrated temporal organization"
+  },
+  "tasks": [
+    "change_localization",
+    "increase_decrease",
+    "magnitude_comparison",
+    "temporal_comparison",
+    "radial_center_periphery_pattern"
+  ],
+  "trial_count": 240,
+  "seed": 20260827,
+  "radial_ground_truth": "Compare mean absolute delta for cells at/below versus above the dataset median rho; balanced if relative difference <= 5%.",
+  "causal_guardrail": "The radial task measures an objective center/periphery pattern and is not described as propagation.",
+  "status": "NO PARTICIPANT DATA COLLECTED"
+}

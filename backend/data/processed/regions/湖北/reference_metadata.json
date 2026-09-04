@@ -10,5 +10,10 @@
   "source_grid_resolution": {
     "longitude": 0.09999999999999432,
     "latitude": 0.10000000000000142
+  },
+  "boundary_definitions": {
+    "topological": "reference_degree < 4 in the default four-neighbor macro-cell graph",
+    "geographic": "unclipped macro-cell intersects/touches or is within tolerance of the real region boundary",
+    "geographic_tolerance_degrees": 1e-09
   }
 }

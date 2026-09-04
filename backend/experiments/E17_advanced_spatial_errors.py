@@ -5,7 +5,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-from common import ROOT, ensure_output_dirs, geometry_config
+from common import ROOT, ensure_output_dirs, experiment_config, geometry_config
 from geodisk_paper.data.regions import load_region_reference
 from geodisk_paper.geometry.serialization import load_geometry
 from geodisk_paper.metrics.geometry import display_adjacency, shared_boundary_lengths
@@ -31,9 +31,17 @@ def _reference_lengths(reference) -> dict[tuple[str, str], float]:
     return output
 
 
-def _boundary_map(reference) -> dict[str, bool]:
+def _boundary_map(reference, definition: str) -> dict[str, bool]:
+    column = f"is_{definition}_boundary"
+    if column in reference.cells.columns:
+        return {str(row.cell_id): bool(getattr(row, column)) for row in reference.cells.itertuples()}
     if "is_boundary" in reference.cells.columns:
+        # External adapters predate the dual CEG definition. Their explicit
+        # boundary field remains the primary classification and is not relabeled
+        # as a geographic sensitivity result.
         return {str(row.cell_id): bool(row.is_boundary) for row in reference.cells.itertuples()}
+    if definition != "topological":
+        raise ValueError(f"Reference {reference.name} lacks {column}; rerun its preprocessing stage")
     degree = {str(cell_id): 0 for cell_id in reference.cells.cell_id}
     for left, right in reference.edges:
         degree[left] += 1; degree[right] += 1
@@ -42,13 +50,16 @@ def _boundary_map(reference) -> dict[str, bool]:
 
 def _evaluate_dataset(dataset: str, reference_root: Path, geometry_root: Path, refined_root: Path | None,
                       inner: float, outer: float,
-                      node_rows: list[dict], group_rows: list[dict], weight_rows: list[dict]) -> None:
+                      node_rows: list[dict], group_rows: list[dict], weight_rows: list[dict],
+                      boundary_definition: str,
+                      sensitivity_rows: list[dict] | None = None,
+                      sensitivity_definitions: list[str] | None = None) -> None:
     reference = load_region_reference(reference_root, dataset)
     ids = reference.cells.cell_id.astype(str).tolist()
     source = {str(row.cell_id): (float(row.longitude), float(row.latitude)) for row in reference.cells.itertuples()}
     theta = {str(row.cell_id): float(row.theta) for row in reference.cells.itertuples()}
     rho = {str(row.cell_id): float(row.rho) for row in reference.cells.itertuples()}
-    boundary = _boundary_map(reference)
+    boundary = _boundary_map(reference, boundary_definition)
     reference_lengths = _reference_lengths(reference)
     paths = [geometry_root / dataset / filename for filename in GEOMETRY_FILES]
     if refined_root is not None:
@@ -67,7 +78,8 @@ def _evaluate_dataset(dataset: str, reference_root: Path, geometry_root: Path, r
         local = node_level_fidelity(ids, reference.edges, display_edges, source, target, theta, rho,
                                     reference.anchor[1], boundary)
         for row in local:
-            node_rows.append({"dataset": dataset, "method": result.method, "view": result.view, **row})
+            node_rows.append({"dataset": dataset, "method": result.method, "view": result.view,
+                              "boundary_definition": boundary_definition, **row})
         local_frame = pd.DataFrame(local)
         for label, subset in [("boundary", local_frame[local_frame.is_boundary]),
                               ("interior", local_frame[~local_frame.is_boundary]),
@@ -76,6 +88,7 @@ def _evaluate_dataset(dataset: str, reference_root: Path, geometry_root: Path, r
                 continue
             group_rows.append({
                 "dataset": dataset, "method": result.method, "view": result.view, "node_group": label,
+                "boundary_definition": boundary_definition,
                 "node_count": len(subset), "mean_reference_degree": float(subset.reference_degree.mean()),
                 "mean_display_degree": float(subset.display_degree.mean()),
                 "degree_absolute_error": float(subset.degree_absolute_error.mean()),
@@ -88,33 +101,66 @@ def _evaluate_dataset(dataset: str, reference_root: Path, geometry_root: Path, r
                 "node_direction_error_deg": float(np.nanmean(subset.node_direction_error_deg)),
                 "node_neighbor_order_accuracy": float(np.nanmean(subset.node_neighbor_order_accuracy)),
             })
+        if sensitivity_rows is not None and result.method in {"GeoDisk-Final", "GeoAnnulus-Final"}:
+            for definition in sensitivity_definitions or []:
+                alternate = _boundary_map(reference, definition)
+                alternate_local = pd.DataFrame(node_level_fidelity(
+                    ids, reference.edges, display_edges, source, target, theta, rho,
+                    reference.anchor[1], alternate,
+                ))
+                for label, subset in (("boundary", alternate_local[alternate_local.is_boundary]),
+                                      ("interior", alternate_local[~alternate_local.is_boundary])):
+                    if subset.empty:
+                        continue
+                    sensitivity_rows.append({
+                        "dataset": dataset, "method": result.method, "view": result.view,
+                        "boundary_definition": definition, "node_group": label,
+                        "node_count": len(subset),
+                        "node_adj_f1": float(subset.node_adj_f1.mean()),
+                        "node_neighbor_jaccard": float(subset.node_neighbor_jaccard.mean()),
+                        "degree_absolute_error": float(subset.degree_absolute_error.mean()),
+                        "node_direction_error_deg": float(np.nanmean(subset.node_direction_error_deg)),
+                        "node_neighbor_order_accuracy": float(np.nanmean(subset.node_neighbor_order_accuracy)),
+                    })
     print("[advanced spatial errors]", dataset, flush=True)
 
 
 def main() -> None:
-    ensure_output_dirs(); config = geometry_config()
+    ensure_output_dirs(); config = geometry_config(); evaluation = experiment_config()["spatial_evaluation"]
+    boundary_definition = str(evaluation["boundary_definition"])
+    sensitivity_definitions = [str(value) for value in evaluation["boundary_sensitivity_definitions"]]
+    if boundary_definition not in {"topological", "geographic"}:
+        raise ValueError("boundary_definition must be topological or geographic")
     inner, outer = float(config["annulus_inner"]), float(config["annulus_outer"])
     node_rows: list[dict] = []; group_rows: list[dict] = []; weight_rows: list[dict] = []
+    sensitivity_rows: list[dict] = []
     for region in config["regions"]:
         _evaluate_dataset(region, ROOT / "data/processed/regions", ROOT / "results/spatial", ROOT / "results/spatial_refined",
-                          inner, outer, node_rows, group_rows, weight_rows)
+                          inner, outer, node_rows, group_rows, weight_rows, boundary_definition,
+                          sensitivity_rows, sensitivity_definitions)
+        # CEG references carry both frozen boundary definitions.
+        # Sensitivity is intentionally restricted to the eight main regions.
+        # External adapters retain their source-specific explicit boundary flag.
     for dataset in ("NE-Admin0-Africa", "NCEP-AirTemp-Africa-2000"):
         _evaluate_dataset(dataset, ROOT / "data/processed/external_regions", ROOT / "results/external_spatial", ROOT / "results/external_refined",
-                          inner, outer, node_rows, group_rows, weight_rows)
+                          inner, outer, node_rows, group_rows, weight_rows, boundary_definition)
     _evaluate_dataset("NASA-Exoplanet-SkyGrid", ROOT / "data/processed/external_regions",
                       ROOT / "results/astronomy_spatial", ROOT / "results/astronomy_spatial",
-                      inner, outer, node_rows, group_rows, weight_rows)
+                      inner, outer, node_rows, group_rows, weight_rows, boundary_definition)
     synthetic_root = ROOT / "data/processed/synthetic_regions"
     for directory in sorted(path for path in synthetic_root.iterdir() if path.is_dir() and path.name.startswith("Synthetic-")):
         _evaluate_dataset(directory.name, synthetic_root, ROOT / "results/synthetic_spatial",
                           ROOT / "results/synthetic_refined", inner, outer,
-                          node_rows, group_rows, weight_rows)
+                          node_rows, group_rows, weight_rows, boundary_definition)
     node = pd.DataFrame(node_rows); grouped = pd.DataFrame(group_rows); weighted = pd.DataFrame(weight_rows)
     write_csv(node, ROOT / "results/tables/Table_node_level_errors.csv")
     write_csv(grouped, ROOT / "results/tables/Table_boundary_interior_errors.csv")
     write_csv(weighted, ROOT / "results/tables/Table_weighted_adjacency.csv")
     write_csv(grouped, ROOT / "paper/tables/Table_boundary_interior_errors.csv")
     write_csv(weighted, ROOT / "paper/tables/Table_weighted_adjacency.csv")
+    sensitivity = pd.DataFrame(sensitivity_rows)
+    write_csv(sensitivity, ROOT / "results/tables/Table_boundary_definition_sensitivity.csv")
+    write_csv(sensitivity, ROOT / "paper/tables/Table_boundary_definition_sensitivity.csv")
     summary = grouped[grouped.node_group != "all"].groupby(
         ["method", "view", "node_group"], as_index=False
     ).agg(node_adj_f1=("node_adj_f1", "mean"), node_neighbor_jaccard=("node_neighbor_jaccard", "mean"),

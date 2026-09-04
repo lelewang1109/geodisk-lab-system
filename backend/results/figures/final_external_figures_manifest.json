@@ -1,0 +1,36 @@
+{
+  "producer": "E32_final_external_figures.py",
+  "figures": [
+    {
+      "dataset": "NE-Admin0-Africa",
+      "figure": "results/figures/Fig_final_external_NE-Admin0-Africa.png",
+      "inputs": [
+        "results/external_spatial/NE-Admin0-Africa/direct_polar_annulus.geojson",
+        "results/external_spatial/NE-Admin0-Africa/harmonic_annulus.geojson",
+        "results/external_spatial/NE-Admin0-Africa/area_balanced_annulus.geojson",
+        "results/external_spatial/NE-Admin0-Africa/regular_topology_annulus.geojson",
+        "results/external_refined/NE-Admin0-Africa/final_refined_disk.geojson",
+        "results/external_refined/NE-Admin0-Africa/final_refined_annulus.geojson"
+      ]
+    },
+    {
+      "dataset": "NCEP-AirTemp-Africa-2000",
+      "figure": "results/figures/Fig_final_external_NCEP-AirTemp-Africa-2000.png",
+      "inputs": [
+        "results/external_spatial/NCEP-AirTemp-Africa-2000/direct_polar_annulus.geojson",
+        "results/external_spatial/NCEP-AirTemp-Africa-2000/harmonic_annulus.geojson",
+        "results/external_spatial/NCEP-AirTemp-Africa-2000/area_balanced_annulus.geojson",
+        "results/external_spatial/NCEP-AirTemp-Africa-2000/regular_topology_annulus.geojson",
+        "results/external_refined/NCEP-AirTemp-Africa-2000/final_refined_disk.geojson",
+        "results/external_refined/NCEP-AirTemp-Africa-2000/final_refined_annulus.geojson"
+      ]
+    }
+  ],
+  "table_sources": [
+    "E4",
+    "E12",
+    "E13",
+    "E19",
+    "E22"
+  ]
+}

@@ -70,7 +70,9 @@ def harmonic_seed_positions(reference: RegionReference, view: str, inner: float,
         neighbors[a].add(b); neighbors[b].add(a)
     theta = frame.theta.to_numpy(float)
     rho = frame.rho.to_numpy(float)
-    if "is_boundary" in frame.columns:
+    if "is_topological_boundary" in frame.columns:
+        outer_boundary = set(np.flatnonzero(frame.is_topological_boundary.to_numpy(bool)))
+    elif "is_boundary" in frame.columns:
         outer_boundary = set(np.flatnonzero(frame.is_boundary.to_numpy(bool)))
     else:
         outer_boundary = {i for i, values in enumerate(neighbors) if len(values) < 4}

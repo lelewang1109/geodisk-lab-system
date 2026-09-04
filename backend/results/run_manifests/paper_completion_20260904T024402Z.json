@@ -1,0 +1,126 @@
+{
+  "run_id": "20260904T024402Z",
+  "pipeline": "paper_completion",
+  "status": "succeeded",
+  "timestamp": "2026-09-04T02:44:02.240993+00:00",
+  "git_commit": "68569047824f5eca7f22453ce0e7d8293caa1d1c",
+  "dirty_status": true,
+  "python_version": "3.9.24",
+  "config_hash": {
+    "config/datasets.yaml": "5a51ae2cb41f78a483cebf9d2e114d82829872cb9c5d859eadf864e94957137c",
+    "config/experiment.yaml": "15a741c41d497678c7b63194ddefe37c83e70df8438562dad8c8beae307b2406",
+    "config/formal_hypotheses.yaml": "2ec01866a6b3ee03ed5ecd5bb00398cb9c7959869e744faf5c7e123e59bbe7e1",
+    "config/geometry.yaml": "87b762105af0dd8bcfd2fe7fdf3da9cbc3f0edd975c6114e1084220c77ab30fc",
+    "config/tvcg_submission.yaml": "82ee8cc5b58406a10386524e315afa82f96157b5611a8733b5ec61da45da9b8c"
+  },
+  "stages": [
+    {
+      "name": "E31",
+      "script": "experiments/E31_final_spatial_figures.py",
+      "status": "succeeded",
+      "return_code": 0,
+      "duration_seconds": 15.39679025,
+      "outputs": [
+        "results/tables/Table_final_spatial_comparison.csv",
+        "results/figures/Fig_final_spatial_comparison_Hubei.png"
+      ],
+      "stdout_tail": "[final spatial figure] 湖北\n[final spatial figure] 湖南\n[final spatial figure] 江西\n[final spatial figure] 广东\n[final spatial figure] 福建\n[final spatial figure] 广西\n[final spatial figure] 安徽\n[final spatial figure] 浙江\n                            adj_f1  weighted_adj_f1       np2\nmethod           view                                        \nArea-balanced    annulus  0.651055         0.700024  0.578462\nDirect Polar     annulus  0.824417         0.999767  0.723037\nGeoAnnulus-Final annulus  0.748137         0.809585  0.639768\nGeoDisk-Final    disk     0.778215         0.888395  0.641881\nHarmonic         annulus  0.691189         0.760126  0.594308\nRegular Topology annulus  0.582251         0.655698  0.471273\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "E32",
+      "script": "experiments/E32_final_external_figures.py",
+      "status": "succeeded",
+      "return_code": 0,
+      "duration_seconds": 3.226161125000001,
+      "outputs": [
+        "results/tables/Table_final_cross_domain_spatial.csv",
+        "results/figures/Fig_final_external_NE-Admin0-Africa.png",
+        "results/figures/Fig_final_external_NCEP-AirTemp-Africa-2000.png"
+      ],
+      "stdout_tail": "[final external figure] NE-Admin0-Africa\n[final external figure] NCEP-AirTemp-Africa-2000\ndataset_family  method            view   \nCEG             Area-balanced     annulus    8\n                                  disk       8\n                Direct Polar      annulus    8\n                                  disk       8\n                GeoAnnulus-Final  annulus    8\n                GeoDisk-Final     disk       8\n                Harmonic          annulus    8\n                                  disk       8\n                Regular Topology  annulus    8\n                                  disk       8\nNASA Exoplanet  Area-balanced     annulus    1\n                                  disk       1\n                Direct Polar      annulus    1\n                                  disk       1\n                GeoAnnulus-Final  annulus    1\n                GeoDisk-Final     disk       1\n                Harmonic          annulus    1\n                                  disk       1\n                Regular Topology  annulus    1\n                                  disk       1\nNCEP            Area-balanced     annulus    1\n                                  disk       1\n                Direct Polar      annulus    1\n                                  disk       1\n                GeoAnnulus-Final  annulus    1\n                GeoDisk-Final     disk       1\n                Harmonic          annulus    1\n                                  disk       1\n                Regular Topology  annulus    1\n                                  disk       1\nNatural Earth   Area-balanced     annulus    1\n                                  disk       1\n                Direct Polar      annulus    1\n                                  disk       1\n                GeoAnnulus-Final  annulus    1\n                GeoDisk-Final     disk       1\n                Harmonic          annulus    1\n                                  disk       1\n                Regular Topology  annulus    1\n                                  disk       1\nSynthetic       Area-balanced     annulus    6\n                                  disk       6\n                Direct Polar      annulus    6\n                                  disk       6\n                GeoAnnulus-Final  annulus    6\n                GeoDisk-Final     disk       6\n                Harmonic          annulus    6\n                                  disk       6\n                Regular Topology  annulus    6\n                                  disk       6\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "E33",
+      "script": "experiments/E33_reference_structure_figure.py",
+      "status": "succeeded",
+      "return_code": 0,
+      "duration_seconds": 1.9740372080000022,
+      "outputs": [
+        "results/figures/Fig_reference_structure_Hubei.png",
+        "results/figures/Fig_reference_structure_Hubei.pdf"
+      ],
+      "stdout_tail": "{'png': '/Users/lele/Desktop/5-9/正式/geodisk-lab-system/backend/results/figures/Fig_reference_structure_Hubei.png', 'pdf': '/Users/lele/Desktop/5-9/正式/geodisk-lab-system/backend/results/figures/Fig_reference_structure_Hubei.pdf', 'cells': 130, 'edges': 225}\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "E34",
+      "script": "experiments/E34_geodisk_method_figure.py",
+      "status": "succeeded",
+      "return_code": 0,
+      "duration_seconds": 12.991098666,
+      "outputs": [
+        "results/figures/Fig_geodisk_method_pipeline_Hubei.png"
+      ],
+      "stdout_tail": "{'topology_objective': [0.5409996345901458, 0.5655722018316786], 'final_edges': [214, 11, 136]}\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "E35",
+      "script": "experiments/E35_integrated_delta_annulus.py",
+      "status": "succeeded",
+      "return_code": 0,
+      "duration_seconds": 9.633693040999994,
+      "outputs": [
+        "results/figures/Fig_integrated_delta_annulus_Hubei.png",
+        "results/figures/Fig_integrated_delta_annulus_NCEP.png",
+        "results/tables/Table_integrated_delta_annulus_consistency.csv"
+      ],
+      "stdout_tail": "[integrated DeltaAnnulus] 湖北\n[integrated DeltaAnnulus] NCEP-AirTemp-Africa-2000\n                         cell_identity_accuracy      rendered_adjacency_jaccard      temporal_layer_mismatch_count    \n                                            min  max                        min  max                           min max\ndataset                                                                                                               \nNCEP-AirTemp-Africa-2000                    1.0  1.0                   0.996289  1.0                             0   0\n湖北                                          1.0  1.0                   0.981818  1.0                             0   0\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "E36",
+      "script": "experiments/E36_user_study_v2_materials.py",
+      "status": "succeeded",
+      "return_code": 0,
+      "duration_seconds": 18.183617083,
+      "outputs": [
+        "user_study_v2/task_manifest.csv",
+        "user_study_v2/response_schema.csv",
+        "user_study_v2/study_manifest.json"
+      ],
+      "stdout_tail": "{'stimuli': 48, 'trials': 240, 'responses': 0, 'status': 'NO PARTICIPANT DATA COLLECTED'}\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "E37",
+      "script": "experiments/E37_failure_case_figures.py",
+      "status": "succeeded",
+      "return_code": 0,
+      "duration_seconds": 3.106584791000003,
+      "outputs": [
+        "results/figures/Fig_failure_cases_Hubei.png"
+      ],
+      "stdout_tail": "                     case                cell_id           method    view  is_boundary                  selection_note  preserved  lost  new\n         boundary failure CEG2000_f4_r0029_c0094    GeoDisk-Final    disk         True        exact requested category          1     2    4\n         interior failure CEG2000_f4_r0032_c0097 GeoAnnulus-Final annulus        False        exact requested category          1     3    3\nunder-connected component CEG2000_f4_r0031_c0098 GeoAnnulus-Final annulus        False (mixed: new edges also present)          1     3    2\n           over-connected CEG2000_f4_r0028_c0090    GeoDisk-Final    disk         True        exact requested category          3     0    5\n           direction-only CEG2000_f4_r0037_c0090    GeoDisk-Final    disk         True        exact requested category          2     0    0\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "E38",
+      "script": "experiments/E38_case_study_hubei_temporal.py",
+      "status": "succeeded",
+      "return_code": 0,
+      "duration_seconds": 2.5905800409999955,
+      "outputs": [
+        "results/figures/Fig_case_hubei_temporal.png",
+        "results/tables/Table_case_hubei_top_changes.csv",
+        "results/temporal/case_hubei_manifest.json"
+      ],
+      "stdout_tail": "{'selected_transition': 'M11-M12', 'event_score': 1.0, 'top_cell': 'CEG2000_f4_r0030_c0102', 'top_delta': np.float64(25.52331764124891)}\n",
+      "stderr_tail": ""
+    }
+  ],
+  "finished_at": "2026-09-04T02:45:09.428868+00:00",
+  "dirty_status_at_end": true
+}

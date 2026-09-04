@@ -1,0 +1,65 @@
+{
+  "producer": "E35_integrated_delta_annulus.py",
+  "selected_design": "B",
+  "design_reason": "Concentric remaps of one fixed Final GeoAnnulus retain a direct deterministic cell correspondence while placing D1 and all eleven deltas in one compact temporal order. Design A would visually privilege a separate center state and disconnect it from the canonical annulus topology.",
+  "mapping": "Each layer is a deterministic radial homeomorphic remap of the same final GeoAnnulus polygons; theta order and cell IDs are unchanged; no monthly geometry optimization occurs.",
+  "guardrail": "Identity, no-reoptimization and logical adjacency values are construction checks, not comparative performance advantages.",
+  "entries": [
+    {
+      "dataset": "湖北",
+      "encoding": "results/temporal/湖北/monthly_delta_encoding.csv",
+      "geometry": "results/spatial_refined/湖北/final_refined_annulus.geojson",
+      "geometry_sha256": "02d1374d263b9336f9ebdbbde415b099d8606c20f5636833116a90af72694128",
+      "figure": "results/figures/Fig_integrated_delta_annulus_Hubei.png",
+      "normalization": {
+        "dataset": "湖北",
+        "variable": "PM2.5",
+        "units": "µg/m³",
+        "month_count": 12,
+        "cell_count": 130,
+        "bin_count": 9,
+        "value_clip_quantiles": [
+          0.02,
+          0.98
+        ],
+        "value_clip_range": [
+          23.93861901501368,
+          78.76927048860043
+        ],
+        "delta_symmetric_quantile": 0.95,
+        "delta_symmetric_limit": 19.181641783146755,
+        "geometry_policy": "one fixed final-refined annulus partition reused for every month",
+        "identity_policy": "cell_id is unchanged across all months",
+        "geometry_path": "results/spatial_refined/湖北/final_refined_annulus.geojson"
+      }
+    },
+    {
+      "dataset": "NCEP-AirTemp-Africa-2000",
+      "encoding": "results/temporal/NCEP-AirTemp-Africa-2000/monthly_delta_encoding.csv",
+      "geometry": "results/external_refined/NCEP-AirTemp-Africa-2000/final_refined_annulus.geojson",
+      "geometry_sha256": "750d66103e4cb9b4aa36de63fa45720edab4b340c0c52aede9bef3c4bc5552b1",
+      "figure": "results/figures/Fig_integrated_delta_annulus_NCEP.png",
+      "normalization": {
+        "dataset": "NCEP-AirTemp-Africa-2000",
+        "variable": "air_temperature",
+        "units": "°C",
+        "month_count": 12,
+        "cell_count": 401,
+        "bin_count": 9,
+        "value_clip_quantiles": [
+          0.02,
+          0.98
+        ],
+        "value_clip_range": [
+          11.509272670745847,
+          34.54859382629394
+        ],
+        "delta_symmetric_quantile": 0.95,
+        "delta_symmetric_limit": 5.943693161010742,
+        "geometry_policy": "one fixed final-refined annulus partition reused for every month",
+        "identity_policy": "cell_id is unchanged across all months",
+        "geometry_path": "results/external_refined/NCEP-AirTemp-Africa-2000/final_refined_annulus.geojson"
+      }
+    }
+  ]
+}

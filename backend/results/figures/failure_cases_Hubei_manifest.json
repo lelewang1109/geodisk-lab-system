@@ -1,0 +1,196 @@
+{
+  "producer": "E37_failure_case_figures.py",
+  "region": "湖北",
+  "selection": "deterministic extrema from E17 node rows; edge categories recomputed directly from reference.edges and display_adjacency",
+  "guardrail": "Hubei has no pure under-connected final node; the panel uses the node with the largest real lost-edge count and labels its simultaneous new edges explicitly.",
+  "cases": [
+    {
+      "case": "boundary failure",
+      "cell_id": "CEG2000_f4_r0029_c0094",
+      "method": "GeoDisk-Final",
+      "view": "disk",
+      "is_boundary": true,
+      "preserved_edges": [
+        [
+          "CEG2000_f4_r0029_c0094",
+          "CEG2000_f4_r0029_c0095"
+        ]
+      ],
+      "lost_edges": [
+        [
+          "CEG2000_f4_r0029_c0093",
+          "CEG2000_f4_r0029_c0094"
+        ],
+        [
+          "CEG2000_f4_r0029_c0094",
+          "CEG2000_f4_r0030_c0094"
+        ]
+      ],
+      "new_edges": [
+        [
+          "CEG2000_f4_r0027_c0089",
+          "CEG2000_f4_r0029_c0094"
+        ],
+        [
+          "CEG2000_f4_r0028_c0092",
+          "CEG2000_f4_r0029_c0094"
+        ],
+        [
+          "CEG2000_f4_r0029_c0092",
+          "CEG2000_f4_r0029_c0094"
+        ],
+        [
+          "CEG2000_f4_r0029_c0094",
+          "CEG2000_f4_r0030_c0095"
+        ]
+      ],
+      "selection_note": "exact requested category"
+    },
+    {
+      "case": "interior failure",
+      "cell_id": "CEG2000_f4_r0032_c0097",
+      "method": "GeoAnnulus-Final",
+      "view": "annulus",
+      "is_boundary": false,
+      "preserved_edges": [
+        [
+          "CEG2000_f4_r0032_c0096",
+          "CEG2000_f4_r0032_c0097"
+        ]
+      ],
+      "lost_edges": [
+        [
+          "CEG2000_f4_r0031_c0097",
+          "CEG2000_f4_r0032_c0097"
+        ],
+        [
+          "CEG2000_f4_r0032_c0097",
+          "CEG2000_f4_r0032_c0098"
+        ],
+        [
+          "CEG2000_f4_r0032_c0097",
+          "CEG2000_f4_r0033_c0097"
+        ]
+      ],
+      "new_edges": [
+        [
+          "CEG2000_f4_r0032_c0095",
+          "CEG2000_f4_r0032_c0097"
+        ],
+        [
+          "CEG2000_f4_r0032_c0097",
+          "CEG2000_f4_r0033_c0095"
+        ],
+        [
+          "CEG2000_f4_r0032_c0097",
+          "CEG2000_f4_r0033_c0096"
+        ]
+      ],
+      "selection_note": "exact requested category"
+    },
+    {
+      "case": "under-connected component",
+      "cell_id": "CEG2000_f4_r0031_c0098",
+      "method": "GeoAnnulus-Final",
+      "view": "annulus",
+      "is_boundary": false,
+      "preserved_edges": [
+        [
+          "CEG2000_f4_r0030_c0098",
+          "CEG2000_f4_r0031_c0098"
+        ]
+      ],
+      "lost_edges": [
+        [
+          "CEG2000_f4_r0031_c0097",
+          "CEG2000_f4_r0031_c0098"
+        ],
+        [
+          "CEG2000_f4_r0031_c0098",
+          "CEG2000_f4_r0031_c0099"
+        ],
+        [
+          "CEG2000_f4_r0031_c0098",
+          "CEG2000_f4_r0032_c0098"
+        ]
+      ],
+      "new_edges": [
+        [
+          "CEG2000_f4_r0030_c0097",
+          "CEG2000_f4_r0031_c0098"
+        ],
+        [
+          "CEG2000_f4_r0030_c0099",
+          "CEG2000_f4_r0031_c0098"
+        ]
+      ],
+      "selection_note": "(mixed: new edges also present)"
+    },
+    {
+      "case": "over-connected",
+      "cell_id": "CEG2000_f4_r0028_c0090",
+      "method": "GeoDisk-Final",
+      "view": "disk",
+      "is_boundary": true,
+      "preserved_edges": [
+        [
+          "CEG2000_f4_r0028_c0089",
+          "CEG2000_f4_r0028_c0090"
+        ],
+        [
+          "CEG2000_f4_r0028_c0090",
+          "CEG2000_f4_r0028_c0091"
+        ],
+        [
+          "CEG2000_f4_r0028_c0090",
+          "CEG2000_f4_r0029_c0090"
+        ]
+      ],
+      "lost_edges": [],
+      "new_edges": [
+        [
+          "CEG2000_f4_r0027_c0088",
+          "CEG2000_f4_r0028_c0090"
+        ],
+        [
+          "CEG2000_f4_r0027_c0089",
+          "CEG2000_f4_r0028_c0090"
+        ],
+        [
+          "CEG2000_f4_r0028_c0090",
+          "CEG2000_f4_r0028_c0092"
+        ],
+        [
+          "CEG2000_f4_r0028_c0090",
+          "CEG2000_f4_r0029_c0089"
+        ],
+        [
+          "CEG2000_f4_r0028_c0090",
+          "CEG2000_f4_r0029_c0091"
+        ]
+      ],
+      "selection_note": "exact requested category"
+    },
+    {
+      "case": "direction-only",
+      "cell_id": "CEG2000_f4_r0037_c0090",
+      "method": "GeoDisk-Final",
+      "view": "disk",
+      "is_boundary": true,
+      "preserved_edges": [
+        [
+          "CEG2000_f4_r0036_c0090",
+          "CEG2000_f4_r0037_c0090"
+        ],
+        [
+          "CEG2000_f4_r0037_c0090",
+          "CEG2000_f4_r0037_c0091"
+        ]
+      ],
+      "lost_edges": [],
+      "new_edges": [],
+      "selection_note": "exact requested category"
+    }
+  ],
+  "output": "results/figures/Fig_failure_cases_Hubei.png"
+}

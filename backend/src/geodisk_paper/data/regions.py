@@ -70,6 +70,38 @@ def grid_edges(cells: pd.DataFrame) -> set[tuple[str, str]]:
     return edges
 
 
+def boundary_flags(
+    cells: pd.DataFrame,
+    polygons: dict[str, Polygon],
+    edges: set[tuple[str, str]],
+    geographic_boundary,
+    *,
+    geographic_tolerance: float,
+) -> tuple[dict[str, bool], dict[str, bool]]:
+    """Return frozen topological and geographic boundary classifications.
+
+    Topological boundary is defined against the default four-neighbor reference
+    graph. Geographic boundary means that the (unclipped) stable macro-cell
+    intersects, touches, or lies within the declared numerical tolerance of the
+    real region boundary. Both definitions are deterministic and are stored at
+    preprocessing time rather than inferred during evaluation.
+    """
+    degree = {str(cell_id): 0 for cell_id in cells.cell_id.astype(str)}
+    for left, right in sorted(edges):
+        degree[left] += 1
+        degree[right] += 1
+    topological = {cell_id: value < 4 for cell_id, value in degree.items()}
+    boundary_line = geographic_boundary.boundary
+    geographic = {
+        cell_id: bool(
+            polygons[cell_id].intersects(boundary_line)
+            or polygons[cell_id].distance(boundary_line) <= geographic_tolerance
+        )
+        for cell_id in degree
+    }
+    return topological, geographic
+
+
 def k_hop_neighborhoods(cell_ids: list[str], edges: set[tuple[str, str]], maximum: int = 3) -> dict[str, dict[str, list[str]]]:
     graph = {cell_id: set() for cell_id in cell_ids}
     for left, right in sorted(edges):
@@ -203,6 +235,15 @@ def prepare_region_references(
             polygons[cell_id] = cell_polygon
         cells = pd.DataFrame(rows)
         edges = grid_edges(cells)
+        geographic_tolerance = max(abs(dlon), abs(dlat), 1.0) * 1e-9
+        topological_boundary, geographic_boundary = boundary_flags(
+            cells, polygons, edges, polygon, geographic_tolerance=geographic_tolerance,
+        )
+        cells["reference_degree"] = cells.cell_id.astype(str).map(
+            {cell_id: sum(cell_id in edge for edge in edges) for cell_id in cells.cell_id.astype(str)}
+        ).astype(int)
+        cells["is_topological_boundary"] = cells.cell_id.astype(str).map(topological_boundary).astype(bool)
+        cells["is_geographic_boundary"] = cells.cell_id.astype(str).map(geographic_boundary).astype(bool)
         ids = cells.cell_id.astype(str).tolist()
         neighborhoods = k_hop_neighborhoods(ids, edges, 3)
         centroid_by_id = {str(row.cell_id): (float(row.longitude), float(row.latitude)) for row in cells.itertuples()}
@@ -224,6 +265,11 @@ def prepare_region_references(
             "region": region, "cell_count": len(ids), "edge_count": len(edges),
             "anchor": {"longitude": anchor[0], "latitude": anchor[1]},
             "coarsen_factor": coarsen_factor, "source_grid_resolution": {"longitude": dlon, "latitude": dlat},
+            "boundary_definitions": {
+                "topological": "reference_degree < 4 in the default four-neighbor macro-cell graph",
+                "geographic": "unclipped macro-cell intersects/touches or is within tolerance of the real region boundary",
+                "geographic_tolerance_degrees": geographic_tolerance,
+            },
         }, region_dir / "reference_metadata.json")
         references[region] = RegionReference(region, cells, polygons, edges, anchor)
     return references
